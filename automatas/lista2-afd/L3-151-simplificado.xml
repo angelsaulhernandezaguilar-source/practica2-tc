@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="L3-151-simplificado">
+	<alfabeto><simbolo>0</simbolo><simbolo>1</simbolo></alfabeto>
+	<estados>
+		<estado nombre="ABD" inicial="true"/>
+		<estado nombre="CF" aceptacion="true"/>
+		<estado nombre="E" aceptacion="true"/>
+		<estado nombre="GH"/>
+		<estado nombre="IJ"/>
+	</estados>
+	<transiciones>
+		<transicion desde="ABD" lee="0" hacia="CF"/>
+		<transicion desde="ABD" lee="1" hacia="E"/>
+		<transicion desde="CF" lee="0" hacia="ABD"/>
+		<transicion desde="CF" lee="1" hacia="GH"/>
+		<transicion desde="E" lee="0" hacia="IJ"/>
+		<transicion desde="E" lee="1" hacia="ABD"/>
+		<transicion desde="GH" lee="0" hacia="CF"/>
+		<transicion desde="GH" lee="1" hacia="IJ"/>
+		<transicion desde="IJ" lee="0" hacia="IJ"/>
+		<transicion desde="IJ" lee="1" hacia="E"/>
+	</transiciones>
+</automata>

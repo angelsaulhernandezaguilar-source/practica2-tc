@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="L2-144d">
+	<alfabeto><simbolo>0</simbolo><simbolo>1</simbolo><simbolo>2</simbolo><simbolo>3</simbolo><simbolo>4</simbolo><simbolo>5</simbolo><simbolo>6</simbolo><simbolo>7</simbolo><simbolo>8</simbolo><simbolo>9</simbolo></alfabeto>
+	<estados>
+		<estado nombre="q0" inicial="true"/>
+		<estado nombre="q1" aceptacion="true"/>
+		<estado nombre="q2" aceptacion="true"/>
+		<estado nombre="q3"/>
+	</estados>
+	<transiciones>
+		<transicion desde="q0" lee="0" hacia="q1"/>
+		<transicion desde="q0" lee="1" hacia="q2"/>
+		<transicion desde="q0" lee="2" hacia="q2"/>
+		<transicion desde="q0" lee="3" hacia="q2"/>
+		<transicion desde="q0" lee="4" hacia="q2"/>
+		<transicion desde="q0" lee="5" hacia="q2"/>
+		<transicion desde="q0" lee="6" hacia="q2"/>
+		<transicion desde="q0" lee="7" hacia="q2"/>
+		<transicion desde="q0" lee="8" hacia="q2"/>
+		<transicion desde="q0" lee="9" hacia="q2"/>
+		<transicion desde="q1" lee="0" hacia="q3"/>
+		<transicion desde="q1" lee="1" hacia="q3"/>
+		<transicion desde="q1" lee="2" hacia="q3"/>
+		<transicion desde="q1" lee="3" hacia="q3"/>
+		<transicion desde="q1" lee="4" hacia="q3"/>
+		<transicion desde="q1" lee="5" hacia="q3"/>
+		<transicion desde="q1" lee="6" hacia="q3"/>
+		<transicion desde="q1" lee="7" hacia="q3"/>
+		<transicion desde="q1" lee="8" hacia="q3"/>
+		<transicion desde="q1" lee="9" hacia="q3"/>
+		<transicion desde="q2" lee="0" hacia="q2"/>
+		<transicion desde="q2" lee="1" hacia="q2"/>
+		<transicion desde="q2" lee="2" hacia="q2"/>
+		<transicion desde="q2" lee="3" hacia="q2"/>
+		<transicion desde="q2" lee="4" hacia="q2"/>
+		<transicion desde="q2" lee="5" hacia="q2"/>
+		<transicion desde="q2" lee="6" hacia="q2"/>
+		<transicion desde="q2" lee="7" hacia="q2"/>
+		<transicion desde="q2" lee="8" hacia="q2"/>
+		<transicion desde="q2" lee="9" hacia="q2"/>
+		<transicion desde="q3" lee="0" hacia="q3"/>
+		<transicion desde="q3" lee="1" hacia="q3"/>
+		<transicion desde="q3" lee="2" hacia="q3"/>
+		<transicion desde="q3" lee="3" hacia="q3"/>
+		<transicion desde="q3" lee="4" hacia="q3"/>
+		<transicion desde="q3" lee="5" hacia="q3"/>
+		<transicion desde="q3" lee="6" hacia="q3"/>
+		<transicion desde="q3" lee="7" hacia="q3"/>
+		<transicion desde="q3" lee="8" hacia="q3"/>
+		<transicion desde="q3" lee="9" hacia="q3"/>
+	</transiciones>
+</automata>

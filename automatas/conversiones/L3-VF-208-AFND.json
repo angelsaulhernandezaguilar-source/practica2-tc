@@ -1,0 +1,81 @@
+{
+  "nombre": "L3-VF-208-AFND",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q3",
+    "q5",
+    "q4",
+    "q6",
+    "q7"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q7"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "a",
+      "hacia": [
+        "q3",
+        "q5",
+        "q4",
+        "q6"
+      ]
+    },
+    {
+      "desde": "q0",
+      "lee": "b",
+      "hacia": [
+        "q7"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "a",
+      "hacia": [
+        "q3",
+        "q5",
+        "q4",
+        "q6"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "a",
+      "hacia": [
+        "q3",
+        "q5",
+        "q4",
+        "q6"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "b",
+      "hacia": [
+        "q7"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "b",
+      "hacia": [
+        "q7"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "b",
+      "hacia": [
+        "q7"
+      ]
+    }
+  ]
+}

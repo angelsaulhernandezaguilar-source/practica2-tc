@@ -1,0 +1,78 @@
+{
+  "nombre": "L3-192-AFND-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "{A}",
+    "{A, B, C}",
+    "{A, B}",
+    "{B, C}",
+    "{B}"
+  ],
+  "inicial": "{A}",
+  "aceptacion": [
+    "{A, B, C}",
+    "{B, C}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{A}",
+      "lee": "0",
+      "hacia": [
+        "{B}"
+      ]
+    },
+    {
+      "desde": "{A}",
+      "lee": "1",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{A, B, C}",
+      "lee": "0",
+      "hacia": [
+        "{A, B, C}"
+      ]
+    },
+    {
+      "desde": "{A, B, C}",
+      "lee": "1",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{A, B}",
+      "lee": "0",
+      "hacia": [
+        "{A, B}"
+      ]
+    },
+    {
+      "desde": "{A, B}",
+      "lee": "1",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{B, C}",
+      "lee": "0",
+      "hacia": [
+        "{A, B, C}"
+      ]
+    },
+    {
+      "desde": "{B}",
+      "lee": "0",
+      "hacia": [
+        "{A, B}"
+      ]
+    }
+  ]
+}

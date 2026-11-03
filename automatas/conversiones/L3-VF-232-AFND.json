@@ -1,0 +1,26 @@
+{
+  "nombre": "L3-VF-232-AFND",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q3"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q3"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "a",
+      "hacia": [
+        "q3"
+      ]
+    }
+  ]
+}

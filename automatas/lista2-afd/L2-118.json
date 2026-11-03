@@ -1,0 +1,106 @@
+{
+  "nombre": "L2-118",
+  "tipo": "AFD",
+  "alfabeto": [
+    "a",
+    "b"
+  ],
+  "estados": [
+    "q1",
+    "q3",
+    "q5",
+    "q4",
+    "q2",
+    "q0"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q5"
+  ],
+  "transiciones": [
+    {
+      "desde": "q1",
+      "lee": "a",
+      "hacia": [
+        "q3"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "b",
+      "hacia": [
+        "q1"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "a",
+      "hacia": [
+        "q3"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "b",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "a",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "b",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "a",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "b",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "a",
+      "hacia": [
+        "q2"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "b",
+      "hacia": [
+        "q2"
+      ]
+    },
+    {
+      "desde": "q0",
+      "lee": "a",
+      "hacia": [
+        "q1"
+      ]
+    },
+    {
+      "desde": "q0",
+      "lee": "b",
+      "hacia": [
+        "q2"
+      ]
+    }
+  ]
+}

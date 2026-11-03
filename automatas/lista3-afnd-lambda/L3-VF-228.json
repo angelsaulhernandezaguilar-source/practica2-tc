@@ -1,0 +1,110 @@
+{
+  "nombre": "L3-VF-228",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q3",
+    "q6",
+    "q9",
+    "q7",
+    "q10",
+    "q11",
+    "q4",
+    "q2",
+    "q5",
+    "q8"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q8"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "",
+      "hacia": [
+        "q6",
+        "q7"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "a",
+      "hacia": [
+        "q9"
+      ]
+    },
+    {
+      "desde": "q9",
+      "lee": "",
+      "hacia": [
+        "q11"
+      ]
+    },
+    {
+      "desde": "q7",
+      "lee": "b",
+      "hacia": [
+        "q10"
+      ]
+    },
+    {
+      "desde": "q10",
+      "lee": "",
+      "hacia": [
+        "q11"
+      ]
+    },
+    {
+      "desde": "q11",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "",
+      "hacia": [
+        "q8"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "a",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "",
+      "hacia": [
+        "q8"
+      ]
+    }
+  ]
+}

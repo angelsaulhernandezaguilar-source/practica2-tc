@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-VF-219-AFD">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo></alfabeto>
+	<estados>
+		<estado nombre="{q0}" inicial="true"/>
+		<estado nombre="{q1, q2, q3, q4, q5, q6, q9}"/>
+		<estado nombre="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<estado nombre="{q8}" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="{q0}" lee="a" hacia="{q1, q2, q3, q4, q5, q6, q9}"/>
+		<transicion desde="{q0}" lee="b" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q0}" lee="c" hacia="{q8}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q6, q9}" lee="a" hacia="{q1, q2, q3, q4, q5, q6, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q6, q9}" lee="b" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q6, q9}" lee="c" hacia="{q8}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q7, q9}" lee="a" hacia="{q1, q2, q3, q4, q5, q6, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q7, q9}" lee="b" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q7, q9}" lee="c" hacia="{q8}"/>
+	</transiciones>
+</automata>

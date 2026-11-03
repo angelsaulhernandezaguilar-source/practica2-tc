@@ -1,0 +1,50 @@
+{
+  "nombre": "L3-VF-217-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1, q2, q3, q4}",
+    "{q3, q4, q7}",
+    "{q5, q6}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q1, q2, q3, q4}",
+    "{q3, q4, q7}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4}",
+      "lee": "b",
+      "hacia": [
+        "{q5, q6}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q7}",
+      "lee": "b",
+      "hacia": [
+        "{q5, q6}"
+      ]
+    },
+    {
+      "desde": "{q5, q6}",
+      "lee": "c",
+      "hacia": [
+        "{q3, q4, q7}"
+      ]
+    }
+  ]
+}

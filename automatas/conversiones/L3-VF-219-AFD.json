@@ -1,0 +1,84 @@
+{
+  "nombre": "L3-VF-219-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1, q2, q3, q4, q5, q6, q9}",
+    "{q1, q2, q3, q4, q5, q7, q9}",
+    "{q8}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q8}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q6, q9}"
+      ]
+    },
+    {
+      "desde": "{q0}",
+      "lee": "b",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q0}",
+      "lee": "c",
+      "hacia": [
+        "{q8}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q6, q9}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q6, q9}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q6, q9}",
+      "lee": "b",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q6, q9}",
+      "lee": "c",
+      "hacia": [
+        "{q8}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q7, q9}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q6, q9}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q7, q9}",
+      "lee": "b",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q7, q9}",
+      "lee": "c",
+      "hacia": [
+        "{q8}"
+      ]
+    }
+  ]
+}

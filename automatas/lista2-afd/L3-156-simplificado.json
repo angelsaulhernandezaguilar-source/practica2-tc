@@ -1,0 +1,61 @@
+{
+  "nombre": "L3-156-simplificado",
+  "tipo": "AFD",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "AC",
+    "BD",
+    "E"
+  ],
+  "inicial": "AC",
+  "aceptacion": [
+    "E"
+  ],
+  "transiciones": [
+    {
+      "desde": "AC",
+      "lee": "0",
+      "hacia": [
+        "BD"
+      ]
+    },
+    {
+      "desde": "AC",
+      "lee": "1",
+      "hacia": [
+        "AC"
+      ]
+    },
+    {
+      "desde": "BD",
+      "lee": "0",
+      "hacia": [
+        "AC"
+      ]
+    },
+    {
+      "desde": "BD",
+      "lee": "1",
+      "hacia": [
+        "E"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "0",
+      "hacia": [
+        "BD"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "1",
+      "hacia": [
+        "E"
+      ]
+    }
+  ]
+}

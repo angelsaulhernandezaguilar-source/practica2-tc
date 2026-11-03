@@ -1,0 +1,76 @@
+{
+  "nombre": "L3-VF-215",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q3",
+    "q4",
+    "q5",
+    "q6",
+    "q7",
+    "q2"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q2"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "a",
+      "hacia": [
+        "q3"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "b",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "",
+      "hacia": [
+        "q6"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "c",
+      "hacia": [
+        "q7"
+      ]
+    },
+    {
+      "desde": "q7",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    }
+  ]
+}

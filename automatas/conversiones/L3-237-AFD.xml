@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="L3-237-AFD">
+	<alfabeto><simbolo>0</simbolo><simbolo>1</simbolo></alfabeto>
+	<estados>
+		<estado nombre="{q0}" inicial="true"/>
+		<estado nombre="{q1, q10, q13, q2, q3, q4, q5, q6, q8, q9}" aceptacion="true"/>
+		<estado nombre="{q1, q10, q2, q3, q4, q5, q6, q8, q9}"/>
+		<estado nombre="{q1, q11, q12, q2, q3, q4, q5, q7, q9}"/>
+		<estado nombre="{q1, q2, q3, q4, q5, q7, q9}"/>
+	</estados>
+	<transiciones>
+		<transicion desde="{q0}" lee="0" hacia="{q1, q10, q2, q3, q4, q5, q6, q8, q9}"/>
+		<transicion desde="{q0}" lee="1" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q10, q13, q2, q3, q4, q5, q6, q8, q9}" lee="0" hacia="{q1, q10, q2, q3, q4, q5, q6, q8, q9}"/>
+		<transicion desde="{q1, q10, q13, q2, q3, q4, q5, q6, q8, q9}" lee="1" hacia="{q1, q11, q12, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q10, q2, q3, q4, q5, q6, q8, q9}" lee="0" hacia="{q1, q10, q2, q3, q4, q5, q6, q8, q9}"/>
+		<transicion desde="{q1, q10, q2, q3, q4, q5, q6, q8, q9}" lee="1" hacia="{q1, q11, q12, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q11, q12, q2, q3, q4, q5, q7, q9}" lee="0" hacia="{q1, q10, q13, q2, q3, q4, q5, q6, q8, q9}"/>
+		<transicion desde="{q1, q11, q12, q2, q3, q4, q5, q7, q9}" lee="1" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q7, q9}" lee="0" hacia="{q1, q10, q2, q3, q4, q5, q6, q8, q9}"/>
+		<transicion desde="{q1, q2, q3, q4, q5, q7, q9}" lee="1" hacia="{q1, q2, q3, q4, q5, q7, q9}"/>
+	</transiciones>
+</automata>

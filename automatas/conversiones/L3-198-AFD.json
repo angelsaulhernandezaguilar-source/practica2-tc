@@ -1,0 +1,61 @@
+{
+  "nombre": "L3-198-AFD",
+  "tipo": "AFD",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "{A}",
+    "{B, C, D}",
+    "{B, C}"
+  ],
+  "inicial": "{A}",
+  "aceptacion": [
+    "{B, C, D}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{A}",
+      "lee": "0",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{A}",
+      "lee": "1",
+      "hacia": [
+        "{B, C, D}"
+      ]
+    },
+    {
+      "desde": "{B, C, D}",
+      "lee": "0",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{B, C, D}",
+      "lee": "1",
+      "hacia": [
+        "{B, C, D}"
+      ]
+    },
+    {
+      "desde": "{B, C}",
+      "lee": "0",
+      "hacia": [
+        "{B, C}"
+      ]
+    },
+    {
+      "desde": "{B, C}",
+      "lee": "1",
+      "hacia": [
+        "{B, C, D}"
+      ]
+    }
+  ]
+}

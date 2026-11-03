@@ -1,0 +1,287 @@
+{
+  "nombre": "L3-238",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q3",
+    "q2",
+    "q4",
+    "q5",
+    "q6",
+    "q7",
+    "q9",
+    "q8",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q15",
+    "q14",
+    "q16",
+    "q17",
+    "q18",
+    "q19",
+    "q21",
+    "q20",
+    "q22",
+    "q25",
+    "q23",
+    "q26",
+    "q27",
+    "q28",
+    "q29",
+    "q31",
+    "q30",
+    "q32",
+    "q33",
+    "q24"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q24"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "0",
+      "hacia": [
+        "q3"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "1",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "",
+      "hacia": [
+        "q6"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "",
+      "hacia": [
+        "q7",
+        "q8"
+      ]
+    },
+    {
+      "desde": "q7",
+      "lee": "0",
+      "hacia": [
+        "q9"
+      ]
+    },
+    {
+      "desde": "q9",
+      "lee": "",
+      "hacia": [
+        "q11"
+      ]
+    },
+    {
+      "desde": "q8",
+      "lee": "1",
+      "hacia": [
+        "q10"
+      ]
+    },
+    {
+      "desde": "q10",
+      "lee": "",
+      "hacia": [
+        "q11"
+      ]
+    },
+    {
+      "desde": "q11",
+      "lee": "",
+      "hacia": [
+        "q12"
+      ]
+    },
+    {
+      "desde": "q12",
+      "lee": "",
+      "hacia": [
+        "q13",
+        "q14"
+      ]
+    },
+    {
+      "desde": "q13",
+      "lee": "0",
+      "hacia": [
+        "q15"
+      ]
+    },
+    {
+      "desde": "q15",
+      "lee": "",
+      "hacia": [
+        "q17"
+      ]
+    },
+    {
+      "desde": "q14",
+      "lee": "1",
+      "hacia": [
+        "q16"
+      ]
+    },
+    {
+      "desde": "q16",
+      "lee": "",
+      "hacia": [
+        "q17"
+      ]
+    },
+    {
+      "desde": "q17",
+      "lee": "",
+      "hacia": [
+        "q18"
+      ]
+    },
+    {
+      "desde": "q18",
+      "lee": "",
+      "hacia": [
+        "q19",
+        "q20"
+      ]
+    },
+    {
+      "desde": "q19",
+      "lee": "",
+      "hacia": [
+        "q21"
+      ]
+    },
+    {
+      "desde": "q21",
+      "lee": "",
+      "hacia": [
+        "q24"
+      ]
+    },
+    {
+      "desde": "q20",
+      "lee": "",
+      "hacia": [
+        "q22",
+        "q23"
+      ]
+    },
+    {
+      "desde": "q22",
+      "lee": "0",
+      "hacia": [
+        "q25"
+      ]
+    },
+    {
+      "desde": "q25",
+      "lee": "",
+      "hacia": [
+        "q27"
+      ]
+    },
+    {
+      "desde": "q23",
+      "lee": "1",
+      "hacia": [
+        "q26"
+      ]
+    },
+    {
+      "desde": "q26",
+      "lee": "",
+      "hacia": [
+        "q27"
+      ]
+    },
+    {
+      "desde": "q27",
+      "lee": "",
+      "hacia": [
+        "q28"
+      ]
+    },
+    {
+      "desde": "q28",
+      "lee": "",
+      "hacia": [
+        "q29",
+        "q30"
+      ]
+    },
+    {
+      "desde": "q29",
+      "lee": "0",
+      "hacia": [
+        "q31"
+      ]
+    },
+    {
+      "desde": "q31",
+      "lee": "",
+      "hacia": [
+        "q33"
+      ]
+    },
+    {
+      "desde": "q30",
+      "lee": "1",
+      "hacia": [
+        "q32"
+      ]
+    },
+    {
+      "desde": "q32",
+      "lee": "",
+      "hacia": [
+        "q33"
+      ]
+    },
+    {
+      "desde": "q33",
+      "lee": "",
+      "hacia": [
+        "q24"
+      ]
+    }
+  ]
+}

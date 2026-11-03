@@ -1,0 +1,72 @@
+{
+  "nombre": "L3-VF-225-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1, q2, q3, q4, q5, q6}",
+    "{q3, q4, q5, q6, q7, q9}",
+    "{q3, q4, q5, q6, q8, q9}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q1, q2, q3, q4, q5, q6}",
+    "{q3, q4, q5, q6, q7, q9}",
+    "{q3, q4, q5, q6, q8, q9}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4, q5, q6}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q6}",
+      "lee": "a",
+      "hacia": [
+        "{q3, q4, q5, q6, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q5, q6}",
+      "lee": "b",
+      "hacia": [
+        "{q3, q4, q5, q6, q8, q9}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q7, q9}",
+      "lee": "a",
+      "hacia": [
+        "{q3, q4, q5, q6, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q7, q9}",
+      "lee": "b",
+      "hacia": [
+        "{q3, q4, q5, q6, q8, q9}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q8, q9}",
+      "lee": "a",
+      "hacia": [
+        "{q3, q4, q5, q6, q7, q9}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q8, q9}",
+      "lee": "b",
+      "hacia": [
+        "{q3, q4, q5, q6, q8, q9}"
+      ]
+    }
+  ]
+}

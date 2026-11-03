@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-253-AFND">
+	<alfabeto><simbolo>0</simbolo><simbolo>1</simbolo></alfabeto>
+	<estados>
+		<estado nombre="q0" inicial="true" aceptacion="true"/>
+		<estado nombre="q3" aceptacion="true"/>
+		<estado nombre="q5"/>
+		<estado nombre="q7"/>
+		<estado nombre="q10"/>
+		<estado nombre="q14"/>
+		<estado nombre="q20" aceptacion="true"/>
+		<estado nombre="q8"/>
+		<estado nombre="q11"/>
+		<estado nombre="q15"/>
+		<estado nombre="q21" aceptacion="true"/>
+		<estado nombre="q27" aceptacion="true"/>
+		<estado nombre="q4" aceptacion="true"/>
+		<estado nombre="q6" aceptacion="true"/>
+		<estado nombre="q9" aceptacion="true"/>
+		<estado nombre="q12"/>
+		<estado nombre="q16"/>
+		<estado nombre="q22"/>
+		<estado nombre="q28"/>
+		<estado nombre="q33" aceptacion="true"/>
+		<estado nombre="q17"/>
+		<estado nombre="q23"/>
+		<estado nombre="q29"/>
+		<estado nombre="q34" aceptacion="true"/>
+		<estado nombre="q18"/>
+		<estado nombre="q24"/>
+		<estado nombre="q30"/>
+		<estado nombre="q35" aceptacion="true"/>
+		<estado nombre="q38" aceptacion="true"/>
+		<estado nombre="q13" aceptacion="true"/>
+		<estado nombre="q19" aceptacion="true"/>
+		<estado nombre="q25" aceptacion="true"/>
+		<estado nombre="q31" aceptacion="true"/>
+		<estado nombre="q26"/>
+		<estado nombre="q32"/>
+		<estado nombre="q37"/>
+		<estado nombre="q39"/>
+		<estado nombre="q40"/>
+		<estado nombre="q41" aceptacion="true"/>
+		<estado nombre="q36" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="q0" lee="0" hacia="q3"/>
+		<transicion desde="q0" lee="0" hacia="q11"/>
+		<transicion desde="q0" lee="0" hacia="q15"/>
+		<transicion desde="q0" lee="0" hacia="q6"/>
+		<transicion desde="q0" lee="0" hacia="q9"/>
+		<transicion desde="q0" lee="0" hacia="q12"/>
+		<transicion desde="q0" lee="0" hacia="q16"/>
+		<transicion desde="q0" lee="0" hacia="q17"/>
+		<transicion desde="q0" lee="0" hacia="q18"/>
+		<transicion desde="q0" lee="0" hacia="q24"/>
+		<transicion desde="q0" lee="0" hacia="q30"/>
+		<transicion desde="q0" lee="0" hacia="q13"/>
+		<transicion desde="q0" lee="0" hacia="q19"/>
+		<transicion desde="q0" lee="0" hacia="q25"/>
+		<transicion desde="q0" lee="0" hacia="q31"/>
+		<transicion desde="q0" lee="0" hacia="q26"/>
+		<transicion desde="q0" lee="0" hacia="q36"/>
+		<transicion desde="q0" lee="1" hacia="q10"/>
+		<transicion desde="q0" lee="1" hacia="q14"/>
+		<transicion desde="q0" lee="1" hacia="q22"/>
+		<transicion desde="q0" lee="1" hacia="q28"/>
+		<transicion desde="q0" lee="1" hacia="q23"/>
+		<transicion desde="q0" lee="1" hacia="q29"/>
+		<transicion desde="q0" lee="1" hacia="q32"/>
+		<transicion desde="q0" lee="1" hacia="q37"/>
+		<transicion desde="q3" lee="0" hacia="q24"/>
+		<transicion desde="q3" lee="0" hacia="q30"/>
+		<transicion desde="q3" lee="1" hacia="q22"/>
+		<transicion desde="q3" lee="1" hacia="q28"/>
+		<transicion desde="q3" lee="1" hacia="q23"/>
+		<transicion desde="q3" lee="1" hacia="q29"/>
+		<transicion desde="q3" lee="1" hacia="q32"/>
+		<transicion desde="q3" lee="1" hacia="q37"/>
+		<transicion desde="q5" lee="0" hacia="q11"/>
+		<transicion desde="q5" lee="0" hacia="q15"/>
+		<transicion desde="q5" lee="1" hacia="q10"/>
+		<transicion desde="q5" lee="1" hacia="q14"/>
+		<transicion desde="q7" lee="1" hacia="q10"/>
+		<transicion desde="q7" lee="1" hacia="q14"/>
+		<transicion desde="q10" lee="1" hacia="q5"/>
+		<transicion desde="q10" lee="1" hacia="q7"/>
+		<transicion desde="q10" lee="1" hacia="q20"/>
+		<transicion desde="q10" lee="1" hacia="q8"/>
+		<transicion desde="q10" lee="1" hacia="q27"/>
+		<transicion desde="q10" lee="1" hacia="q4"/>
+		<transicion desde="q10" lee="1" hacia="q6"/>
+		<transicion desde="q10" lee="1" hacia="q9"/>
+		<transicion desde="q10" lee="1" hacia="q12"/>
+		<transicion desde="q10" lee="1" hacia="q16"/>
+		<transicion desde="q10" lee="1" hacia="q17"/>
+		<transicion desde="q10" lee="1" hacia="q18"/>
+		<transicion desde="q10" lee="1" hacia="q13"/>
+		<transicion desde="q10" lee="1" hacia="q19"/>
+		<transicion desde="q10" lee="1" hacia="q25"/>
+		<transicion desde="q10" lee="1" hacia="q31"/>
+		<transicion desde="q10" lee="1" hacia="q26"/>
+		<transicion desde="q10" lee="1" hacia="q36"/>
+		<transicion desde="q14" lee="1" hacia="q5"/>
+		<transicion desde="q14" lee="1" hacia="q7"/>
+		<transicion desde="q14" lee="1" hacia="q20"/>
+		<transicion desde="q14" lee="1" hacia="q8"/>
+		<transicion desde="q14" lee="1" hacia="q27"/>
+		<transicion desde="q14" lee="1" hacia="q4"/>
+		<transicion desde="q14" lee="1" hacia="q6"/>
+		<transicion desde="q14" lee="1" hacia="q9"/>
+		<transicion desde="q14" lee="1" hacia="q12"/>
+		<transicion desde="q14" lee="1" hacia="q16"/>
+		<transicion desde="q14" lee="1" hacia="q17"/>
+		<transicion desde="q14" lee="1" hacia="q18"/>
+		<transicion desde="q14" lee="1" hacia="q13"/>
+		<transicion desde="q14" lee="1" hacia="q19"/>
+		<transicion desde="q14" lee="1" hacia="q25"/>
+		<transicion desde="q14" lee="1" hacia="q31"/>
+		<transicion desde="q14" lee="1" hacia="q26"/>
+		<transicion desde="q14" lee="1" hacia="q36"/>
+		<transicion desde="q20" lee="0" hacia="q11"/>
+		<transicion desde="q20" lee="0" hacia="q15"/>
+		<transicion desde="q20" lee="0" hacia="q24"/>
+		<transicion desde="q20" lee="0" hacia="q30"/>
+		<transicion desde="q20" lee="1" hacia="q10"/>
+		<transicion desde="q20" lee="1" hacia="q14"/>
+		<transicion desde="q20" lee="1" hacia="q22"/>
+		<transicion desde="q20" lee="1" hacia="q28"/>
+		<transicion desde="q20" lee="1" hacia="q23"/>
+		<transicion desde="q20" lee="1" hacia="q29"/>
+		<transicion desde="q20" lee="1" hacia="q32"/>
+		<transicion desde="q20" lee="1" hacia="q37"/>
+		<transicion desde="q8" lee="0" hacia="q11"/>
+		<transicion desde="q8" lee="0" hacia="q15"/>
+		<transicion desde="q11" lee="0" hacia="q5"/>
+		<transicion desde="q11" lee="0" hacia="q7"/>
+		<transicion desde="q11" lee="0" hacia="q8"/>
+		<transicion desde="q11" lee="0" hacia="q21"/>
+		<transicion desde="q11" lee="0" hacia="q27"/>
+		<transicion desde="q11" lee="0" hacia="q4"/>
+		<transicion desde="q11" lee="0" hacia="q6"/>
+		<transicion desde="q11" lee="0" hacia="q9"/>
+		<transicion desde="q11" lee="0" hacia="q12"/>
+		<transicion desde="q11" lee="0" hacia="q16"/>
+		<transicion desde="q11" lee="0" hacia="q17"/>
+		<transicion desde="q11" lee="0" hacia="q18"/>
+		<transicion desde="q11" lee="0" hacia="q13"/>
+		<transicion desde="q11" lee="0" hacia="q19"/>
+		<transicion desde="q11" lee="0" hacia="q25"/>
+		<transicion desde="q11" lee="0" hacia="q31"/>
+		<transicion desde="q11" lee="0" hacia="q26"/>
+		<transicion desde="q11" lee="0" hacia="q36"/>
+		<transicion desde="q15" lee="0" hacia="q5"/>
+		<transicion desde="q15" lee="0" hacia="q7"/>
+		<transicion desde="q15" lee="0" hacia="q8"/>
+		<transicion desde="q15" lee="0" hacia="q21"/>
+		<transicion desde="q15" lee="0" hacia="q27"/>
+		<transicion desde="q15" lee="0" hacia="q4"/>
+		<transicion desde="q15" lee="0" hacia="q6"/>
+		<transicion desde="q15" lee="0" hacia="q9"/>
+		<transicion desde="q15" lee="0" hacia="q12"/>
+		<transicion desde="q15" lee="0" hacia="q16"/>
+		<transicion desde="q15" lee="0" hacia="q17"/>
+		<transicion desde="q15" lee="0" hacia="q18"/>
+		<transicion desde="q15" lee="0" hacia="q13"/>
+		<transicion desde="q15" lee="0" hacia="q19"/>
+		<transicion desde="q15" lee="0" hacia="q25"/>
+		<transicion desde="q15" lee="0" hacia="q31"/>
+		<transicion desde="q15" lee="0" hacia="q26"/>
+		<transicion desde="q15" lee="0" hacia="q36"/>
+		<transicion desde="q21" lee="0" hacia="q11"/>
+		<transicion desde="q21" lee="0" hacia="q15"/>
+		<transicion desde="q21" lee="0" hacia="q24"/>
+		<transicion desde="q21" lee="0" hacia="q30"/>
+		<transicion desde="q21" lee="1" hacia="q10"/>
+		<transicion desde="q21" lee="1" hacia="q14"/>
+		<transicion desde="q21" lee="1" hacia="q22"/>
+		<transicion desde="q21" lee="1" hacia="q28"/>
+		<transicion desde="q21" lee="1" hacia="q23"/>
+		<transicion desde="q21" lee="1" hacia="q29"/>
+		<transicion desde="q21" lee="1" hacia="q32"/>
+		<transicion desde="q21" lee="1" hacia="q37"/>
+		<transicion desde="q27" lee="0" hacia="q11"/>
+		<transicion desde="q27" lee="0" hacia="q15"/>
+		<transicion desde="q27" lee="0" hacia="q24"/>
+		<transicion desde="q27" lee="0" hacia="q30"/>
+		<transicion desde="q27" lee="1" hacia="q10"/>
+		<transicion desde="q27" lee="1" hacia="q14"/>
+		<transicion desde="q27" lee="1" hacia="q22"/>
+		<transicion desde="q27" lee="1" hacia="q28"/>
+		<transicion desde="q27" lee="1" hacia="q23"/>
+		<transicion desde="q27" lee="1" hacia="q29"/>
+		<transicion desde="q27" lee="1" hacia="q32"/>
+		<transicion desde="q27" lee="1" hacia="q37"/>
+		<transicion desde="q4" lee="0" hacia="q24"/>
+		<transicion desde="q4" lee="0" hacia="q30"/>
+		<transicion desde="q4" lee="1" hacia="q22"/>
+		<transicion desde="q4" lee="1" hacia="q28"/>
+		<transicion desde="q4" lee="1" hacia="q23"/>
+		<transicion desde="q4" lee="1" hacia="q29"/>
+		<transicion desde="q4" lee="1" hacia="q32"/>
+		<transicion desde="q4" lee="1" hacia="q37"/>
+		<transicion desde="q6" lee="0" hacia="q24"/>
+		<transicion desde="q6" lee="0" hacia="q30"/>
+		<transicion desde="q6" lee="1" hacia="q22"/>
+		<transicion desde="q6" lee="1" hacia="q28"/>
+		<transicion desde="q6" lee="1" hacia="q23"/>
+		<transicion desde="q6" lee="1" hacia="q29"/>
+		<transicion desde="q6" lee="1" hacia="q32"/>
+		<transicion desde="q6" lee="1" hacia="q37"/>
+		<transicion desde="q9" lee="0" hacia="q24"/>
+		<transicion desde="q9" lee="0" hacia="q30"/>
+		<transicion desde="q9" lee="1" hacia="q22"/>
+		<transicion desde="q9" lee="1" hacia="q28"/>
+		<transicion desde="q9" lee="1" hacia="q23"/>
+		<transicion desde="q9" lee="1" hacia="q29"/>
+		<transicion desde="q9" lee="1" hacia="q32"/>
+		<transicion desde="q9" lee="1" hacia="q37"/>
+		<transicion desde="q12" lee="0" hacia="q24"/>
+		<transicion desde="q12" lee="0" hacia="q30"/>
+		<transicion desde="q12" lee="1" hacia="q22"/>
+		<transicion desde="q12" lee="1" hacia="q28"/>
+		<transicion desde="q12" lee="1" hacia="q23"/>
+		<transicion desde="q12" lee="1" hacia="q29"/>
+		<transicion desde="q16" lee="1" hacia="q22"/>
+		<transicion desde="q16" lee="1" hacia="q28"/>
+		<transicion desde="q22" lee="1" hacia="q12"/>
+		<transicion desde="q22" lee="1" hacia="q16"/>
+		<transicion desde="q22" lee="1" hacia="q33"/>
+		<transicion desde="q22" lee="1" hacia="q17"/>
+		<transicion desde="q22" lee="1" hacia="q18"/>
+		<transicion desde="q22" lee="1" hacia="q38"/>
+		<transicion desde="q22" lee="1" hacia="q13"/>
+		<transicion desde="q22" lee="1" hacia="q19"/>
+		<transicion desde="q22" lee="1" hacia="q25"/>
+		<transicion desde="q22" lee="1" hacia="q31"/>
+		<transicion desde="q22" lee="1" hacia="q26"/>
+		<transicion desde="q22" lee="1" hacia="q36"/>
+		<transicion desde="q28" lee="1" hacia="q12"/>
+		<transicion desde="q28" lee="1" hacia="q16"/>
+		<transicion desde="q28" lee="1" hacia="q33"/>
+		<transicion desde="q28" lee="1" hacia="q17"/>
+		<transicion desde="q28" lee="1" hacia="q18"/>
+		<transicion desde="q28" lee="1" hacia="q38"/>
+		<transicion desde="q28" lee="1" hacia="q13"/>
+		<transicion desde="q28" lee="1" hacia="q19"/>
+		<transicion desde="q28" lee="1" hacia="q25"/>
+		<transicion desde="q28" lee="1" hacia="q31"/>
+		<transicion desde="q28" lee="1" hacia="q26"/>
+		<transicion desde="q28" lee="1" hacia="q36"/>
+		<transicion desde="q33" lee="0" hacia="q24"/>
+		<transicion desde="q33" lee="0" hacia="q30"/>
+		<transicion desde="q33" lee="1" hacia="q22"/>
+		<transicion desde="q33" lee="1" hacia="q28"/>
+		<transicion desde="q33" lee="1" hacia="q23"/>
+		<transicion desde="q33" lee="1" hacia="q29"/>
+		<transicion desde="q33" lee="1" hacia="q32"/>
+		<transicion desde="q33" lee="1" hacia="q37"/>
+		<transicion desde="q17" lee="1" hacia="q23"/>
+		<transicion desde="q17" lee="1" hacia="q29"/>
+		<transicion desde="q23" lee="0" hacia="q12"/>
+		<transicion desde="q23" lee="0" hacia="q16"/>
+		<transicion desde="q23" lee="0" hacia="q17"/>
+		<transicion desde="q23" lee="0" hacia="q34"/>
+		<transicion desde="q23" lee="0" hacia="q18"/>
+		<transicion desde="q23" lee="0" hacia="q38"/>
+		<transicion desde="q23" lee="0" hacia="q13"/>
+		<transicion desde="q23" lee="0" hacia="q19"/>
+		<transicion desde="q23" lee="0" hacia="q25"/>
+		<transicion desde="q23" lee="0" hacia="q31"/>
+		<transicion desde="q23" lee="0" hacia="q26"/>
+		<transicion desde="q23" lee="0" hacia="q36"/>
+		<transicion desde="q29" lee="0" hacia="q12"/>
+		<transicion desde="q29" lee="0" hacia="q16"/>
+		<transicion desde="q29" lee="0" hacia="q17"/>
+		<transicion desde="q29" lee="0" hacia="q34"/>
+		<transicion desde="q29" lee="0" hacia="q18"/>
+		<transicion desde="q29" lee="0" hacia="q38"/>
+		<transicion desde="q29" lee="0" hacia="q13"/>
+		<transicion desde="q29" lee="0" hacia="q19"/>
+		<transicion desde="q29" lee="0" hacia="q25"/>
+		<transicion desde="q29" lee="0" hacia="q31"/>
+		<transicion desde="q29" lee="0" hacia="q26"/>
+		<transicion desde="q29" lee="0" hacia="q36"/>
+		<transicion desde="q34" lee="0" hacia="q24"/>
+		<transicion desde="q34" lee="0" hacia="q30"/>
+		<transicion desde="q34" lee="1" hacia="q22"/>
+		<transicion desde="q34" lee="1" hacia="q28"/>
+		<transicion desde="q34" lee="1" hacia="q23"/>
+		<transicion desde="q34" lee="1" hacia="q29"/>
+		<transicion desde="q34" lee="1" hacia="q32"/>
+		<transicion desde="q34" lee="1" hacia="q37"/>
+		<transicion desde="q18" lee="0" hacia="q24"/>
+		<transicion desde="q18" lee="0" hacia="q30"/>
+		<transicion desde="q24" lee="1" hacia="q12"/>
+		<transicion desde="q24" lee="1" hacia="q16"/>
+		<transicion desde="q24" lee="1" hacia="q17"/>
+		<transicion desde="q24" lee="1" hacia="q18"/>
+		<transicion desde="q24" lee="1" hacia="q35"/>
+		<transicion desde="q24" lee="1" hacia="q38"/>
+		<transicion desde="q24" lee="1" hacia="q13"/>
+		<transicion desde="q24" lee="1" hacia="q19"/>
+		<transicion desde="q24" lee="1" hacia="q25"/>
+		<transicion desde="q24" lee="1" hacia="q31"/>
+		<transicion desde="q24" lee="1" hacia="q26"/>
+		<transicion desde="q24" lee="1" hacia="q36"/>
+		<transicion desde="q30" lee="1" hacia="q12"/>
+		<transicion desde="q30" lee="1" hacia="q16"/>
+		<transicion desde="q30" lee="1" hacia="q17"/>
+		<transicion desde="q30" lee="1" hacia="q18"/>
+		<transicion desde="q30" lee="1" hacia="q35"/>
+		<transicion desde="q30" lee="1" hacia="q38"/>
+		<transicion desde="q30" lee="1" hacia="q13"/>
+		<transicion desde="q30" lee="1" hacia="q19"/>
+		<transicion desde="q30" lee="1" hacia="q25"/>
+		<transicion desde="q30" lee="1" hacia="q31"/>
+		<transicion desde="q30" lee="1" hacia="q26"/>
+		<transicion desde="q30" lee="1" hacia="q36"/>
+		<transicion desde="q35" lee="0" hacia="q24"/>
+		<transicion desde="q35" lee="0" hacia="q30"/>
+		<transicion desde="q35" lee="1" hacia="q22"/>
+		<transicion desde="q35" lee="1" hacia="q28"/>
+		<transicion desde="q35" lee="1" hacia="q23"/>
+		<transicion desde="q35" lee="1" hacia="q29"/>
+		<transicion desde="q35" lee="1" hacia="q32"/>
+		<transicion desde="q35" lee="1" hacia="q37"/>
+		<transicion desde="q38" lee="0" hacia="q24"/>
+		<transicion desde="q38" lee="0" hacia="q30"/>
+		<transicion desde="q38" lee="1" hacia="q22"/>
+		<transicion desde="q38" lee="1" hacia="q28"/>
+		<transicion desde="q38" lee="1" hacia="q23"/>
+		<transicion desde="q38" lee="1" hacia="q29"/>
+		<transicion desde="q38" lee="1" hacia="q32"/>
+		<transicion desde="q38" lee="1" hacia="q37"/>
+		<transicion desde="q13" lee="1" hacia="q32"/>
+		<transicion desde="q13" lee="1" hacia="q37"/>
+		<transicion desde="q19" lee="1" hacia="q32"/>
+		<transicion desde="q19" lee="1" hacia="q37"/>
+		<transicion desde="q26" lee="1" hacia="q32"/>
+		<transicion desde="q26" lee="1" hacia="q37"/>
+		<transicion desde="q32" lee="1" hacia="q39"/>
+		<transicion desde="q32" lee="1" hacia="q40"/>
+		<transicion desde="q37" lee="1" hacia="q39"/>
+		<transicion desde="q37" lee="1" hacia="q40"/>
+		<transicion desde="q39" lee="0" hacia="q41"/>
+		<transicion desde="q39" lee="0" hacia="q36"/>
+		<transicion desde="q40" lee="0" hacia="q41"/>
+		<transicion desde="q40" lee="0" hacia="q36"/>
+	</transiciones>
+</automata>

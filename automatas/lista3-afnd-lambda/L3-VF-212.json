@@ -1,0 +1,76 @@
+{
+  "nombre": "L3-VF-212",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "q5",
+    "q4",
+    "q6",
+    "q7"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q7"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "a",
+      "hacia": [
+        "q1"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "",
+      "hacia": [
+        "q2"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "b",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "",
+      "hacia": [
+        "q6"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "c",
+      "hacia": [
+        "q7"
+      ]
+    }
+  ]
+}

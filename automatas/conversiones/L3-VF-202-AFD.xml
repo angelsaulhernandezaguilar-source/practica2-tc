@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-VF-202-AFD">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo></alfabeto>
+	<estados>
+		<estado nombre="{q0}" inicial="true"/>
+		<estado nombre="{q1, q2}"/>
+		<estado nombre="{q3}" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="{q0}" lee="a" hacia="{q1, q2}"/>
+		<transicion desde="{q1, q2}" lee="b" hacia="{q3}"/>
+	</transiciones>
+</automata>

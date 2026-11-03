@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/formatos.py).-->
+<structure>
+	<!--alfabeto: ["0", "1"]-->
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{q0}">
+			<x>80.0</x>
+			<y>905.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="{q0, q1, q2, q3, q4, q5}">
+			<x>880.0</x>
+			<y>105.0</y>
+			<final/>
+		</state>
+		<state id="2" name="{q0, q1, q2, q3, q4}">
+			<x>720.0</x>
+			<y>520.0</y>
+		</state>
+		<state id="3" name="{q0, q1, q2, q3, q5}">
+			<x>880.0</x>
+			<y>215.0</y>
+			<final/>
+		</state>
+		<state id="4" name="{q0, q1, q2, q3}">
+			<x>560.0</x>
+			<y>765.0</y>
+		</state>
+		<state id="5" name="{q0, q1, q2, q4, q5}">
+			<x>880.0</x>
+			<y>325.0</y>
+			<final/>
+		</state>
+		<state id="6" name="{q0, q1, q2, q4}">
+			<x>720.0</x>
+			<y>630.0</y>
+		</state>
+		<state id="7" name="{q0, q1, q2, q5}">
+			<x>880.0</x>
+			<y>435.0</y>
+			<final/>
+		</state>
+		<state id="8" name="{q0, q1, q2}">
+			<x>400.0</x>
+			<y>850.0</y>
+		</state>
+		<state id="9" name="{q0, q1, q3, q4, q5}">
+			<x>880.0</x>
+			<y>545.0</y>
+			<final/>
+		</state>
+		<state id="10" name="{q0, q1, q3, q4}">
+			<x>720.0</x>
+			<y>740.0</y>
+		</state>
+		<state id="11" name="{q0, q1, q3, q5}">
+			<x>880.0</x>
+			<y>655.0</y>
+			<final/>
+		</state>
+		<state id="12" name="{q0, q1, q3}">
+			<x>560.0</x>
+			<y>875.0</y>
+		</state>
+		<state id="13" name="{q0, q1, q4, q5}">
+			<x>880.0</x>
+			<y>765.0</y>
+			<final/>
+		</state>
+		<state id="14" name="{q0, q1, q4}">
+			<x>720.0</x>
+			<y>850.0</y>
+		</state>
+		<state id="15" name="{q0, q1, q5}">
+			<x>880.0</x>
+			<y>875.0</y>
+			<final/>
+		</state>
+		<state id="16" name="{q0, q1}">
+			<x>240.0</x>
+			<y>930.0</y>
+		</state>
+		<state id="17" name="{q0, q2, q3, q4, q5}">
+			<x>880.0</x>
+			<y>985.0</y>
+			<final/>
+		</state>
+		<state id="18" name="{q0, q2, q3, q4}">
+			<x>720.0</x>
+			<y>960.0</y>
+		</state>
+		<state id="19" name="{q0, q2, q3, q5}">
+			<x>880.0</x>
+			<y>1095.0</y>
+			<final/>
+		</state>
+		<state id="20" name="{q0, q2, q3}">
+			<x>560.0</x>
+			<y>985.0</y>
+		</state>
+		<state id="21" name="{q0, q2, q4, q5}">
+			<x>880.0</x>
+			<y>1205.0</y>
+			<final/>
+		</state>
+		<state id="22" name="{q0, q2, q4}">
+			<x>720.0</x>
+			<y>1070.0</y>
+		</state>
+		<state id="23" name="{q0, q2, q5}">
+			<x>880.0</x>
+			<y>1315.0</y>
+			<final/>
+		</state>
+		<state id="24" name="{q0, q2}">
+			<x>400.0</x>
+			<y>960.0</y>
+		</state>
+		<state id="25" name="{q0, q3, q4, q5}">
+			<x>880.0</x>
+			<y>1425.0</y>
+			<final/>
+		</state>
+		<state id="26" name="{q0, q3, q4}">
+			<x>720.0</x>
+			<y>1180.0</y>
+		</state>
+		<state id="27" name="{q0, q3, q5}">
+			<x>880.0</x>
+			<y>1535.0</y>
+			<final/>
+		</state>
+		<state id="28" name="{q0, q3}">
+			<x>560.0</x>
+			<y>1095.0</y>
+		</state>
+		<state id="29" name="{q0, q4, q5}">
+			<x>880.0</x>
+			<y>1645.0</y>
+			<final/>
+		</state>
+		<state id="30" name="{q0, q4}">
+			<x>720.0</x>
+			<y>1290.0</y>
+		</state>
+		<state id="31" name="{q0, q5}">
+			<x>880.0</x>
+			<y>1755.0</y>
+			<final/>
+		</state>
+		<transition><from>0</from><to>0</to><read>0</read></transition>
+		<transition><from>0</from><to>16</to><read>1</read></transition>
+		<transition><from>1</from><to>17</to><read>0</read></transition>
+		<transition><from>1</from><to>1</to><read>1</read></transition>
+		<transition><from>2</from><to>17</to><read>0</read></transition>
+		<transition><from>2</from><to>1</to><read>1</read></transition>
+		<transition><from>3</from><to>18</to><read>0</read></transition>
+		<transition><from>3</from><to>2</to><read>1</read></transition>
+		<transition><from>4</from><to>18</to><read>0</read></transition>
+		<transition><from>4</from><to>2</to><read>1</read></transition>
+		<transition><from>5</from><to>19</to><read>0</read></transition>
+		<transition><from>5</from><to>3</to><read>1</read></transition>
+		<transition><from>6</from><to>19</to><read>0</read></transition>
+		<transition><from>6</from><to>3</to><read>1</read></transition>
+		<transition><from>7</from><to>20</to><read>0</read></transition>
+		<transition><from>7</from><to>4</to><read>1</read></transition>
+		<transition><from>8</from><to>20</to><read>0</read></transition>
+		<transition><from>8</from><to>4</to><read>1</read></transition>
+		<transition><from>9</from><to>21</to><read>0</read></transition>
+		<transition><from>9</from><to>5</to><read>1</read></transition>
+		<transition><from>10</from><to>21</to><read>0</read></transition>
+		<transition><from>10</from><to>5</to><read>1</read></transition>
+		<transition><from>11</from><to>22</to><read>0</read></transition>
+		<transition><from>11</from><to>6</to><read>1</read></transition>
+		<transition><from>12</from><to>22</to><read>0</read></transition>
+		<transition><from>12</from><to>6</to><read>1</read></transition>
+		<transition><from>13</from><to>23</to><read>0</read></transition>
+		<transition><from>13</from><to>7</to><read>1</read></transition>
+		<transition><from>14</from><to>23</to><read>0</read></transition>
+		<transition><from>14</from><to>7</to><read>1</read></transition>
+		<transition><from>15</from><to>24</to><read>0</read></transition>
+		<transition><from>15</from><to>8</to><read>1</read></transition>
+		<transition><from>16</from><to>24</to><read>0</read></transition>
+		<transition><from>16</from><to>8</to><read>1</read></transition>
+		<transition><from>17</from><to>25</to><read>0</read></transition>
+		<transition><from>17</from><to>9</to><read>1</read></transition>
+		<transition><from>18</from><to>25</to><read>0</read></transition>
+		<transition><from>18</from><to>9</to><read>1</read></transition>
+		<transition><from>19</from><to>26</to><read>0</read></transition>
+		<transition><from>19</from><to>10</to><read>1</read></transition>
+		<transition><from>20</from><to>26</to><read>0</read></transition>
+		<transition><from>20</from><to>10</to><read>1</read></transition>
+		<transition><from>21</from><to>27</to><read>0</read></transition>
+		<transition><from>21</from><to>11</to><read>1</read></transition>
+		<transition><from>22</from><to>27</to><read>0</read></transition>
+		<transition><from>22</from><to>11</to><read>1</read></transition>
+		<transition><from>23</from><to>28</to><read>0</read></transition>
+		<transition><from>23</from><to>12</to><read>1</read></transition>
+		<transition><from>24</from><to>28</to><read>0</read></transition>
+		<transition><from>24</from><to>12</to><read>1</read></transition>
+		<transition><from>25</from><to>29</to><read>0</read></transition>
+		<transition><from>25</from><to>13</to><read>1</read></transition>
+		<transition><from>26</from><to>29</to><read>0</read></transition>
+		<transition><from>26</from><to>13</to><read>1</read></transition>
+		<transition><from>27</from><to>30</to><read>0</read></transition>
+		<transition><from>27</from><to>14</to><read>1</read></transition>
+		<transition><from>28</from><to>30</to><read>0</read></transition>
+		<transition><from>28</from><to>14</to><read>1</read></transition>
+		<transition><from>29</from><to>31</to><read>0</read></transition>
+		<transition><from>29</from><to>15</to><read>1</read></transition>
+		<transition><from>30</from><to>31</to><read>0</read></transition>
+		<transition><from>30</from><to>15</to><read>1</read></transition>
+		<transition><from>31</from><to>0</to><read>0</read></transition>
+		<transition><from>31</from><to>16</to><read>1</read></transition>
+	</automaton>
+</structure>

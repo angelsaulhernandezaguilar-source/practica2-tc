@@ -1,0 +1,60 @@
+{
+  "nombre": "L3-VF-204",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "q5",
+    "q4"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q4"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "a",
+      "hacia": [
+        "q1"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "",
+      "hacia": [
+        "q2"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "b",
+      "hacia": [
+        "q5"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    }
+  ]
+}
