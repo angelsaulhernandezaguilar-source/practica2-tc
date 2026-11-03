@@ -47,6 +47,25 @@ def mostrar_conjunto(conjunto) -> str:
     return "{" + ", ".join(sorted(conjunto)) + "}" if conjunto else "∅"
 
 
+def separar(texto: str) -> list[str]:
+    """Divide una lista escrita por el usuario ("q0, q1" o "{q0,q1}"); ∅, - y vacío no dan elementos."""
+    texto = (texto or "").strip().strip("{}").strip()
+    if texto in ("", "∅", "-", "—"):
+        return []
+    return [t.strip() for t in texto.split(",") if t.strip()]
+
+
+def desde_tabla(alfabeto: str, estados: str, inicial: str, aceptacion, celdas: dict, nombre="") -> "Automata":
+    """Construye el autómata a partir de lo que el usuario escribió en la tabla interactiva.
+
+    ``celdas`` es {(estado, símbolo): texto}; el símbolo "" es la columna λ y
+    cada texto es una lista de destinos separados por comas.
+    """
+    sigma, q = separar(alfabeto), separar(estados)
+    trans = [(origen, a, p) for (origen, a), texto in celdas.items() for p in separar(texto)]
+    return Automata(sigma, q, (inicial or "").strip(), set(aceptacion), trans, nombre).validar()
+
+
 @dataclass
 class Paso:
     """Un paso de la simulación: se leyó ``simbolo`` estando en ``antes``.

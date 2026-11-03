@@ -190,3 +190,23 @@ def test_simbolos_de_varios_caracteres():
     assert m.simbolos("SYNACK") == ["SYN", "ACK"]
     assert m.acepta("SYN ACK")
     assert not m.acepta("ACK")
+
+
+# ----------------------------------------------------------------------
+# Tabla interactiva de la interfaz (sin Flet)
+# ----------------------------------------------------------------------
+
+def test_desde_tabla_como_la_escribe_el_usuario():
+    from automata import desde_tabla
+
+    celdas = {("q0", "a"): "q1", ("q0", "b"): " q0 ", ("q0", ""): "{q1}", ("q1", "a"): "∅", ("q1", "b"): ""}
+    m = desde_tabla("a, b", "q0, q1", "q0", {"q1"}, celdas)
+    assert m.tipo == AFND_LAMBDA
+    assert m.acepta("bb") and m.acepta("ba") and not m.acepta("ab")
+
+
+def test_desde_tabla_rechaza_destino_desconocido():
+    from automata import desde_tabla
+
+    with pytest.raises(AutomataInvalido):
+        desde_tabla("a", "q0", "q0", set(), {("q0", "a"): "q7"})
