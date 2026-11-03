@@ -96,24 +96,6 @@ nunca puede contener la cadena vacía. JFLAP no guarda el alfabeto en el `.jff`;
 comentario `<!--alfabeto: [...]-->` que JFLAP ignora, y si falta lo deduce de las transiciones. Más detalles en
 el [Ejercicio 3](docs/03-simulador.md#32-importación).
 
-## Uso de inteligencia artificial en este trabajo
-
-En cumplimiento del principio de transparencia académica, se documenta el uso de un asistente de
-inteligencia artificial, como en la Práctica 1:
-
-- Se usó para **escribir el código** (`src/`, `tests/`, `herramientas/`) y para **redactar los documentos** de
-  `docs/` a partir de las fuentes de la [bibliografía](docs/bibliografia.md). Ningún texto generado se cita
-  como fuente: toda afirmación remite a un libro con ISBN, un artículo con DOI o documentación oficial.
-- Se usó para **verificar las fuentes en línea** en vez de citarlas de memoria: los DOI se resolvieron en
-  doi.org, los ISBN en Open Library, y la sección 5 del artículo de Rabin y Scott, la figura 5 de la RFC 9293
-  y los resúmenes de los dos artículos nuevos se leyeron en su texto original.
-- Los resultados no se escribieron a mano: cada autómata se comparó con un oráculo escrito a partir de su
-  enunciado, cada cadena de prueba se corrió en el motor de JFLAP 7.1 y cada conversión se hizo con la clase
-  `NFAToDFA` de JFLAP; las tablas de los documentos se generan con esos resultados.
-- Las decisiones de interpretación (ℕ = {1, 2, …}, el sentido de «después de cada aa aparece una b», la
-  contradicción del problema 142 a), la división de SYN-RECEIVED en el modelo de TCP) están señaladas en el
-  documento correspondiente para que el autor las revise y las defienda.
-
 ## Licencia y autoría
 
 Trabajo académico individual para la Unidad de Aprendizaje de Teoría de la Computación, ESCOM–IPN, periodo 2027-1.
