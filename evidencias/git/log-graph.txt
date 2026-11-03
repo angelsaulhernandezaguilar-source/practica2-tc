@@ -1,0 +1,35 @@
+$ git log --oneline --graph --all
+*   46a94fb Merge pull request #8 from angelsaulhernandezaguilar-source/feature/evidencias
+|\  
+| * ade18cf Completa el README y la evidencia de pruebas en los contenedores
+* | f58e299 Merge pull request #7 from angelsaulhernandezaguilar-source/feature/automata-aplicacion
+|\| 
+| * 424ea2e Agrega la propuesta de trabajo sobre detección de ReDoS con autómatas
+| * ac2df1a Modela el diagrama de estados de TCP (RFC 9293) como AFD
+* | 5eed5f6 Merge pull request #6 from angelsaulhernandezaguilar-source/feature/investigacion
+|\| 
+| * ee273ba Agrega la investigación, el análisis de Rabin y Scott y dos fichas nuevas
+* | 2503b14 Merge pull request #5 from angelsaulhernandezaguilar-source/feature/automatas-listas
+|\| 
+| * 72ac382 Documenta el Ejercicio 2 y prueba cada autómata contra su enunciado
+| * cd1c7d9 Agrega la simulación paso a paso de JFLAP de cada autómata
+| * d8e2bd3 Convierte los AFND y AFND-λ a AFD con JFLAP y valida los casos en su motor
+| * 2b6ae74 Agrega los autómatas de las Listas 2 y 3 en .jff, .json y .xml
+| * 33a6b5a Agrega el catálogo de los problemas 94-263 con su clasificación
+* | 195bd38 Merge pull request #4 from angelsaulhernandezaguilar-source/feature/simulador-interfaz
+|\| 
+| * 255f7eb Documenta el simulador y su decisión de diseño para el no determinismo
+| * 09b0fbd Clasifica como AFD solo los autómatas con δ total
+| * 21b95a8 Agrega el simulador con interfaz gráfica en Flet
+* | 0674b14 Merge pull request #3 from angelsaulhernandezaguilar-source/feature/importar-exportar
+|\| 
+| * f1ddf8e Construye el autómata a partir de la tabla interactiva
+| * 7e27f87 Lee y escribe autómatas en .jff, .json y .xml
+* | 23f63f5 Merge pull request #2 from angelsaulhernandezaguilar-source/feature/nucleo-automata
+|\| 
+| * 64a8d46 Agrega el núcleo de autómatas finitos
+* | 9ca0698 Merge pull request #1 from angelsaulhernandezaguilar-source/feature/entorno
+|\| 
+| * f2ee697 Reutiliza el entorno y lenguajes.py de la Práctica 1
+|/  
+* 6f5274e Initial commit
