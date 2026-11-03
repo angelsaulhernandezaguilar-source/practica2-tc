@@ -1,0 +1,92 @@
+{
+  "nombre": "L3-151-simplificado",
+  "tipo": "AFD",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "ABD",
+    "CF",
+    "E",
+    "GH",
+    "IJ"
+  ],
+  "inicial": "ABD",
+  "aceptacion": [
+    "CF",
+    "E"
+  ],
+  "transiciones": [
+    {
+      "desde": "ABD",
+      "lee": "0",
+      "hacia": [
+        "CF"
+      ]
+    },
+    {
+      "desde": "ABD",
+      "lee": "1",
+      "hacia": [
+        "E"
+      ]
+    },
+    {
+      "desde": "CF",
+      "lee": "0",
+      "hacia": [
+        "ABD"
+      ]
+    },
+    {
+      "desde": "CF",
+      "lee": "1",
+      "hacia": [
+        "GH"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "0",
+      "hacia": [
+        "IJ"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "1",
+      "hacia": [
+        "ABD"
+      ]
+    },
+    {
+      "desde": "GH",
+      "lee": "0",
+      "hacia": [
+        "CF"
+      ]
+    },
+    {
+      "desde": "GH",
+      "lee": "1",
+      "hacia": [
+        "IJ"
+      ]
+    },
+    {
+      "desde": "IJ",
+      "lee": "0",
+      "hacia": [
+        "IJ"
+      ]
+    },
+    {
+      "desde": "IJ",
+      "lee": "1",
+      "hacia": [
+        "E"
+      ]
+    }
+  ]
+}

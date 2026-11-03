@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="L2-143a">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo></alfabeto>
+	<estados>
+		<estado nombre="q0" inicial="true" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="q0" lee="a" hacia="q0"/>
+		<transicion desde="q0" lee="b" hacia="q0"/>
+	</transiciones>
+</automata>

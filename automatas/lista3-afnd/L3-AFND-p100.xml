@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-AFND-p100">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo><simbolo>0</simbolo><simbolo>1</simbolo></alfabeto>
+	<estados>
+		<estado nombre="q0" inicial="true"/>
+		<estado nombre="q1"/>
+		<estado nombre="q2" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="q0" lee="a" hacia="q1"/>
+		<transicion desde="q0" lee="b" hacia="q1"/>
+		<transicion desde="q0" lee="c" hacia="q1"/>
+		<transicion desde="q1" lee="0" hacia="q2"/>
+		<transicion desde="q1" lee="1" hacia="q2"/>
+		<transicion desde="q2" lee="a" hacia="q2"/>
+		<transicion desde="q2" lee="b" hacia="q2"/>
+		<transicion desde="q2" lee="c" hacia="q2"/>
+		<transicion desde="q2" lee="0" hacia="q2"/>
+		<transicion desde="q2" lee="1" hacia="q2"/>
+	</transiciones>
+</automata>

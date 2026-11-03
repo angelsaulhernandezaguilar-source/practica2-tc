@@ -1,0 +1,60 @@
+{
+  "nombre": "L3-VF-205",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q3",
+    "q2",
+    "q4",
+    "q5"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q5"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "a",
+      "hacia": [
+        "q3"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "",
+      "hacia": [
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "b",
+      "hacia": [
+        "q5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "nombre": "L3-157-simplificado",
+  "tipo": "AFD",
+  "alfabeto": [
+    "0",
+    "1"
+  ],
+  "estados": [
+    "A",
+    "BCD",
+    "E",
+    "F"
+  ],
+  "inicial": "A",
+  "aceptacion": [
+    "F"
+  ],
+  "transiciones": [
+    {
+      "desde": "A",
+      "lee": "0",
+      "hacia": [
+        "BCD"
+      ]
+    },
+    {
+      "desde": "A",
+      "lee": "1",
+      "hacia": [
+        "F"
+      ]
+    },
+    {
+      "desde": "BCD",
+      "lee": "0",
+      "hacia": [
+        "BCD"
+      ]
+    },
+    {
+      "desde": "BCD",
+      "lee": "1",
+      "hacia": [
+        "E"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "0",
+      "hacia": [
+        "F"
+      ]
+    },
+    {
+      "desde": "E",
+      "lee": "1",
+      "hacia": [
+        "BCD"
+      ]
+    },
+    {
+      "desde": "F",
+      "lee": "0",
+      "hacia": [
+        "F"
+      ]
+    },
+    {
+      "desde": "F",
+      "lee": "1",
+      "hacia": [
+        "BCD"
+      ]
+    }
+  ]
+}

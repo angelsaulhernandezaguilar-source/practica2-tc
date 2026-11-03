@@ -1,0 +1,95 @@
+{
+  "nombre": "L3-VF-203",
+  "tipo": "AFND-lambda",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0",
+    "q1",
+    "q3",
+    "q7",
+    "q4",
+    "q2",
+    "q5",
+    "q9",
+    "q6",
+    "q8"
+  ],
+  "inicial": "q0",
+  "aceptacion": [
+    "q8"
+  ],
+  "transiciones": [
+    {
+      "desde": "q0",
+      "lee": "",
+      "hacia": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "desde": "q1",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q3",
+      "lee": "a",
+      "hacia": [
+        "q7"
+      ]
+    },
+    {
+      "desde": "q7",
+      "lee": "",
+      "hacia": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "desde": "q4",
+      "lee": "",
+      "hacia": [
+        "q8"
+      ]
+    },
+    {
+      "desde": "q2",
+      "lee": "",
+      "hacia": [
+        "q5",
+        "q6"
+      ]
+    },
+    {
+      "desde": "q5",
+      "lee": "b",
+      "hacia": [
+        "q9"
+      ]
+    },
+    {
+      "desde": "q9",
+      "lee": "",
+      "hacia": [
+        "q5",
+        "q6"
+      ]
+    },
+    {
+      "desde": "q6",
+      "lee": "",
+      "hacia": [
+        "q8"
+      ]
+    }
+  ]
+}
