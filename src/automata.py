@@ -199,9 +199,14 @@ class Automata:
 
     @property
     def tipo(self) -> str:
+        """AFD solo si δ: Q × Σ → Q es total; con δ parcial (algún δ(q, a) = ∅) es un AFND.
+
+        Es la definición del curso: en un AFD, δ es una función de Q × Σ en Q.
+        JFLAP, en cambio, llama DFA a un autómata determinista con δ parcial.
+        """
         if self.tiene_lambda:
             return AFND_LAMBDA
-        return AFD if self.es_determinista else AFND
+        return AFD if self.es_completo else AFND
 
     def num_transiciones(self) -> int:
         return sum(len(d) for d in self.transiciones.values())
