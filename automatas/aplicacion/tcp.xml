@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="tcp">
+	<alfabeto><simbolo>p</simbolo><simbolo>o</simbolo><simbolo>e</simbolo><simbolo>c</simbolo><simbolo>a</simbolo><simbolo>s</simbolo><simbolo>y</simbolo><simbolo>k</simbolo><simbolo>f</simbolo><simbolo>g</simbolo><simbolo>r</simbolo><simbolo>t</simbolo></alfabeto>
+	<estados>
+		<estado nombre="CLOSED" inicial="true" aceptacion="true"/>
+		<estado nombre="LISTEN"/>
+		<estado nombre="SYN-SENT"/>
+		<estado nombre="SYN-RCVD-P"/>
+		<estado nombre="SYN-RCVD-A"/>
+		<estado nombre="ESTAB"/>
+		<estado nombre="FIN-WAIT-1"/>
+		<estado nombre="FIN-WAIT-2"/>
+		<estado nombre="CLOSE-WAIT"/>
+		<estado nombre="CLOSING"/>
+		<estado nombre="LAST-ACK"/>
+		<estado nombre="TIME-WAIT"/>
+	</estados>
+	<transiciones>
+		<transicion desde="CLOSED" lee="p" hacia="LISTEN"/>
+		<transicion desde="CLOSED" lee="o" hacia="SYN-SENT"/>
+		<transicion desde="CLOSED" lee="e" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="c" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="a" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="s" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="y" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="k" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="f" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="g" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="r" hacia="CLOSED"/>
+		<transicion desde="CLOSED" lee="t" hacia="CLOSED"/>
+		<transicion desde="LISTEN" lee="p" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="o" hacia="SYN-SENT"/>
+		<transicion desde="LISTEN" lee="e" hacia="SYN-SENT"/>
+		<transicion desde="LISTEN" lee="c" hacia="CLOSED"/>
+		<transicion desde="LISTEN" lee="a" hacia="CLOSED"/>
+		<transicion desde="LISTEN" lee="s" hacia="SYN-RCVD-P"/>
+		<transicion desde="LISTEN" lee="y" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="k" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="f" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="g" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="r" hacia="LISTEN"/>
+		<transicion desde="LISTEN" lee="t" hacia="LISTEN"/>
+		<transicion desde="SYN-SENT" lee="p" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="o" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="e" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="c" hacia="CLOSED"/>
+		<transicion desde="SYN-SENT" lee="a" hacia="CLOSED"/>
+		<transicion desde="SYN-SENT" lee="s" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-SENT" lee="y" hacia="ESTAB"/>
+		<transicion desde="SYN-SENT" lee="k" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="f" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="g" hacia="SYN-SENT"/>
+		<transicion desde="SYN-SENT" lee="r" hacia="CLOSED"/>
+		<transicion desde="SYN-SENT" lee="t" hacia="SYN-SENT"/>
+		<transicion desde="SYN-RCVD-P" lee="p" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="o" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="e" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="c" hacia="FIN-WAIT-1"/>
+		<transicion desde="SYN-RCVD-P" lee="a" hacia="CLOSED"/>
+		<transicion desde="SYN-RCVD-P" lee="s" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="y" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="k" hacia="ESTAB"/>
+		<transicion desde="SYN-RCVD-P" lee="f" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="g" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-P" lee="r" hacia="LISTEN"/>
+		<transicion desde="SYN-RCVD-P" lee="t" hacia="SYN-RCVD-P"/>
+		<transicion desde="SYN-RCVD-A" lee="p" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="o" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="e" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="c" hacia="FIN-WAIT-1"/>
+		<transicion desde="SYN-RCVD-A" lee="a" hacia="CLOSED"/>
+		<transicion desde="SYN-RCVD-A" lee="s" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="y" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="k" hacia="ESTAB"/>
+		<transicion desde="SYN-RCVD-A" lee="f" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="g" hacia="SYN-RCVD-A"/>
+		<transicion desde="SYN-RCVD-A" lee="r" hacia="CLOSED"/>
+		<transicion desde="SYN-RCVD-A" lee="t" hacia="SYN-RCVD-A"/>
+		<transicion desde="ESTAB" lee="p" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="o" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="e" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="c" hacia="FIN-WAIT-1"/>
+		<transicion desde="ESTAB" lee="a" hacia="CLOSED"/>
+		<transicion desde="ESTAB" lee="s" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="y" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="k" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="f" hacia="CLOSE-WAIT"/>
+		<transicion desde="ESTAB" lee="g" hacia="ESTAB"/>
+		<transicion desde="ESTAB" lee="r" hacia="CLOSED"/>
+		<transicion desde="ESTAB" lee="t" hacia="ESTAB"/>
+		<transicion desde="FIN-WAIT-1" lee="p" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="o" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="e" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="c" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="a" hacia="CLOSED"/>
+		<transicion desde="FIN-WAIT-1" lee="s" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="y" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-1" lee="k" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-1" lee="f" hacia="CLOSING"/>
+		<transicion desde="FIN-WAIT-1" lee="g" hacia="TIME-WAIT"/>
+		<transicion desde="FIN-WAIT-1" lee="r" hacia="CLOSED"/>
+		<transicion desde="FIN-WAIT-1" lee="t" hacia="FIN-WAIT-1"/>
+		<transicion desde="FIN-WAIT-2" lee="p" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="o" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="e" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="c" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="a" hacia="CLOSED"/>
+		<transicion desde="FIN-WAIT-2" lee="s" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="y" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="k" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="f" hacia="TIME-WAIT"/>
+		<transicion desde="FIN-WAIT-2" lee="g" hacia="FIN-WAIT-2"/>
+		<transicion desde="FIN-WAIT-2" lee="r" hacia="CLOSED"/>
+		<transicion desde="FIN-WAIT-2" lee="t" hacia="FIN-WAIT-2"/>
+		<transicion desde="CLOSE-WAIT" lee="p" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="o" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="e" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="c" hacia="LAST-ACK"/>
+		<transicion desde="CLOSE-WAIT" lee="a" hacia="CLOSED"/>
+		<transicion desde="CLOSE-WAIT" lee="s" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="y" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="k" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="f" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="g" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSE-WAIT" lee="r" hacia="CLOSED"/>
+		<transicion desde="CLOSE-WAIT" lee="t" hacia="CLOSE-WAIT"/>
+		<transicion desde="CLOSING" lee="p" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="o" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="e" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="c" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="a" hacia="CLOSED"/>
+		<transicion desde="CLOSING" lee="s" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="y" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="k" hacia="TIME-WAIT"/>
+		<transicion desde="CLOSING" lee="f" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="g" hacia="CLOSING"/>
+		<transicion desde="CLOSING" lee="r" hacia="CLOSED"/>
+		<transicion desde="CLOSING" lee="t" hacia="CLOSING"/>
+		<transicion desde="LAST-ACK" lee="p" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="o" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="e" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="c" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="a" hacia="CLOSED"/>
+		<transicion desde="LAST-ACK" lee="s" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="y" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="k" hacia="CLOSED"/>
+		<transicion desde="LAST-ACK" lee="f" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="g" hacia="LAST-ACK"/>
+		<transicion desde="LAST-ACK" lee="r" hacia="CLOSED"/>
+		<transicion desde="LAST-ACK" lee="t" hacia="LAST-ACK"/>
+		<transicion desde="TIME-WAIT" lee="p" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="o" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="e" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="c" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="a" hacia="CLOSED"/>
+		<transicion desde="TIME-WAIT" lee="s" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="y" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="k" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="f" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="g" hacia="TIME-WAIT"/>
+		<transicion desde="TIME-WAIT" lee="r" hacia="CLOSED"/>
+		<transicion desde="TIME-WAIT" lee="t" hacia="CLOSED"/>
+	</transiciones>
+</automata>

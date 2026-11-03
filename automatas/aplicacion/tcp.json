@@ -1,0 +1,1046 @@
+{
+  "nombre": "tcp",
+  "tipo": "AFD",
+  "alfabeto": [
+    "p",
+    "o",
+    "e",
+    "c",
+    "a",
+    "s",
+    "y",
+    "k",
+    "f",
+    "g",
+    "r",
+    "t"
+  ],
+  "estados": [
+    "CLOSED",
+    "LISTEN",
+    "SYN-SENT",
+    "SYN-RCVD-P",
+    "SYN-RCVD-A",
+    "ESTAB",
+    "FIN-WAIT-1",
+    "FIN-WAIT-2",
+    "CLOSE-WAIT",
+    "CLOSING",
+    "LAST-ACK",
+    "TIME-WAIT"
+  ],
+  "inicial": "CLOSED",
+  "aceptacion": [
+    "CLOSED"
+  ],
+  "transiciones": [
+    {
+      "desde": "CLOSED",
+      "lee": "p",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "o",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "e",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "c",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "s",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "y",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "k",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "f",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "g",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSED",
+      "lee": "t",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "p",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "o",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "e",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "c",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "s",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "y",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "k",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "f",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "g",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "r",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "LISTEN",
+      "lee": "t",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "p",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "o",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "e",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "c",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "s",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "y",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "k",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "f",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "g",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-SENT",
+      "lee": "t",
+      "hacia": [
+        "SYN-SENT"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "p",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "o",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "e",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "c",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "s",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "y",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "k",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "f",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "g",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "r",
+      "hacia": [
+        "LISTEN"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-P",
+      "lee": "t",
+      "hacia": [
+        "SYN-RCVD-P"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "p",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "o",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "e",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "c",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "s",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "y",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "k",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "f",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "g",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "SYN-RCVD-A",
+      "lee": "t",
+      "hacia": [
+        "SYN-RCVD-A"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "p",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "o",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "e",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "c",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "s",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "y",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "k",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "f",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "g",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "ESTAB",
+      "lee": "t",
+      "hacia": [
+        "ESTAB"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "p",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "o",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "e",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "c",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "s",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "y",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "k",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "f",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "g",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-1",
+      "lee": "t",
+      "hacia": [
+        "FIN-WAIT-1"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "p",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "o",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "e",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "c",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "s",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "y",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "k",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "f",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "g",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "FIN-WAIT-2",
+      "lee": "t",
+      "hacia": [
+        "FIN-WAIT-2"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "p",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "o",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "e",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "c",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "s",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "y",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "k",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "f",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "g",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSE-WAIT",
+      "lee": "t",
+      "hacia": [
+        "CLOSE-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "p",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "o",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "e",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "c",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "s",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "y",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "k",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "f",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "g",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "CLOSING",
+      "lee": "t",
+      "hacia": [
+        "CLOSING"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "p",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "o",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "e",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "c",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "s",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "y",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "k",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "f",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "g",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "LAST-ACK",
+      "lee": "t",
+      "hacia": [
+        "LAST-ACK"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "p",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "o",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "e",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "c",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "a",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "s",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "y",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "k",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "f",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "g",
+      "hacia": [
+        "TIME-WAIT"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "r",
+      "hacia": [
+        "CLOSED"
+      ]
+    },
+    {
+      "desde": "TIME-WAIT",
+      "lee": "t",
+      "hacia": [
+        "CLOSED"
+      ]
+    }
+  ]
+}
