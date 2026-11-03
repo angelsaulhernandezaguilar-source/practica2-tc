@@ -1,0 +1,27 @@
+{
+  "nombre": "L3-VF-231-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q4, q5}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q0}",
+    "{q4, q5}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q4, q5}"
+      ]
+    }
+  ]
+}

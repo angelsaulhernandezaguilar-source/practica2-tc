@@ -1,0 +1,18 @@
+{
+  "nombre": "L3-VF-229-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q1}"
+  ],
+  "transiciones": []
+}

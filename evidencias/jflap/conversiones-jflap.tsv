@@ -1,0 +1,2794 @@
+automatas/lista3-afnd/L2-143b.jff	S	q0	1	true	false
+automatas/lista3-afnd/L2-143b.jff	S	q1	0	false	true
+automatas/lista3-afnd/L2-143b.jff	S	q2	0,1	false	true
+automatas/lista3-afnd/L2-143b.jff	T	q1	q1	a
+automatas/lista3-afnd/L2-143b.jff	T	q1	q2	b
+automatas/lista3-afnd/L2-143b.jff	T	q2	q1	a
+automatas/lista3-afnd/L2-143b.jff	T	q2	q2	b
+automatas/lista3-afnd/L2-143b.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-158.jff	S	q1		true	false
+automatas/lista3-afnd/L3-158.jff	S	q2		false	false
+automatas/lista3-afnd/L3-158.jff	S	q3		false	true
+automatas/lista3-afnd/L3-158.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-158.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-159.jff	S	q1		true	false
+automatas/lista3-afnd/L3-159.jff	S	q2		false	false
+automatas/lista3-afnd/L3-159.jff	S	q3		false	true
+automatas/lista3-afnd/L3-159.jff	T	q1	q1	1
+automatas/lista3-afnd/L3-159.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-159.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-160.jff	S	q1		true	false
+automatas/lista3-afnd/L3-160.jff	S	q2		false	false
+automatas/lista3-afnd/L3-160.jff	S	q3		false	true
+automatas/lista3-afnd/L3-160.jff	T	q3	q3	0
+automatas/lista3-afnd/L3-160.jff	T	q3	q3	1
+automatas/lista3-afnd/L3-160.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-160.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-161.jff	S	q1		true	true
+automatas/lista3-afnd/L3-161.jff	S	q2		false	false
+automatas/lista3-afnd/L3-161.jff	S	q3		false	false
+automatas/lista3-afnd/L3-161.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-161.jff	T	q3	q1	0
+automatas/lista3-afnd/L3-161.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-AFND-p100.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p100.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p100.jff	S	q2		false	true
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q0	q1	c
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q2	q2	a
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q2	q2	1
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q0	q1	b
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q2	q2	b
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q2	q2	c
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-AFND-p100.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q2	2,0	false	false
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q3	3,0,1	false	true
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q4	3,2,0	false	true
+automatas/lista3-afnd/L3-AFND-p101.jff	S	q5	3,0	false	true
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q1	q1	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q3	q3	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q3	q4	b
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q4	q3	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q5	q5	b
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q2	q0	b
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q4	q5	b
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q5	q3	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q2	q3	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p101.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q2	2,0	false	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q3	0,3	false	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q4	4,0	false	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q5	5,0,1	false	false
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q6	2,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q7	1,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q8	0,6,3	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q9	4,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q10	5,0,1,6	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	S	q11	0,6	false	true
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q1	q1	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q7	q7	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q9	q10	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q11	q11	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q3	q1	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q8	q9	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q5	q1	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q11	q7	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q6	q8	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q10	q6	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q9	q11	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q4	q5	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q3	q4	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q4	q0	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q7	q6	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q5	q6	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q6	q7	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q2	q1	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q8	q7	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q2	q3	b
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q10	q7	a
+automatas/lista3-afnd/L3-AFND-p102.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q2	0,1,2	false	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q3	3,0	false	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q4	4,0	false	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q5	0,5	false	false
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q6	1,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q7	2,0,1,6	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q8	0,6	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q9	3,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q10	4,0,6	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	S	q11	0,6,5	false	true
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q2	q2	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q7	q7	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q8	q8	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q8	q6	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q9	q10	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q5	q0	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q3	q1	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q6	q8	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q7	q9	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q3	q4	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q10	q11	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q4	q1	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q4	q5	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q11	q8	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q6	q7	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q11	q6	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q5	q6	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q10	q6	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q1	q0	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q2	q3	b
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q9	q6	a
+automatas/lista3-afnd/L3-AFND-p103.jff	T	q1	q2	a
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q2		false	false
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q3		false	false
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q4		false	false
+automatas/lista3-afnd/L3-AFND-p104.jff	S	q5		false	true
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q4	q5	b
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q5	q5	a
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q5	q5	b
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q2	q3	b
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p104.jff	T	q3	q4	a
+automatas/lista3-afnd/L3-AFND-p105.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p105.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p105.jff	S	q2	2,0	false	false
+automatas/lista3-afnd/L3-AFND-p105.jff	S	q3	3,0,1	false	false
+automatas/lista3-afnd/L3-AFND-p105.jff	S	q4	1,0,4	false	true
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q3	q2	b
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q4	q2	b
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q1	q1	a
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q3	q4	a
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q2	q3	a
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q2	q0	b
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q4	q1	a
+automatas/lista3-afnd/L3-AFND-p105.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q2	0,1,2	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q3	0,3	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q4	1,0,4	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q5	0,5	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q6	0,6	false	false
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q7	1,0,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q8	0,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q9	2,0,1,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q10	0,3,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q11	1,0,4,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q12	0,5,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	S	q13	0,6,7	false	true
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q11	q9	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q3	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q10	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q3	q0	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q3	q4	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q10	q8	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q6	q7	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q11	q12	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q2	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q4	q2	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q9	q10	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q11	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q5	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q4	q5	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q6	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q12	q7	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q6	q0	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q12	q13	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q12	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q5	q1	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q10	q11	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q9	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q7	q9	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q0	q0	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q8	q8	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q8	q7	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q2	q2	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q7	q8	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q9	q9	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q13	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q0	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q8	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q4	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q7	q8	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q13	q8	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q13	q7	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q5	q6	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q1	q0	2
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q1	q0	0
+automatas/lista3-afnd/L3-AFND-p106.jff	T	q2	q3	0
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q1	0,1,7	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q2	0,8	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q3	0,2	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q4	0,9	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q5	0,1,7,3	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q6	0,1,7,9,10	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q7	0,4,2	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q8	8,0,9	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q9	0,11,2,9	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q10	0,4	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q11	0,1,7,4,5,3	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q12	0,1,7,12,3,9,10	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q13	7,1,0,4,5	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q14	8,0,4,6	false	false
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q15	13,0,4,11,2,9	false	true
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q16	13,0,4,9	false	true
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q17	13,0,1,7,4,5,12,3,9,10	false	true
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q18	13,0,1,7,4,5,9,10	false	true
+automatas/lista3-afnd/L3-AFND-p107.jff	S	q19	8,13,0,4,6,9	false	true
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q14	q10	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q2	q1	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q5	q2	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q1	q2	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q9	q4	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q6	q9	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q9	q4	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q14	q16	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q15	q17	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q17	q15	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q2	q4	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q18	q15	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q12	q6	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q11	q14	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q9	q12	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q17	q19	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q18	q19	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q13	q7	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q19	q18	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q1	q1	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q6	q6	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q13	q13	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q18	q18	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q4	q4	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q10	q10	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q16	q16	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q0	q0	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q4	q4	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q5	q1	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q10	q10	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q16	q16	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q4	q6	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q2	q0	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q17	q18	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q19	q16	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q11	q7	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q19	q16	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q7	q11	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q13	q14	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q14	q13	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q8	q6	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q8	q4	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q6	q8	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q8	q4	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q3	q0	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q16	q18	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q3	q0	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q11	q13	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q12	q15	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q7	q10	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q7	q10	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q1	q3	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q3	q5	0
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q5	q7	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q15	q16	1
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q15	q16	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q12	q8	2
+automatas/lista3-afnd/L3-AFND-p107.jff	T	q10	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q1	1,13	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q2	1,13,14	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q3	13,2,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q4	13,15,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q5	3,13,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q6	13,16,1,2	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q7	13,4,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q8	13,2,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q9	14,13,5,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q10	3,13,18,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q11	13,6,15,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q12	13,4,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q13	13,6,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q14	13,14,6,7,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q15	13,6,2,1,16	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q16	13,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q17	14,13,5,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q18	13,2,20,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q19	13,6,2,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q20	13,6,15,8,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q21	3,13,6,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q22	13,6,2,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q23	14,13,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q24	13,6,15,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q25	3,13,19,1,21	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q26	13,6,16,9,1,2	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q27	13,6,4,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q28	3,13,6,18,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q29	13,15,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q30	13,6,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q31	14,13,6,19,1,7	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q32	13,6,16,19,20,1,2	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q33	13,22,4,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q34	13,6,2,10,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q35	14,13,6,5,1,7	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q36	13,6,4,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q37	13,2,20,19,1,16	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q38	13,6,2,20,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q39	13,6,15,8,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q40	3,13,6,19,1,21	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q41	13,6,2,20,19,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q42	14,13,5,23,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q43	3,13,6,18,11,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q44	14,13,6,5,19,1,7	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q45	13,2,20,19,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q46	13,6,16,9,19,20,1,2	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q47	13,6,22,4,19,1	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q48	3,13,6,18,19,1,21	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q49	13,24,6,15,19,1,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q50	13,6,4,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q51	3,13,18,19,1,21	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q52	13,6,2,10,20,19,1,17	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q53	14,13,6,5,23,19,1,7	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q54	13,24,6,19,1,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q55	14,13,24,6,19,1,7,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q56	13,24,25,6,16,19,20,1,2	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q57	13,6,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q58	14,13,6,5,19,1,7,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q59	13,6,2,20,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q60	3,13,6,18,19,11,1,21	false	false
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q61	13,24,6,15,8,19,1,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q62	13,24,6,2,20,19,1,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q63	3,13,24,6,19,1,25,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q64	13,24,6,2,20,19,1,17,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q65	14,13,6,19,1,7,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q66	13,6,15,8,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q67	3,13,6,19,1,25,12,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q68	13,6,22,4,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q69	13,24,25,6,16,9,19,20,1,2	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q70	13,24,6,22,4,19,1,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q71	3,13,24,6,18,19,1,25,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q72	13,6,2,20,19,9,1,25,16,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q73	14,13,6,5,23,19,1,7,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q74	13,24,6,2,10,20,19,1,17,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q75	14,13,24,6,5,23,19,1,7,25	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q76	13,6,2,10,20,19,1,17,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q77	13,24,6,15,8,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q78	3,13,24,6,18,19,11,1,25,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q79	3,13,6,18,19,11,1,25,12,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q80	13,24,6,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q81	14,13,24,6,19,1,7,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q82	13,24,25,6,16,9,19,20,1,2,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q83	13,24,6,22,4,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q84	13,24,6,2,20,19,1,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q85	3,13,24,6,19,1,25,12,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q86	13,24,6,2,10,20,19,1,17,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q87	14,13,24,6,5,23,19,1,7,25,12	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	S	q88	3,13,24,6,18,19,11,1,25,12,21	false	true
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q73	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q73	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q35	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q35	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q24	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q35	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q88	q83	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q78	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q78	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q36	q44	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q18	q25	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q25	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q58	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q58	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q38	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q38	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q49	q54	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q15	q21	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q41	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q76	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q17	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q22	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q13	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q16	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q30	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q54	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q57	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q80	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q13	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q16	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q30	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q54	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q57	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q80	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q47	q53	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q13	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q22	q28	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q79	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q29	q16	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q80	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q43	q50	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q70	q75	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q44	q39	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q66	q72	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q20	q26	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q0	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q11	q15	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q33	q42	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q7	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q60	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q63	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q63	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q19	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q3	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q18	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q38	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q40	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q43	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q59	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q62	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q84	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q1	q1	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q13	q13	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q16	q16	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q30	q30	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q54	q54	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q57	q57	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q80	q80	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q2	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q14	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q23	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q31	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q55	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q65	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q81	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q19	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q19	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q29	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q81	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q29	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q81	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q76	q79	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q10	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q30	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q87	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q10	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q28	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q71	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q49	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q49	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q9	q11	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q47	q30	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q53	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q33	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q53	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q67	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q82	q85	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q74	q78	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q55	q61	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q66	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q61	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q66	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q75	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q4	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q47	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q4	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q39	q46	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q45	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q42	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q68	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q68	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q72	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q72	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q51	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q51	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q32	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q32	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q66	q57	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q70	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q4	q1	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q53	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q8	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q26	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q82	q86	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q68	q73	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q7	q9	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q58	q66	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q85	q83	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q77	q82	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q47	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q47	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q86	q88	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q5	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q68	q57	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q5	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q9	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q42	q49	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q20	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q14	q20	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q64	q71	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q25	q33	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q74	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q64	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q74	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q5	q7	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q74	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q63	q70	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q12	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q32	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q12	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q26	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q26	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q32	q40	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q56	q64	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q59	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q59	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q21	q27	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q53	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q10	q12	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q4	q6	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q9	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q5	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q9	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q3	q5	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q20	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q20	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q70	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q70	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q12	q16	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q57	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q37	q25	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q79	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q79	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q6	q5	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q17	q24	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q45	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q58	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q45	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q32	q41	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q35	q20	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q76	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q76	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q75	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q75	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q20	q13	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q70	q54	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q51	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q61	q69	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q40	q47	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q24	q32	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q73	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q7	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q7	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q69	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q31	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q41	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q38	q40	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q41	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q72	q76	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q38	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q40	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q56	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q45	q51	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q62	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q62	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q73	q77	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q46	q52	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q30	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q79	q68	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q23	q29	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q62	q63	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q29	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q87	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q63	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q10	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q87	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q87	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q23	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q24	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q28	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q23	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q24	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q28	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q28	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q3	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q3	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q81	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q84	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q14	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q19	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q43	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q14	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q84	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q14	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q84	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q43	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q60	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q43	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q68	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q54	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q31	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q41	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q31	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q40	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q40	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q6	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q6	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q7	q1	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q35	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q1	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q80	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q13	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q22	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q22	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q22	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q78	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q16	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q24	q30	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q60	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q60	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q44	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q18	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q44	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q69	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q23	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q69	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q11	q13	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q71	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q56	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q56	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q75	q61	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q49	q56	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q55	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q6	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q62	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q26	q34	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q39	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q36	q30	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q39	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q59	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q65	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q21	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q19	q21	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q21	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q48	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q56	q63	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q21	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q36	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q88	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q69	q63	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q44	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q83	q87	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q17	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q0	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q11	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q11	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q83	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q76	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q15	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q36	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q48	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q15	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q36	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q39	q30	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q48	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q79	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q25	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q3	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q2	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q64	q62	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q52	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q34	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q34	q43	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q29	q37	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q69	q74	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q37	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q37	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q50	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q71	q70	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q6	q8	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q86	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q12	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q87	q77	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q52	q60	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q42	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q48	q47	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q8	q3	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q46	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q46	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q67	q59	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q59	q67	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q75	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q84	q85	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q85	q84	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q12	q17	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q45	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q9	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q8	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q8	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q42	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q57	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q42	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q51	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q61	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q61	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q8	q10	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q58	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q27	q13	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q53	q61	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q77	q80	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q33	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q52	q30	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q33	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q52	q30	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q27	q35	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q5	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q85	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q85	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q73	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q85	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q61	q54	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q26	q21	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q27	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q27	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q27	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q34	q13	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q34	q13	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q4	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q37	q23	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q2	q4	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q34	q19	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q65	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q65	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q60	q68	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q52	q38	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q86	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q86	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q86	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q77	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q77	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q33	q16	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q46	q40	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q46	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q81	q77	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q77	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q67	q68	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q64	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q74	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q64	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q72	q67	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q83	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q83	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q11	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q17	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q17	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q78	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q39	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q31	q39	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q72	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q50	q57	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q16	q18	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q41	q48	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q50	q58	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q67	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q37	q45	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q67	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q2	q1	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q2	q1	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q15	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q66	q65	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q44	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q65	q66	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q25	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q25	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q54	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q10	q2	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q82	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q82	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q18	q16	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q18	q16	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q82	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q83	q80	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q0	q1	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q50	q57	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q50	q57	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q63	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q48	q31	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q15	q22	a
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q88	q81	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q55	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q55	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q21	q14	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q88	q80	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q88	q80	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q71	q54	1
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q71	q54	0
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q28	q36	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q49	q55	c
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q78	q83	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q51	q33	b
+automatas/conversiones/L3-AFNDL-p108-AFND.jff	T	q1	q2	c
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q1	0,11,29	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q2	1,0,21	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q3	30,12,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q4	22,2,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q5	31,13,0,1,21	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q6	23,3,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q7	1,32,0,21,14	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q8	11,0,4,29,24	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q9	22,33,15,2,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q10	30,12,25,0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q11	23,16,3,0,34	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q12	11,6,0,5,29	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q13	31,13,26,0,1,21,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q14	0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q15	35,11,16,0,4,29,24	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q16	1,16,0,17,21	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q17	16,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q18	0,1,21,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q19	30,12,7,0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q20	1,32,0,21,5,27,14	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q21	22,2,0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q22	11,16,0,29	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q23	30,12,36,16,25,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q24	22,18,16,2,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q25	1,31,13,0,21,5,8	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q26	22,33,15,2,0,5,28	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q27	23,3,0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q28	30,12,16,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q29	11,36,16,6,0,5,29	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q30	31,13,36,16,17,26,0,1,21,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q31	36,16,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q32	23,19,16,3,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q33	1,32,0,21,5,9,14	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q34	23,36,16,3,0,34,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q35	11,6,0,4,5,29,24	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q36	1,31,16,13,0,17,21	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q37	1,36,16,0,17,21,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q38	30,12,7,36,16,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q39	1,32,36,16,0,17,21,5,27,14	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q40	22,18,36,16,2,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q41	11,16,0,4,20,29,24	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q42	22,33,10,15,2,0,5	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q43	35,11,36,16,6,0,4,5,29,24	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q44	12,7,0,5,30,25	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q45	1,32,16,0,17,21,14	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q46	1,31,36,16,13,0,17,21,5,8	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q47	22,33,18,15,36,16,2,0,5,28	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q48	23,19,36,16,3,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q49	36,12,16,7,0,5,30,25	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q50	1,31,13,0,21,26,5,8	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q51	22,33,18,15,16,2,0	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q52	1,32,36,16,0,17,21,5,9,14	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q53	23,19,36,16,3,0,34,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q54	11,36,16,6,0,4,20,5,29,24	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q55	36,13,16,17,8,0,1,21,5,31,26	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q56	1,32,0,21,5,27,9,14	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q57	23,19,16,3,0,34	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q58	22,33,18,10,15,36,16,2,0,5	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q59	35,11,36,16,6,0,4,20,5,29,24	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q60	1,32,36,16,0,17,21,5,27,9,14	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q61	22,33,10,15,2,0,5,28	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q62	35,11,16,0,4,20,29,24	false	false
+automatas/lista3-afnd/L3-AFND-p109.jff	S	q63	22,33,18,10,15,36,16,2,0,5,28	false	true
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q56	q61	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q26	q34	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q28	q36	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q35	q44	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q20	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q20	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q5	q7	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q4	q6	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q9	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q9	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q57	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q45	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q21	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q55	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q61	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q21	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q42	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q44	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q61	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q55	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q55	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q27	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q27	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q11	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q11	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q58	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q58	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q63	q53	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q58	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q17	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q7	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q0	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q14	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q17	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q31	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q60	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q14	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q17	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q31	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q48	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q60	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q31	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q60	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q39	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q40	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q40	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q39	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q39	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q40	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q45	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q40	q48	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q45	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q56	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q56	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q43	q49	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q24	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q8	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q35	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q34	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q24	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q24	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q32	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q10	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q59	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q3	q5	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q5	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q13	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q2	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q16	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q18	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q37	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q3	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q14	q14	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q17	q17	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q31	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q1	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q1	q3	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q12	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q22	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q29	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q29	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q29	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q12	q19	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q48	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q19	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q21	q27	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q48	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q25	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q10	q13	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q19	q25	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q47	q53	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q55	q60	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q27	q14	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q11	q17	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q22	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q22	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q55	q40	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q33	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q33	q42	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q26	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q6	q8	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q26	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q7	q9	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q5	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q5	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q42	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q50	q21	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q6	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q1	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q3	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q15	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q52	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q1	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q3	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q52	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q52	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q29	q38	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q38	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q61	q34	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q51	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q38	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q38	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q9	q11	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q63	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q23	q30	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q53	q59	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q33	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q25	q33	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q43	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q51	q57	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q59	q49	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q2	q4	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q4	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q50	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q9	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q12	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q50	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q18	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q62	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q62	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q47	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q41	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q54	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q48	q54	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q52	q58	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q7	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q54	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q7	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q54	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q0	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q3	q0	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q35	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q53	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q41	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q15	q23	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q41	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q38	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q50	q56	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q62	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q34	q43	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q20	q26	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q36	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q57	q62	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q8	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q8	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q30	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q53	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q53	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q26	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q30	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q14	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q30	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q54	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q60	q63	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q47	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q49	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q27	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q47	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q49	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q21	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q61	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q36	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q49	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q18	q21	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q36	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q44	q50	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q47	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q28	q17	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q46	q40	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q2	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q2	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q15	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q51	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q42	q34	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q62	q23	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q20	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q36	q24	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q43	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q43	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q43	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q51	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q51	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q15	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q15	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q41	q23	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q33	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q33	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q36	q45	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q63	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q63	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q58	q53	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q63	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q39	q47	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q49	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q30	q39	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q30	q40	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q53	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q9	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q32	q41	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q52	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q4	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q49	q55	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q50	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q18	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q18	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q5	q4	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q8	q10	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q45	q51	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q22	q28	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q41	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q28	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q11	q15	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q28	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q28	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q0	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q62	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q46	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q46	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q46	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q56	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q23	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q57	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q10	q14	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q57	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q27	q35	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q20	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q54	q49	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q37	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q48	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q29	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q4	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q4	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q13	q21	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q32	q17	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q37	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q37	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q21	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q42	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q44	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q61	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q42	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q44	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q45	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q7	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q25	q21	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q59	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q59	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q17	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q13	q20	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q34	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q34	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q59	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q11	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q14	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q26	q18	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q19	q14	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q38	q46	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q6	q0	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q46	q52	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q56	q12	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q39	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q40	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q37	q40	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q8	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q24	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q60	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q16	q24	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q31	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q32	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q35	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q32	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q35	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q23	q31	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q58	q37	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q23	q31	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q23	q29	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q10	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q57	q17	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q10	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q13	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q13	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q12	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q12	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q1	q2	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q16	q22	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q2	q1	c
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q6	q0	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q19	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q22	q16	a
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q6	q0	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q19	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q25	q14	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q25	q14	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q44	q14	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q16	q17	0
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q16	q17	1
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q34	q31	b
+automatas/lista3-afnd/L3-AFND-p109.jff	T	q24	q32	b
+automatas/lista3-afnd/L3-AFND-p114.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p114.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p114.jff	S	q2		false	true
+automatas/lista3-afnd/L3-AFND-p114.jff	T	q1	q1	a
+automatas/lista3-afnd/L3-AFND-p114.jff	T	q2	q2	b
+automatas/lista3-afnd/L3-AFND-p114.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p114.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p115.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p115.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p115.jff	S	q2		false	false
+automatas/lista3-afnd/L3-AFND-p115.jff	S	q3		false	true
+automatas/lista3-afnd/L3-AFND-p115.jff	T	q3	q1	a
+automatas/lista3-afnd/L3-AFND-p115.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p115.jff	T	q2	q3	c
+automatas/lista3-afnd/L3-AFND-p115.jff	T	q0	q1	a
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	S	q1	1,2	false	false
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	S	q2	4,3	false	false
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	S	q3	5,6	false	false
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	S	q4	7	false	true
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q1	q1	a
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q3	q3	a
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q4	q4	b
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q2	q3	a
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q3	q4	b
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-AFNDL-p117-AFND.jff	T	q1	q2	b
+automatas/lista3-afnd/L3-AFND-p118.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p118.jff	S	q1	1	false	false
+automatas/lista3-afnd/L3-AFND-p118.jff	S	q2	1,2	false	false
+automatas/lista3-afnd/L3-AFND-p118.jff	S	q3	1,3	false	false
+automatas/lista3-afnd/L3-AFND-p118.jff	S	q4	1,2,3,4	false	true
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q2	q2	a
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q4	q4	a
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q1	q1	b
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q3	q3	b
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q1	q2	a
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q2	q3	b
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q3	q4	a
+automatas/lista3-afnd/L3-AFND-p118.jff	T	q4	q3	b
+automatas/lista3-afnd/L3-AFND-p119.jff	S	q0		true	true
+automatas/lista3-afnd/L3-AFND-p119.jff	S	q1		false	true
+automatas/lista3-afnd/L3-AFND-p119.jff	S	q2		false	false
+automatas/lista3-afnd/L3-AFND-p119.jff	T	q0	q0	b
+automatas/lista3-afnd/L3-AFND-p119.jff	T	q1	q0	b
+automatas/lista3-afnd/L3-AFND-p119.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p119.jff	T	q2	q0	b
+automatas/lista3-afnd/L3-AFND-p119.jff	T	q1	q2	a
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q1	2	false	false
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q2	1	false	false
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q3	3	false	false
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q4	2,4	false	true
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q5	1,4	false	true
+automatas/lista3-afnd/L3-AFND-p120.jff	S	q6	3,4	false	true
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q0	q2	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q4	q1	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q4	q4	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q6	q6	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q1	q1	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q1	q4	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q5	q5	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q6	q6	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q3	q3	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q4	q4	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q5	q5	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q0	q3	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q1	q4	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q5	q2	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q2	q5	1
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q2	q5	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q6	q3	2
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q3	q6	0
+automatas/lista3-afnd/L3-AFND-p120.jff	T	q3	q6	1
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q1	4,5	false	false
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q2	2,4,5	false	false
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q3	6	false	false
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q4	3,6	false	false
+automatas/lista3-afnd/L3-AFND-p121.jff	S	q5	1	false	true
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q1	q3	2
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q5	q1	1
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q1	q3	1
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q5	q1	2
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q1	q4	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q0	q1	2
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q3	q5	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q5	q2	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q0	q2	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q2	q4	2
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q2	q4	1
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q2	q4	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q4	q5	2
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q4	q5	0
+automatas/lista3-afnd/L3-AFND-p121.jff	T	q4	q5	1
+automatas/lista3-afnd/L3-AFND-p122.jff	S	q0		true	true
+automatas/lista3-afnd/L3-AFND-p122.jff	S	q1		false	true
+automatas/lista3-afnd/L3-AFND-p122.jff	S	q2		false	true
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q0	q0	0
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q1	q2	2
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q0	q1	2
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q1	q0	0
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q2	q0	0
+automatas/lista3-afnd/L3-AFND-p122.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q1	1	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q2	2	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q3	3	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q4	4	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q5	5	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q6	6	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q7	3,7	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q8	8,4	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q9	9,5	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q10	6,10	false	false
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q11	3,7,11	false	true
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q12	11,4	false	true
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q13	11,5	false	true
+automatas/lista3-afnd/L3-AFND-p123.jff	S	q14	6,11,10	false	true
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q14	q6	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q9	q13	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q13	q9	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q11	q3	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q0	q2	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q7	q11	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q1	q4	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q10	q6	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q2	q5	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q6	q10	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q5	q9	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q5	q5	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q6	q6	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q8	q8	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q11	q11	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q3	q3	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q4	q4	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q9	q9	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q14	q14	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q2	q6	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q8	q12	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q12	q8	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q12	q4	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q1	q3	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q4	q8	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q10	q14	b
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q13	q5	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q3	q7	a
+automatas/lista3-afnd/L3-AFND-p123.jff	T	q7	q3	b
+automatas/lista3-afnd/L3-AFND-p094.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p094.jff	S	q1	1	false	false
+automatas/lista3-afnd/L3-AFND-p094.jff	S	q2	1,2	false	true
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q1	q1	0
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q1	q1	1
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q2	q2	2
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q1	q2	2
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q2	q1	0
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q2	q1	1
+automatas/lista3-afnd/L3-AFND-p094.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p095.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p095.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p095.jff	S	q2		false	false
+automatas/lista3-afnd/L3-AFND-p095.jff	S	q3		false	false
+automatas/lista3-afnd/L3-AFND-p095.jff	S	q4		false	true
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q0	q1	2
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q3	q4	2
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q3	q4	1
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q2	q3	0
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q1	q2	2
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q2	q3	2
+automatas/lista3-afnd/L3-AFND-p095.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-AFND-p096.jff	S	q0		true	false
+automatas/lista3-afnd/L3-AFND-p096.jff	S	q1		false	false
+automatas/lista3-afnd/L3-AFND-p096.jff	S	q2		false	false
+automatas/lista3-afnd/L3-AFND-p096.jff	S	q3		false	false
+automatas/lista3-afnd/L3-AFND-p096.jff	S	q4		false	true
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q2	q3	0
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q2	q3	2
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q3	q4	2
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q3	q4	1
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-AFND-p096.jff	T	q0	q1	2
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q2	0,1,2	false	false
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q3	3,0	false	false
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q4	4,1,0	false	false
+automatas/lista3-afnd/L3-AFND-p098.jff	S	q5	5,0	false	true
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q1	q0	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q5	q0	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q4	q5	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q5	q0	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q1	q0	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q2	q0	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q4	q2	0
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q0	q0	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q4	q0	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q5	q1	0
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q3	q0	2
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q3	q0	1
+automatas/lista3-afnd/L3-AFND-p098.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q2	0,1,2	false	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q3	0,3	false	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q4	1,4,0	false	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q5	2,5,0,1	false	false
+automatas/lista3-afnd/L3-AFND-p099.jff	S	q6	6,0,3	false	true
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q5	q2	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q2	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q4	q0	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q6	q4	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q6	q0	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q0	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q4	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q6	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q3	q0	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q5	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q4	q5	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q3	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q5	q6	1
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q1	q0	2
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-AFND-p099.jff	T	q1	q0	1
+automatas/lista3-afnd/L3-189.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-189.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-189.jff	S	q2	0,1,2	false	false
+automatas/lista3-afnd/L3-189.jff	S	q3	3,0	false	false
+automatas/lista3-afnd/L3-189.jff	S	q4	0,4,1	false	false
+automatas/lista3-afnd/L3-189.jff	S	q5	0,5	false	false
+automatas/lista3-afnd/L3-189.jff	S	q6	6,0	false	true
+automatas/lista3-afnd/L3-189.jff	S	q7	6,0,1	false	true
+automatas/lista3-afnd/L3-189.jff	S	q8	6,0,1,2	false	true
+automatas/lista3-afnd/L3-189.jff	S	q9	6,3,0	false	true
+automatas/lista3-afnd/L3-189.jff	S	q10	6,0,4,1	false	true
+automatas/lista3-afnd/L3-189.jff	S	q11	6,0,5	false	true
+automatas/lista3-afnd/L3-189.jff	T	q4	q6	1
+automatas/lista3-afnd/L3-189.jff	T	q10	q6	1
+automatas/lista3-afnd/L3-189.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-189.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-189.jff	T	q9	q11	1
+automatas/lista3-afnd/L3-189.jff	T	q7	q8	0
+automatas/lista3-afnd/L3-189.jff	T	q3	q5	1
+automatas/lista3-afnd/L3-189.jff	T	q5	q7	0
+automatas/lista3-afnd/L3-189.jff	T	q5	q0	1
+automatas/lista3-afnd/L3-189.jff	T	q4	q2	0
+automatas/lista3-afnd/L3-189.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-189.jff	T	q1	q0	1
+automatas/lista3-afnd/L3-189.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-189.jff	T	q6	q7	0
+automatas/lista3-afnd/L3-189.jff	T	q8	q8	0
+automatas/lista3-afnd/L3-189.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-189.jff	T	q6	q6	1
+automatas/lista3-afnd/L3-189.jff	T	q7	q6	1
+automatas/lista3-afnd/L3-189.jff	T	q10	q8	0
+automatas/lista3-afnd/L3-189.jff	T	q9	q10	0
+automatas/lista3-afnd/L3-189.jff	T	q11	q7	0
+automatas/lista3-afnd/L3-189.jff	T	q11	q6	1
+automatas/lista3-afnd/L3-189.jff	T	q8	q9	1
+automatas/lista3-afnd/L3-189.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-190.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-190.jff	S	q1	0,1,10,19,24	false	false
+automatas/lista3-afnd/L3-190.jff	S	q2	0,1,10,19,24,2,20,25	false	false
+automatas/lista3-afnd/L3-190.jff	S	q3	0,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q4	26,21,0,3,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q5	0,1,10,19,24,12	false	false
+automatas/lista3-afnd/L3-190.jff	S	q6	27,22,0,1,10,19,24,4,12	false	false
+automatas/lista3-afnd/L3-190.jff	S	q7	0,11,13	false	false
+automatas/lista3-afnd/L3-190.jff	S	q8	13,23,0,5,28,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q9	14,0	false	false
+automatas/lista3-afnd/L3-190.jff	S	q10	12,1,24,29,10,19,0,5,6	false	false
+automatas/lista3-afnd/L3-190.jff	S	q11	14,31,0,5	false	true
+automatas/lista3-afnd/L3-190.jff	S	q12	14,15,0,1,10,19,24	false	false
+automatas/lista3-afnd/L3-190.jff	S	q13	2,25,20,0,1,10,19,24,5,6	false	false
+automatas/lista3-afnd/L3-190.jff	S	q14	30,13,0,5,7,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q15	1,24,31,14,10,19,15,0,5,6	false	true
+automatas/lista3-afnd/L3-190.jff	S	q16	14,15,16,0,1,10,19,24,2,20,25	false	false
+automatas/lista3-afnd/L3-190.jff	S	q17	14,0,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q18	26,21,0,5,3,7,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q19	12,1,24,10,19,0,8,5,6	false	false
+automatas/lista3-afnd/L3-190.jff	S	q20	2,25,31,14,15,20,16,0,1,10,19,24,5,6	false	true
+automatas/lista3-afnd/L3-190.jff	S	q21	31,14,0,5,7,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q22	17,26,14,21,0,3,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q23	12,1,24,14,10,19,15,0	false	false
+automatas/lista3-afnd/L3-190.jff	S	q24	27,22,0,1,10,19,24,5,6,4,8,12	false	false
+automatas/lista3-afnd/L3-190.jff	S	q25	0,5	false	false
+automatas/lista3-afnd/L3-190.jff	S	q26	9,13,0,5,7,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q27	17,31,26,14,21,0,5,3,7,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q28	12,1,24,31,14,10,19,15,0,8,5,6	false	true
+automatas/lista3-afnd/L3-190.jff	S	q29	12,22,1,24,14,10,27,18,19,15,0,4	false	false
+automatas/lista3-afnd/L3-190.jff	S	q30	13,14,0,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q31	9,13,23,0,5,7,28,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q32	1,24,10,19,0,5,6	false	false
+automatas/lista3-afnd/L3-190.jff	S	q33	18,31,27,14,15,22,0,1,10,19,24,5,6,4,8,12	false	true
+automatas/lista3-afnd/L3-190.jff	S	q34	9,31,13,14,0,5,7,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q35	31,13,23,14,0,5,28,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q36	12,1,24,29,10,19,0,8,5,6	false	false
+automatas/lista3-afnd/L3-190.jff	S	q37	0,5,7,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q38	9,31,13,23,14,0,5,7,28,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q39	12,1,24,31,14,29,10,19,15,0,5,6	false	true
+automatas/lista3-afnd/L3-190.jff	S	q40	9,30,13,0,5,7,11	false	false
+automatas/lista3-afnd/L3-190.jff	S	q41	31,14,15,0,1,10,19,24,5,6,8,29,12	false	true
+automatas/lista3-afnd/L3-190.jff	S	q42	30,31,13,14,0,5,7,11	false	true
+automatas/lista3-afnd/L3-190.jff	S	q43	9,30,31,13,14,0,5,7,11	false	true
+automatas/lista3-afnd/L3-190.jff	T	q18	q25	0
+automatas/lista3-afnd/L3-190.jff	T	q7	q9	0
+automatas/lista3-afnd/L3-190.jff	T	q32	q37	0
+automatas/lista3-afnd/L3-190.jff	T	q41	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q41	q43	0
+automatas/lista3-afnd/L3-190.jff	T	q1	q3	0
+automatas/lista3-afnd/L3-190.jff	T	q27	q33	1
+automatas/lista3-afnd/L3-190.jff	T	q18	q24	1
+automatas/lista3-afnd/L3-190.jff	T	q12	q17	0
+automatas/lista3-afnd/L3-190.jff	T	q9	q12	1
+automatas/lista3-afnd/L3-190.jff	T	q37	q19	1
+automatas/lista3-afnd/L3-190.jff	T	q25	q32	1
+automatas/lista3-afnd/L3-190.jff	T	q16	q22	0
+automatas/lista3-afnd/L3-190.jff	T	q15	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-190.jff	T	q30	q23	1
+automatas/lista3-afnd/L3-190.jff	T	q23	q30	0
+automatas/lista3-afnd/L3-190.jff	T	q42	q28	1
+automatas/lista3-afnd/L3-190.jff	T	q43	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q21	q28	1
+automatas/lista3-afnd/L3-190.jff	T	q37	q25	0
+automatas/lista3-afnd/L3-190.jff	T	q34	q28	1
+automatas/lista3-afnd/L3-190.jff	T	q28	q34	0
+automatas/lista3-afnd/L3-190.jff	T	q35	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q0	q0	0
+automatas/lista3-afnd/L3-190.jff	T	q7	q5	1
+automatas/lista3-afnd/L3-190.jff	T	q9	q9	0
+automatas/lista3-afnd/L3-190.jff	T	q11	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q25	q25	0
+automatas/lista3-afnd/L3-190.jff	T	q2	q2	1
+automatas/lista3-afnd/L3-190.jff	T	q5	q7	0
+automatas/lista3-afnd/L3-190.jff	T	q13	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q16	q16	1
+automatas/lista3-afnd/L3-190.jff	T	q20	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q17	q9	0
+automatas/lista3-afnd/L3-190.jff	T	q29	q35	0
+automatas/lista3-afnd/L3-190.jff	T	q23	q16	1
+automatas/lista3-afnd/L3-190.jff	T	q39	q42	0
+automatas/lista3-afnd/L3-190.jff	T	q11	q15	1
+automatas/lista3-afnd/L3-190.jff	T	q33	q38	0
+automatas/lista3-afnd/L3-190.jff	T	q2	q4	0
+automatas/lista3-afnd/L3-190.jff	T	q29	q16	1
+automatas/lista3-afnd/L3-190.jff	T	q39	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q40	q19	1
+automatas/lista3-afnd/L3-190.jff	T	q35	q39	1
+automatas/lista3-afnd/L3-190.jff	T	q10	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q24	q31	0
+automatas/lista3-afnd/L3-190.jff	T	q38	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q19	q26	0
+automatas/lista3-afnd/L3-190.jff	T	q26	q19	1
+automatas/lista3-afnd/L3-190.jff	T	q30	q9	0
+automatas/lista3-afnd/L3-190.jff	T	q32	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q36	q40	0
+automatas/lista3-afnd/L3-190.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-190.jff	T	q13	q18	0
+automatas/lista3-afnd/L3-190.jff	T	q15	q21	0
+automatas/lista3-afnd/L3-190.jff	T	q33	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q36	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q4	q0	0
+automatas/lista3-afnd/L3-190.jff	T	q26	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q40	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q19	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q34	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q5	q2	1
+automatas/lista3-afnd/L3-190.jff	T	q42	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q43	q28	1
+automatas/lista3-afnd/L3-190.jff	T	q28	q20	1
+automatas/lista3-afnd/L3-190.jff	T	q17	q23	1
+automatas/lista3-afnd/L3-190.jff	T	q21	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q20	q27	0
+automatas/lista3-afnd/L3-190.jff	T	q12	q16	1
+automatas/lista3-afnd/L3-190.jff	T	q24	q13	1
+automatas/lista3-afnd/L3-190.jff	T	q31	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q14	q19	1
+automatas/lista3-afnd/L3-190.jff	T	q8	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q22	q29	1
+automatas/lista3-afnd/L3-190.jff	T	q8	q10	1
+automatas/lista3-afnd/L3-190.jff	T	q38	q41	1
+automatas/lista3-afnd/L3-190.jff	T	q31	q36	1
+automatas/lista3-afnd/L3-190.jff	T	q4	q6	1
+automatas/lista3-afnd/L3-190.jff	T	q22	q9	0
+automatas/lista3-afnd/L3-190.jff	T	q14	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q10	q14	0
+automatas/lista3-afnd/L3-190.jff	T	q3	q5	1
+automatas/lista3-afnd/L3-190.jff	T	q27	q11	0
+automatas/lista3-afnd/L3-190.jff	T	q6	q8	0
+automatas/lista3-afnd/L3-190.jff	T	q3	q0	0
+automatas/lista3-afnd/L3-190.jff	T	q6	q2	1
+automatas/lista3-afnd/L3-192-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-192-AFND.jff	S	q1	1	false	false
+automatas/lista3-afnd/L3-192-AFND.jff	S	q2	1,2	false	true
+automatas/lista3-afnd/L3-192-AFND.jff	S	q3	0,1	false	false
+automatas/lista3-afnd/L3-192-AFND.jff	S	q4	0,1,2	false	true
+automatas/lista3-afnd/L3-192-AFND.jff	T	q3	q3	0
+automatas/lista3-afnd/L3-192-AFND.jff	T	q4	q4	0
+automatas/lista3-afnd/L3-192-AFND.jff	T	q1	q3	0
+automatas/lista3-afnd/L3-192-AFND.jff	T	q0	q2	1
+automatas/lista3-afnd/L3-192-AFND.jff	T	q4	q2	1
+automatas/lista3-afnd/L3-192-AFND.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-192-AFND.jff	T	q2	q4	0
+automatas/lista3-afnd/L3-192-AFND.jff	T	q3	q2	1
+automatas/lista3-afnd/L3-193-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-193-AFND.jff	S	q1	1,2	false	false
+automatas/lista3-afnd/L3-193-AFND.jff	S	q2	0,3,2	false	true
+automatas/lista3-afnd/L3-193-AFND.jff	S	q3	1,2,3,0	false	true
+automatas/lista3-afnd/L3-193-AFND.jff	S	q4	2	false	false
+automatas/lista3-afnd/L3-193-AFND.jff	S	q5	2,0	false	false
+automatas/lista3-afnd/L3-193-AFND.jff	S	q6	1,2,0	false	false
+automatas/lista3-afnd/L3-193-AFND.jff	T	q2	q4	0
+automatas/lista3-afnd/L3-193-AFND.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q5	q6	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q4	q4	0
+automatas/lista3-afnd/L3-193-AFND.jff	T	q3	q3	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-193-AFND.jff	T	q6	q3	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q5	q4	0
+automatas/lista3-afnd/L3-193-AFND.jff	T	q4	q5	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q1	q3	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q6	q2	0
+automatas/lista3-afnd/L3-193-AFND.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-193-AFND.jff	T	q3	q2	0
+automatas/lista3-afnd/L3-194-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-194-AFND.jff	S	q1	0,2	false	true
+automatas/lista3-afnd/L3-194-AFND.jff	S	q2	0,1	false	false
+automatas/lista3-afnd/L3-194-AFND.jff	S	q3	0,2,1,3	false	true
+automatas/lista3-afnd/L3-194-AFND.jff	T	q2	q2	0
+automatas/lista3-afnd/L3-194-AFND.jff	T	q3	q3	1
+automatas/lista3-afnd/L3-194-AFND.jff	T	q3	q0	2
+automatas/lista3-afnd/L3-194-AFND.jff	T	q0	q0	2
+automatas/lista3-afnd/L3-194-AFND.jff	T	q2	q1	1
+automatas/lista3-afnd/L3-194-AFND.jff	T	q1	q2	0
+automatas/lista3-afnd/L3-194-AFND.jff	T	q1	q3	1
+automatas/lista3-afnd/L3-194-AFND.jff	T	q1	q0	2
+automatas/lista3-afnd/L3-194-AFND.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-194-AFND.jff	T	q0	q2	0
+automatas/lista3-afnd/L3-194-AFND.jff	T	q3	q2	0
+automatas/lista3-afnd/L3-194-AFND.jff	T	q2	q0	2
+automatas/lista3-afnd/L3-195-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-195-AFND.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-195-AFND.jff	S	q2	0,2	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q3	3,0	false	false
+automatas/lista3-afnd/L3-195-AFND.jff	S	q4	3,0,1	false	false
+automatas/lista3-afnd/L3-195-AFND.jff	S	q5	0,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q6	0,2,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q7	1,0,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q8	3,0,2	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q9	3,0,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q10	3,0,1,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	S	q11	3,0,2,4	false	true
+automatas/lista3-afnd/L3-195-AFND.jff	T	q6	q7	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q4	q6	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q2	q3	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q5	q8	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q8	q4	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q7	q8	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q2	q1	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q8	q9	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q1	q1	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q4	q4	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q7	q7	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q10	q10	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q5	q7	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q11	q11	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q9	q10	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q10	q11	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q6	q8	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q11	q10	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q9	q11	1
+automatas/lista3-afnd/L3-195-AFND.jff	T	q3	q4	0
+automatas/lista3-afnd/L3-195-AFND.jff	T	q3	q5	1
+automatas/conversiones/L3-196-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-196-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/L3-196-AFND.jff	S	q2	2	false	true
+automatas/conversiones/L3-196-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-196-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-196-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-196-AFND.jff	T	q1	q2	1
+automatas/conversiones/L3-197-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-197-AFND.jff	S	q1	0,1,2,3	false	true
+automatas/conversiones/L3-197-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-197-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-197-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-197-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-198-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-198-AFND.jff	S	q1	1,2	false	false
+automatas/conversiones/L3-198-AFND.jff	S	q2	1,2,3	false	true
+automatas/conversiones/L3-198-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-198-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-198-AFND.jff	T	q2	q2	1
+automatas/conversiones/L3-198-AFND.jff	T	q1	q2	1
+automatas/conversiones/L3-198-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-198-AFND.jff	T	q2	q1	0
+automatas/conversiones/L3-199-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-199-AFND.jff	S	q1	0,1,2,3,4	false	true
+automatas/conversiones/L3-199-AFND.jff	S	q2	4	false	true
+automatas/conversiones/L3-199-AFND.jff	S	q3	3	false	true
+automatas/conversiones/L3-199-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-199-AFND.jff	T	q1	q2	0
+automatas/conversiones/L3-199-AFND.jff	T	q3	q3	1
+automatas/conversiones/L3-199-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-199-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-199-AFND.jff	T	q2	q3	1
+automatas/conversiones/L3-200-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-200-AFND.jff	S	q1	2,3,4,5	false	true
+automatas/conversiones/L3-200-AFND.jff	S	q2	0,1,2,4,5	false	true
+automatas/conversiones/L3-200-AFND.jff	S	q3	2,4,1,0	false	true
+automatas/conversiones/L3-200-AFND.jff	S	q4	0,1,2,3,4,5	false	true
+automatas/conversiones/L3-200-AFND.jff	S	q5	5,2,4,1,3	false	true
+automatas/conversiones/L3-200-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-200-AFND.jff	T	q4	q4	0
+automatas/conversiones/L3-200-AFND.jff	T	q4	q4	1
+automatas/conversiones/L3-200-AFND.jff	T	q5	q4	1
+automatas/conversiones/L3-200-AFND.jff	T	q1	q4	1
+automatas/conversiones/L3-200-AFND.jff	T	q5	q4	0
+automatas/conversiones/L3-200-AFND.jff	T	q2	q4	1
+automatas/conversiones/L3-200-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-200-AFND.jff	T	q2	q5	0
+automatas/conversiones/L3-200-AFND.jff	T	q3	q4	1
+automatas/conversiones/L3-200-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-200-AFND.jff	T	q3	q1	0
+automatas/conversiones/L3-VF-201-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-201-AFND.jff	S	q1	2,3	false	true
+automatas/conversiones/L3-VF-201-AFND.jff	S	q2	3,1	false	true
+automatas/conversiones/L3-VF-201-AFND.jff	T	q0	q1	b
+automatas/conversiones/L3-VF-201-AFND.jff	T	q0	q2	a
+automatas/conversiones/L3-VF-202-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-202-AFND.jff	S	q1	1,2	false	false
+automatas/conversiones/L3-VF-202-AFND.jff	S	q2	3	false	true
+automatas/conversiones/L3-VF-202-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-202-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-203-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-203-AFND.jff	S	q1	1,2,3,7	false	true
+automatas/conversiones/L3-VF-203-AFND.jff	S	q2	7,5,4,6	false	true
+automatas/conversiones/L3-VF-203-AFND.jff	T	q1	q1	a
+automatas/conversiones/L3-VF-203-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-203-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-203-AFND.jff	T	q0	q2	b
+automatas/conversiones/L3-VF-204-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-204-AFND.jff	S	q1	1,2,3,5	false	true
+automatas/conversiones/L3-VF-204-AFND.jff	S	q2	3,4,5	false	true
+automatas/conversiones/L3-VF-204-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-204-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-204-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-205-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-205-AFND.jff	S	q1	1,2,3,4	false	false
+automatas/conversiones/L3-VF-205-AFND.jff	S	q2	5	false	true
+automatas/conversiones/L3-VF-205-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-205-AFND.jff	T	q1	q1	a
+automatas/conversiones/L3-VF-205-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-205-AFND.jff	T	q0	q2	b
+automatas/conversiones/L3-VF-208-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-208-AFND.jff	S	q1	1,2,3,4	false	false
+automatas/conversiones/L3-VF-208-AFND.jff	S	q2	5	false	true
+automatas/conversiones/L3-VF-208-AFND.jff	T	q0	q2	b
+automatas/conversiones/L3-VF-208-AFND.jff	T	q1	q1	a
+automatas/conversiones/L3-VF-208-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-208-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-209-AFND.jff	S	q0		true	false
+automatas/conversiones/L3-VF-210-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-210-AFND.jff	S	q1	1,2,3,4,6,7	false	true
+automatas/conversiones/L3-VF-210-AFND.jff	S	q2	7,1,6,4,2,5	false	true
+automatas/conversiones/L3-VF-210-AFND.jff	T	q1	q1	a
+automatas/conversiones/L3-VF-210-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-210-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-210-AFND.jff	T	q0	q2	b
+automatas/conversiones/L3-VF-210-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-210-AFND.jff	T	q2	q1	a
+automatas/conversiones/L3-VF-211-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-211-AFND.jff	S	q1	1,2	false	false
+automatas/conversiones/L3-VF-211-AFND.jff	S	q2	3,4,5,7	false	true
+automatas/conversiones/L3-VF-211-AFND.jff	S	q3	5,6,7	false	true
+automatas/conversiones/L3-VF-211-AFND.jff	T	q2	q3	c
+automatas/conversiones/L3-VF-211-AFND.jff	T	q3	q3	c
+automatas/conversiones/L3-VF-211-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-211-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-212-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-212-AFND.jff	S	q1	1,2,3,5,6	false	false
+automatas/conversiones/L3-VF-212-AFND.jff	S	q2	3,4,5,6	false	false
+automatas/conversiones/L3-VF-212-AFND.jff	S	q3	7	false	true
+automatas/conversiones/L3-VF-212-AFND.jff	T	q1	q3	c
+automatas/conversiones/L3-VF-212-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-212-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-212-AFND.jff	T	q2	q3	c
+automatas/conversiones/L3-VF-212-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-213-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-213-AFND.jff	S	q1	1,2,3,5,6,7,9	false	true
+automatas/conversiones/L3-VF-213-AFND.jff	S	q2	7,8,9	false	true
+automatas/conversiones/L3-VF-213-AFND.jff	S	q3	3,4,5,6,7,9	false	true
+automatas/conversiones/L3-VF-213-AFND.jff	T	q1	q2	c
+automatas/conversiones/L3-VF-213-AFND.jff	T	q3	q3	b
+automatas/conversiones/L3-VF-213-AFND.jff	T	q2	q2	c
+automatas/conversiones/L3-VF-213-AFND.jff	T	q1	q3	b
+automatas/conversiones/L3-VF-213-AFND.jff	T	q3	q2	c
+automatas/conversiones/L3-VF-213-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-214-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-214-AFND.jff	S	q1	1,2,4,5,6,8,9	false	true
+automatas/conversiones/L3-VF-214-AFND.jff	S	q2	4,2,1,9,7,6,8	false	true
+automatas/conversiones/L3-VF-214-AFND.jff	S	q3	4,2,1,9,3,6,8	false	true
+automatas/conversiones/L3-VF-214-AFND.jff	T	q3	q2	c
+automatas/conversiones/L3-VF-214-AFND.jff	T	q3	q3	a
+automatas/conversiones/L3-VF-214-AFND.jff	T	q1	q1	b
+automatas/conversiones/L3-VF-214-AFND.jff	T	q2	q3	a
+automatas/conversiones/L3-VF-214-AFND.jff	T	q2	q2	c
+automatas/conversiones/L3-VF-214-AFND.jff	T	q1	q3	a
+automatas/conversiones/L3-VF-214-AFND.jff	T	q2	q1	b
+automatas/conversiones/L3-VF-214-AFND.jff	T	q1	q2	c
+automatas/conversiones/L3-VF-214-AFND.jff	T	q3	q1	b
+automatas/conversiones/L3-VF-214-AFND.jff	T	q0	q2	c
+automatas/conversiones/L3-VF-214-AFND.jff	T	q0	q3	a
+automatas/conversiones/L3-VF-214-AFND.jff	T	q0	q1	b
+automatas/conversiones/L3-VF-215-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-215-AFND.jff	S	q1	2,3	false	false
+automatas/conversiones/L3-VF-215-AFND.jff	S	q2	4,5	false	false
+automatas/conversiones/L3-VF-215-AFND.jff	S	q3	1,6,7	false	true
+automatas/conversiones/L3-VF-215-AFND.jff	T	q3	q1	a
+automatas/conversiones/L3-VF-215-AFND.jff	T	q2	q3	c
+automatas/conversiones/L3-VF-215-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-215-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-216-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-216-AFND.jff	S	q1	7	false	true
+automatas/conversiones/L3-VF-216-AFND.jff	S	q2	2,3	false	false
+automatas/conversiones/L3-VF-216-AFND.jff	S	q3	1,4,5,6	false	false
+automatas/conversiones/L3-VF-216-AFND.jff	T	q2	q3	b
+automatas/conversiones/L3-VF-216-AFND.jff	T	q3	q2	a
+automatas/conversiones/L3-VF-216-AFND.jff	T	q0	q2	a
+automatas/conversiones/L3-VF-216-AFND.jff	T	q3	q1	c
+automatas/conversiones/L3-VF-216-AFND.jff	T	q0	q1	c
+automatas/conversiones/L3-VF-217-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-217-AFND.jff	S	q1	1,2,3,7	false	true
+automatas/conversiones/L3-VF-217-AFND.jff	S	q2	4,5	false	false
+automatas/conversiones/L3-VF-217-AFND.jff	S	q3	3,6,7	false	true
+automatas/conversiones/L3-VF-217-AFND.jff	T	q2	q3	c
+automatas/conversiones/L3-VF-217-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-217-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-217-AFND.jff	T	q3	q2	b
+automatas/conversiones/L3-VF-218-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-218-AFND.jff	S	q1	1,2,3,4,6,9	false	true
+automatas/conversiones/L3-VF-218-AFND.jff	S	q2	6,3,9,8,7,4	false	true
+automatas/conversiones/L3-VF-218-AFND.jff	S	q3	5,6,3,9,8,4	false	true
+automatas/conversiones/L3-VF-218-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-218-AFND.jff	T	q3	q3	b
+automatas/conversiones/L3-VF-218-AFND.jff	T	q2	q2	c
+automatas/conversiones/L3-VF-218-AFND.jff	T	q1	q3	b
+automatas/conversiones/L3-VF-218-AFND.jff	T	q1	q2	c
+automatas/conversiones/L3-VF-218-AFND.jff	T	q2	q3	b
+automatas/conversiones/L3-VF-218-AFND.jff	T	q3	q2	c
+automatas/conversiones/L3-VF-219-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-219-AFND.jff	S	q1	1,2,4,5,6,7,8	false	false
+automatas/conversiones/L3-VF-219-AFND.jff	S	q2	4,7,1,3,6,2,8	false	false
+automatas/conversiones/L3-VF-219-AFND.jff	S	q3	9	false	true
+automatas/conversiones/L3-VF-219-AFND.jff	T	q0	q2	a
+automatas/conversiones/L3-VF-219-AFND.jff	T	q1	q3	c
+automatas/conversiones/L3-VF-219-AFND.jff	T	q2	q2	a
+automatas/conversiones/L3-VF-219-AFND.jff	T	q1	q1	b
+automatas/conversiones/L3-VF-219-AFND.jff	T	q0	q3	c
+automatas/conversiones/L3-VF-219-AFND.jff	T	q1	q2	a
+automatas/conversiones/L3-VF-219-AFND.jff	T	q2	q3	c
+automatas/conversiones/L3-VF-219-AFND.jff	T	q2	q1	b
+automatas/conversiones/L3-VF-219-AFND.jff	T	q0	q1	b
+automatas/conversiones/L3-VF-220-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-220-AFND.jff	S	q1	9,10,11	false	true
+automatas/conversiones/L3-VF-220-AFND.jff	S	q2	1,2,3,4,6,7,8,9,11	false	true
+automatas/conversiones/L3-VF-220-AFND.jff	S	q3	7,9,5,1,6,2,4,8,11	false	true
+automatas/conversiones/L3-VF-220-AFND.jff	T	q2	q2	a
+automatas/conversiones/L3-VF-220-AFND.jff	T	q3	q1	c
+automatas/conversiones/L3-VF-220-AFND.jff	T	q3	q3	b
+automatas/conversiones/L3-VF-220-AFND.jff	T	q1	q1	c
+automatas/conversiones/L3-VF-220-AFND.jff	T	q0	q3	b
+automatas/conversiones/L3-VF-220-AFND.jff	T	q0	q1	c
+automatas/conversiones/L3-VF-220-AFND.jff	T	q2	q1	c
+automatas/conversiones/L3-VF-220-AFND.jff	T	q3	q2	a
+automatas/conversiones/L3-VF-220-AFND.jff	T	q2	q3	b
+automatas/conversiones/L3-VF-220-AFND.jff	T	q0	q2	a
+automatas/conversiones/L3-VF-223-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-223-AFND.jff	S	q1	5,6,7	false	true
+automatas/conversiones/L3-VF-223-AFND.jff	S	q2	1,2,3,4,5,7	false	true
+automatas/conversiones/L3-VF-223-AFND.jff	T	q2	q2	a
+automatas/conversiones/L3-VF-223-AFND.jff	T	q1	q1	b
+automatas/conversiones/L3-VF-223-AFND.jff	T	q0	q2	a
+automatas/conversiones/L3-VF-223-AFND.jff	T	q2	q1	b
+automatas/conversiones/L3-VF-223-AFND.jff	T	q0	q1	b
+automatas/conversiones/L3-VF-225-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-VF-225-AFND.jff	S	q1	1,2,3,4,6,9	false	true
+automatas/conversiones/L3-VF-225-AFND.jff	S	q2	6,7,8,9,3,4	false	true
+automatas/conversiones/L3-VF-225-AFND.jff	S	q3	6,8,9,3,5,4	false	true
+automatas/conversiones/L3-VF-225-AFND.jff	T	q3	q3	a
+automatas/conversiones/L3-VF-225-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-225-AFND.jff	T	q1	q3	a
+automatas/conversiones/L3-VF-225-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-225-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-225-AFND.jff	T	q2	q3	a
+automatas/conversiones/L3-VF-225-AFND.jff	T	q3	q2	b
+automatas/lista3-afnd-lambda/L3-VF-226.jff	S	q0		true	false
+automatas/lista3-afnd-lambda/L3-VF-226.jff	S	q1		false	true
+automatas/lista3-afnd-lambda/L3-VF-226.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-228-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-228-AFND.jff	S	q1	1,2,3,4,6,7,8,9	false	true
+automatas/conversiones/L3-VF-228-AFND.jff	S	q2	1,2,4,5,6,7,9	false	true
+automatas/conversiones/L3-VF-228-AFND.jff	S	q3	6,4,1,3,7,9,2	false	true
+automatas/conversiones/L3-VF-228-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-228-AFND.jff	T	q3	q3	a
+automatas/conversiones/L3-VF-228-AFND.jff	T	q1	q3	a
+automatas/conversiones/L3-VF-228-AFND.jff	T	q2	q2	b
+automatas/conversiones/L3-VF-228-AFND.jff	T	q0	q2	b
+automatas/conversiones/L3-VF-228-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-VF-228-AFND.jff	T	q2	q3	a
+automatas/conversiones/L3-VF-228-AFND.jff	T	q3	q2	b
+automatas/lista3-afnd-lambda/L3-VF-229.jff	S	q0		true	false
+automatas/lista3-afnd-lambda/L3-VF-229.jff	S	q1		false	true
+automatas/conversiones/L3-VF-230-AFND.jff	S	q0		true	true
+automatas/conversiones/L3-VF-231-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-231-AFND.jff	S	q1	1,2	false	true
+automatas/conversiones/L3-VF-231-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-232-AFND.jff	S	q0		true	false
+automatas/conversiones/L3-VF-232-AFND.jff	S	q3		false	true
+automatas/conversiones/L3-VF-232-AFND.jff	T	q0	q3	a
+automatas/conversiones/L3-VF-234-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-VF-234-AFND.jff	S	q1	2,3	false	false
+automatas/conversiones/L3-VF-234-AFND.jff	S	q2	1,4,5	false	true
+automatas/conversiones/L3-VF-234-AFND.jff	T	q0	q1	a
+automatas/conversiones/L3-VF-234-AFND.jff	T	q2	q1	a
+automatas/conversiones/L3-VF-234-AFND.jff	T	q1	q2	b
+automatas/conversiones/L3-236-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-236-AFND.jff	S	q1	1,2,4,5,6,7,8	false	false
+automatas/conversiones/L3-236-AFND.jff	S	q2	1,2,3,4,6,7,8,9,10	false	false
+automatas/conversiones/L3-236-AFND.jff	S	q3	1,2,3,4,6,7,8,9,10,11,12	false	false
+automatas/conversiones/L3-236-AFND.jff	S	q4	1,2,4,5,6,7,8,13,14,15,16,18,21	false	true
+automatas/conversiones/L3-236-AFND.jff	S	q5	4,16,21,6,20,7,19,8,15,2,5,18,1	false	true
+automatas/conversiones/L3-236-AFND.jff	S	q6	1,2,3,4,6,7,8,9,10,15,16,17,18,20,21	false	true
+automatas/conversiones/L3-236-AFND.jff	S	q7	1,2,3,4,6,7,8,9,10,11,12,15,16,17,18,20,21	false	true
+automatas/conversiones/L3-236-AFND.jff	S	q8	4,16,21,6,20,7,19,8,15,13,2,14,5,18,1	false	true
+automatas/conversiones/L3-236-AFND.jff	T	q6	q7	0
+automatas/conversiones/L3-236-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-236-AFND.jff	T	q4	q5	1
+automatas/conversiones/L3-236-AFND.jff	T	q4	q6	0
+automatas/conversiones/L3-236-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-236-AFND.jff	T	q3	q4	1
+automatas/conversiones/L3-236-AFND.jff	T	q8	q5	1
+automatas/conversiones/L3-236-AFND.jff	T	q8	q6	0
+automatas/conversiones/L3-236-AFND.jff	T	q1	q2	0
+automatas/conversiones/L3-236-AFND.jff	T	q2	q1	1
+automatas/conversiones/L3-236-AFND.jff	T	q3	q3	0
+automatas/conversiones/L3-236-AFND.jff	T	q6	q5	1
+automatas/conversiones/L3-236-AFND.jff	T	q7	q7	0
+automatas/conversiones/L3-236-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-236-AFND.jff	T	q5	q5	1
+automatas/conversiones/L3-236-AFND.jff	T	q5	q6	0
+automatas/conversiones/L3-236-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-236-AFND.jff	T	q7	q8	1
+automatas/conversiones/L3-237-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-237-AFND.jff	S	q1	1,2,4,5,6,7,8	false	false
+automatas/conversiones/L3-237-AFND.jff	S	q2	1,2,3,4,6,7,8,9,10	false	false
+automatas/conversiones/L3-237-AFND.jff	S	q3	6,7,2,11,12,5,4,1,8	false	false
+automatas/conversiones/L3-237-AFND.jff	S	q4	1,2,3,4,6,7,8,9,10,13	false	true
+automatas/conversiones/L3-237-AFND.jff	T	q2	q2	0
+automatas/conversiones/L3-237-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-237-AFND.jff	T	q2	q3	1
+automatas/conversiones/L3-237-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-237-AFND.jff	T	q4	q2	0
+automatas/conversiones/L3-237-AFND.jff	T	q3	q4	0
+automatas/conversiones/L3-237-AFND.jff	T	q4	q3	1
+automatas/conversiones/L3-237-AFND.jff	T	q1	q2	0
+automatas/conversiones/L3-237-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-237-AFND.jff	T	q3	q1	1
+automatas/conversiones/L3-238-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-238-AFND.jff	S	q1	1,3,4,5,7	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q2	2,7,5,4,3	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q3	13,9,11,10,6	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q4	13,9,8,11,10	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q5	12,15,16,17,18,19,20,22,31	false	true
+automatas/conversiones/L3-238-AFND.jff	S	q6	16,18,17,22,19,20,15,14,31	false	true
+automatas/conversiones/L3-238-AFND.jff	S	q7	21,24,28,26,25	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q8	24,28,26,25,23	false	false
+automatas/conversiones/L3-238-AFND.jff	S	q9	27,30,31	false	true
+automatas/conversiones/L3-238-AFND.jff	S	q10	29,30,31	false	true
+automatas/conversiones/L3-238-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-238-AFND.jff	T	q2	q4	1
+automatas/conversiones/L3-238-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-238-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-238-AFND.jff	T	q8	q9	0
+automatas/conversiones/L3-238-AFND.jff	T	q7	q10	1
+automatas/conversiones/L3-238-AFND.jff	T	q8	q10	1
+automatas/conversiones/L3-238-AFND.jff	T	q1	q4	1
+automatas/conversiones/L3-238-AFND.jff	T	q7	q9	0
+automatas/conversiones/L3-238-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-238-AFND.jff	T	q3	q6	1
+automatas/conversiones/L3-238-AFND.jff	T	q4	q6	1
+automatas/conversiones/L3-238-AFND.jff	T	q6	q7	0
+automatas/conversiones/L3-238-AFND.jff	T	q6	q8	1
+automatas/conversiones/L3-238-AFND.jff	T	q5	q8	1
+automatas/conversiones/L3-238-AFND.jff	T	q4	q5	0
+automatas/conversiones/L3-238-AFND.jff	T	q5	q7	0
+automatas/conversiones/L3-238-AFND.jff	T	q3	q5	0
+automatas/conversiones/L3-239-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-239-AFND.jff	S	q1	12,13,15,16,17,18,19,20,21	false	false
+automatas/conversiones/L3-239-AFND.jff	S	q2	17,1,2,13,19,18,14,15,12	false	false
+automatas/conversiones/L3-239-AFND.jff	S	q3	17,23,13,19,18,14,15,22,12	false	true
+automatas/conversiones/L3-239-AFND.jff	S	q4	12,13,15,16,17,18,19,20,21,3,4,5,6,8,11,23	false	true
+automatas/conversiones/L3-239-AFND.jff	S	q5	12,13,14,15,17,18,19	false	false
+automatas/conversiones/L3-239-AFND.jff	S	q6	17,20,11,10,23,13,6,19,21,8,5,16,18,9,15,12	false	true
+automatas/conversiones/L3-239-AFND.jff	S	q7	12,13,14,15,17,18,19,22,23,5,6,7,8,10,11	false	true
+automatas/conversiones/L3-239-AFND.jff	S	q8	12,13,14,15,17,18,19,5,6,7,8,10,11,23	false	true
+automatas/conversiones/L3-239-AFND.jff	T	q7	q6	1
+automatas/conversiones/L3-239-AFND.jff	T	q8	q6	1
+automatas/conversiones/L3-239-AFND.jff	T	q4	q7	0
+automatas/conversiones/L3-239-AFND.jff	T	q6	q7	0
+automatas/conversiones/L3-239-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-239-AFND.jff	T	q2	q5	0
+automatas/conversiones/L3-239-AFND.jff	T	q5	q1	1
+automatas/conversiones/L3-239-AFND.jff	T	q5	q5	0
+automatas/conversiones/L3-239-AFND.jff	T	q7	q8	0
+automatas/conversiones/L3-239-AFND.jff	T	q8	q8	0
+automatas/conversiones/L3-239-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-239-AFND.jff	T	q4	q6	1
+automatas/conversiones/L3-239-AFND.jff	T	q6	q6	1
+automatas/conversiones/L3-239-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-239-AFND.jff	T	q2	q4	1
+automatas/conversiones/L3-239-AFND.jff	T	q3	q1	1
+automatas/conversiones/L3-239-AFND.jff	T	q3	q5	0
+automatas/conversiones/L3-239-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-240-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-240-AFND.jff	S	q1	3,6,7,8,10,15,16,34,37,38,39,41,47,50,51	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q2	5,6,7,8,10,36,37,38,39,41,49,50,51	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q3	1,2,4,9,12,13,14,32,33,35,40,43,44,45,46,48,52,53	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q4	1,2,4,11,12,13,14,17,18,19,20,22,31,75,32,33,35,42,43,44,45,46,48	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q5	1,2,4,11,12,13,14,32,33,35,42,43,44,45,46,48	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q6	5,6,7,8,10,36,37,38,39,41,49,50,51,54,55,56,58	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q7	3,6,7,8,10,15,16,21,24,25,26,28,34,37,38,39,41,47,50,51	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q8	8,50,51,10,24,41,37,39,49,5,38,7,26,25,28,6,36,23	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q9	1,2,4,9,12,13,14,32,33,35,40,43,44,45,46,48,52,53,57,60,61,62,63,65,74,75	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q10	1,2,4,11,12,13,14,32,33,35,42,43,44,45,46,48,59,60,61,62,63,65,74,75	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q11	1,2,4,9,12,13,14,19,20,22,27,30,31,75,32,33,35,40,43,44,45,46,48,52,53	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q12	2,18,31,35,42,48,20,29,33,22,14,12,75,30,43,17,1,4,44,19,13,11,46,32,45	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q13	2,31,35,42,48,20,29,33,22,14,12,75,30,43,1,4,44,19,13,11,46,32,45	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q14	47,8,71,50,51,10,16,64,41,37,39,68,38,7,15,3,6,69,34,67	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q15	5,6,7,8,10,36,37,38,39,41,49,50,51,54,55,56,58,66,67,68,69,71	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q16	8,66,71,50,51,10,41,37,39,49,68,5,38,7,6,69,67,36	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q17	8,50,51,10,24,41,37,39,49,55,5,38,7,58,26,54,25,28,6,36,56,23	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q18	2,65,35,48,62,33,14,63,53,12,75,43,52,9,74,40,1,4,44,70,13,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q19	62,63,65,72,73,74,75,1,2,4,11,12,13,14,17,18,19,20,22,31,32,33,35,42,43,44,45,46,48	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q20	1,2,4,9,12,13,14,32,33,35,40,43,44,45,46,48,52,53,57,60,61,62,63,65,74,75,70,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q21	2,65,35,42,48,62,33,14,63,12,75,60,43,72,74,61,1,4,44,13,11,59,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q22	2,65,35,42,48,62,33,14,63,12,75,43,72,74,1,4,44,13,11,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q23	1,2,4,9,12,13,14,52,53,19,20,22,27,30,31,75,32,33,35,40,43,44,45,46,48,57,60,61,62,63,65,74	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q24	1,2,4,11,12,13,14,19,20,22,29,30,31,75,32,33,35,42,43,44,45,46,48,59,60,61,62,63,65,74	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q25	47,8,71,50,51,10,24,16,64,41,37,39,68,38,7,15,26,21,3,25,28,6,69,34,67	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q26	8,66,71,50,51,10,24,41,37,39,49,68,5,38,7,26,25,28,6,69,67,36,23	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q27	5,6,7,8,10,54,55,56,58,23,24,25,26,28,36,37,38,39,41,49,50,51,66,67,68,69,71	false	false
+automatas/conversiones/L3-240-AFND.jff	S	q28	52,53,1,2,4,9,12,13,14,19,20,22,27,30,31,75,62,63,65,70,73,74,32,33,35,40,43,44,45,46,48	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q29	2,18,65,31,35,42,48,20,29,62,33,22,14,63,12,75,30,43,72,74,17,1,4,44,19,13,11,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q30	2,65,31,35,42,48,20,29,62,33,22,14,63,12,75,30,43,72,74,1,4,44,19,13,11,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q31	1,2,4,9,12,13,14,57,60,61,62,63,65,74,75,19,20,22,27,30,31,32,33,35,40,43,44,45,46,48,52,53,70,73	false	true
+automatas/conversiones/L3-240-AFND.jff	S	q32	2,65,31,35,42,48,20,29,62,33,22,14,63,12,75,60,30,43,72,74,61,1,4,44,19,13,11,59,46,32,45,73	false	true
+automatas/conversiones/L3-240-AFND.jff	T	q22	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q27	q31	0
+automatas/conversiones/L3-240-AFND.jff	T	q6	q10	1
+automatas/conversiones/L3-240-AFND.jff	T	q31	q27	1
+automatas/conversiones/L3-240-AFND.jff	T	q24	q26	1
+automatas/conversiones/L3-240-AFND.jff	T	q5	q1	0
+automatas/conversiones/L3-240-AFND.jff	T	q29	q26	1
+automatas/conversiones/L3-240-AFND.jff	T	q21	q16	1
+automatas/conversiones/L3-240-AFND.jff	T	q16	q18	0
+automatas/conversiones/L3-240-AFND.jff	T	q20	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q23	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q28	q27	1
+automatas/conversiones/L3-240-AFND.jff	T	q9	q15	1
+automatas/conversiones/L3-240-AFND.jff	T	q17	q24	1
+automatas/conversiones/L3-240-AFND.jff	T	q10	q16	1
+automatas/conversiones/L3-240-AFND.jff	T	q15	q20	0
+automatas/conversiones/L3-240-AFND.jff	T	q2	q5	1
+automatas/conversiones/L3-240-AFND.jff	T	q5	q2	1
+automatas/conversiones/L3-240-AFND.jff	T	q20	q15	1
+automatas/conversiones/L3-240-AFND.jff	T	q9	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q3	q6	1
+automatas/conversiones/L3-240-AFND.jff	T	q26	q30	1
+automatas/conversiones/L3-240-AFND.jff	T	q30	q26	1
+automatas/conversiones/L3-240-AFND.jff	T	q26	q28	0
+automatas/conversiones/L3-240-AFND.jff	T	q19	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q32	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q15	q21	1
+automatas/conversiones/L3-240-AFND.jff	T	q18	q15	1
+automatas/conversiones/L3-240-AFND.jff	T	q12	q8	1
+automatas/conversiones/L3-240-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-240-AFND.jff	T	q27	q32	1
+automatas/conversiones/L3-240-AFND.jff	T	q29	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q25	q29	1
+automatas/conversiones/L3-240-AFND.jff	T	q14	q19	1
+automatas/conversiones/L3-240-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-240-AFND.jff	T	q10	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q12	q7	0
+automatas/conversiones/L3-240-AFND.jff	T	q24	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q7	q12	1
+automatas/conversiones/L3-240-AFND.jff	T	q4	q7	0
+automatas/conversiones/L3-240-AFND.jff	T	q8	q13	1
+automatas/conversiones/L3-240-AFND.jff	T	q13	q8	1
+automatas/conversiones/L3-240-AFND.jff	T	q32	q26	1
+automatas/conversiones/L3-240-AFND.jff	T	q23	q27	1
+automatas/conversiones/L3-240-AFND.jff	T	q19	q26	1
+automatas/conversiones/L3-240-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-240-AFND.jff	T	q25	q28	0
+automatas/conversiones/L3-240-AFND.jff	T	q28	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q30	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q8	q11	0
+automatas/conversiones/L3-240-AFND.jff	T	q17	q23	0
+automatas/conversiones/L3-240-AFND.jff	T	q11	q17	1
+automatas/conversiones/L3-240-AFND.jff	T	q14	q18	0
+automatas/conversiones/L3-240-AFND.jff	T	q18	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q21	q14	0
+automatas/conversiones/L3-240-AFND.jff	T	q31	q25	0
+automatas/conversiones/L3-240-AFND.jff	T	q6	q9	0
+automatas/conversiones/L3-240-AFND.jff	T	q4	q8	1
+automatas/conversiones/L3-240-AFND.jff	T	q13	q7	0
+automatas/conversiones/L3-240-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-240-AFND.jff	T	q3	q1	0
+automatas/conversiones/L3-240-AFND.jff	T	q7	q11	0
+automatas/conversiones/L3-240-AFND.jff	T	q11	q7	0
+automatas/conversiones/L3-240-AFND.jff	T	q1	q4	1
+automatas/conversiones/L3-240-AFND.jff	T	q16	q22	1
+automatas/conversiones/L3-240-AFND.jff	T	q22	q16	1
+automatas/conversiones/L3-241-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-241-AFND.jff	S	q1	2,3	false	true
+automatas/conversiones/L3-241-AFND.jff	S	q2	3,1	false	true
+automatas/conversiones/L3-241-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-241-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-242-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-242-AFND.jff	S	q1	1,2,3,5	false	true
+automatas/conversiones/L3-242-AFND.jff	S	q2	4,5	false	true
+automatas/conversiones/L3-242-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-242-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-242-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-243-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-243-AFND.jff	S	q1	1,2,4,5,6,7	false	true
+automatas/conversiones/L3-243-AFND.jff	S	q2	2,6,3,7,4,1	false	true
+automatas/conversiones/L3-243-AFND.jff	T	q2	q2	0
+automatas/conversiones/L3-243-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-243-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-243-AFND.jff	T	q2	q1	1
+automatas/conversiones/L3-243-AFND.jff	T	q1	q2	0
+automatas/conversiones/L3-243-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-244-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-244-AFND.jff	S	q1	1,2,3,5	false	false
+automatas/conversiones/L3-244-AFND.jff	S	q2	4,7	false	true
+automatas/conversiones/L3-244-AFND.jff	S	q3	6,7	false	true
+automatas/conversiones/L3-244-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-244-AFND.jff	T	q1	q2	0
+automatas/conversiones/L3-244-AFND.jff	T	q1	q3	1
+automatas/conversiones/L3-245-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-245-AFND.jff	S	q1	1,2,3,4,6,9	false	true
+automatas/conversiones/L3-245-AFND.jff	S	q2	7,9,8,4,6,3	false	true
+automatas/conversiones/L3-245-AFND.jff	S	q3	5,9,8,4,6,3	false	true
+automatas/conversiones/L3-245-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-245-AFND.jff	T	q3	q3	0
+automatas/conversiones/L3-245-AFND.jff	T	q2	q2	1
+automatas/conversiones/L3-245-AFND.jff	T	q3	q2	1
+automatas/conversiones/L3-245-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-245-AFND.jff	T	q1	q2	1
+automatas/conversiones/L3-245-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-246-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-246-AFND.jff	S	q1	1,2,3,4,5,6,7,9	false	true
+automatas/conversiones/L3-246-AFND.jff	S	q2	8,9	false	true
+automatas/conversiones/L3-246-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-246-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-246-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-246-AFND.jff	T	q1	q2	1
+automatas/conversiones/L3-247-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-247-AFND.jff	S	q1	6,7,8,9	false	true
+automatas/conversiones/L3-247-AFND.jff	S	q2	2,3	false	false
+automatas/conversiones/L3-247-AFND.jff	S	q3	9,4,1,5	false	true
+automatas/conversiones/L3-247-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-247-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-247-AFND.jff	T	q3	q2	0
+automatas/conversiones/L3-247-AFND.jff	T	q2	q3	1
+automatas/conversiones/L3-247-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-248-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-248-AFND.jff	S	q1	1,2,3,5,6,7	false	true
+automatas/conversiones/L3-248-AFND.jff	S	q2	4,5,6	false	false
+automatas/conversiones/L3-248-AFND.jff	S	q3	7	false	true
+automatas/conversiones/L3-248-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-248-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-248-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-248-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-249-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-249-AFND.jff	S	q1	1,2,3,5,6,7,8,9	false	true
+automatas/conversiones/L3-249-AFND.jff	S	q2	4,5,6,7,9	false	true
+automatas/conversiones/L3-249-AFND.jff	S	q3	7,8,9	false	true
+automatas/conversiones/L3-249-AFND.jff	T	q1	q1	0
+automatas/conversiones/L3-249-AFND.jff	T	q3	q3	0
+automatas/conversiones/L3-249-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-249-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-249-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-250-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-250-AFND.jff	S	q1	1,2,3,4,5,7,12,13	false	true
+automatas/conversiones/L3-250-AFND.jff	S	q2	8,5,10,6,13,9,7,11	false	true
+automatas/conversiones/L3-250-AFND.jff	S	q3	1,2,3,4,5,7,13	false	true
+automatas/conversiones/L3-250-AFND.jff	S	q4	5,6,7,13	false	true
+automatas/conversiones/L3-250-AFND.jff	S	q5	12,13	false	true
+automatas/conversiones/L3-250-AFND.jff	T	q2	q5	0
+automatas/conversiones/L3-250-AFND.jff	T	q3	q3	0
+automatas/conversiones/L3-250-AFND.jff	T	q2	q2	1
+automatas/conversiones/L3-250-AFND.jff	T	q4	q4	1
+automatas/conversiones/L3-250-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-250-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-250-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-250-AFND.jff	T	q1	q4	1
+automatas/conversiones/L3-250-AFND.jff	T	q3	q4	1
+automatas/conversiones/L3-251-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-251-AFND.jff	S	q1	2,3,4,5,6,8,9,10,11,12,13	false	true
+automatas/conversiones/L3-251-AFND.jff	S	q2	1,5,6,7,13	false	true
+automatas/conversiones/L3-251-AFND.jff	S	q3	7,13	false	true
+automatas/conversiones/L3-251-AFND.jff	T	q1	q1	1
+automatas/conversiones/L3-251-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-251-AFND.jff	T	q2	q3	0
+automatas/conversiones/L3-251-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-251-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-252-AFND.jff	S	q0	0	true	false
+automatas/conversiones/L3-252-AFND.jff	S	q1	1,2,3,4,6,7,8,9,10,11,13,18,19	false	false
+automatas/conversiones/L3-252-AFND.jff	S	q2	7,6,14,15,4,22,1,8,5,9,2,21,13	false	false
+automatas/conversiones/L3-252-AFND.jff	S	q3	1,2,3,4,6,7,8,9,13,10,11,12,17,33,20,24,25,26,27,29,32	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q4	1,2,4,5,6,7,8,9,13,14,15	false	false
+automatas/conversiones/L3-252-AFND.jff	S	q5	7,10,6,3,4,1,8,9,2,13,11	false	false
+automatas/conversiones/L3-252-AFND.jff	S	q6	29,7,23,33,6,14,27,24,25,15,4,16,26,1,8,5,9,2,32,17,13	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q7	1,2,3,4,6,7,8,9,13,10,11,12,17,33,26,27,28,29,31,32	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q8	1,2,4,5,6,7,8,9,13,14,15,26,27,29,30,31,32,33	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q9	1,2,4,5,6,7,8,9,13,14,15,16,17,33	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q10	7,10,33,6,3,4,1,8,9,2,12,17,13,11	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q11	29,7,10,28,33,6,27,3,4,26,1,8,9,31,2,32,13,11	false	true
+automatas/conversiones/L3-252-AFND.jff	S	q12	29,7,33,6,14,27,15,4,30,16,26,1,8,5,9,31,2,32,17,13	false	true
+automatas/conversiones/L3-252-AFND.jff	T	q0	q2	1
+automatas/conversiones/L3-252-AFND.jff	T	q4	q9	1
+automatas/conversiones/L3-252-AFND.jff	T	q6	q12	1
+automatas/conversiones/L3-252-AFND.jff	T	q4	q5	0
+automatas/conversiones/L3-252-AFND.jff	T	q5	q4	1
+automatas/conversiones/L3-252-AFND.jff	T	q5	q10	0
+automatas/conversiones/L3-252-AFND.jff	T	q6	q11	0
+automatas/conversiones/L3-252-AFND.jff	T	q3	q7	0
+automatas/conversiones/L3-252-AFND.jff	T	q2	q6	1
+automatas/conversiones/L3-252-AFND.jff	T	q9	q5	0
+automatas/conversiones/L3-252-AFND.jff	T	q0	q1	0
+automatas/conversiones/L3-252-AFND.jff	T	q11	q7	0
+automatas/conversiones/L3-252-AFND.jff	T	q7	q8	1
+automatas/conversiones/L3-252-AFND.jff	T	q1	q3	0
+automatas/conversiones/L3-252-AFND.jff	T	q7	q7	0
+automatas/conversiones/L3-252-AFND.jff	T	q10	q10	0
+automatas/conversiones/L3-252-AFND.jff	T	q9	q9	1
+automatas/conversiones/L3-252-AFND.jff	T	q12	q12	1
+automatas/conversiones/L3-252-AFND.jff	T	q8	q12	1
+automatas/conversiones/L3-252-AFND.jff	T	q1	q4	1
+automatas/conversiones/L3-252-AFND.jff	T	q2	q5	0
+automatas/conversiones/L3-252-AFND.jff	T	q8	q11	0
+automatas/conversiones/L3-252-AFND.jff	T	q11	q8	1
+automatas/conversiones/L3-252-AFND.jff	T	q3	q8	1
+automatas/conversiones/L3-252-AFND.jff	T	q10	q4	1
+automatas/conversiones/L3-252-AFND.jff	T	q12	q11	0
+automatas/conversiones/L3-253-AFND.jff	S	q0	0	true	true
+automatas/conversiones/L3-253-AFND.jff	S	q1	4,5,17,18,21,22,34,35	false	false
+automatas/conversiones/L3-253-AFND.jff	S	q2	1,8,9,13,14,15,16,20,24,25,26,29,30,31,32,33,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q3	2,3,6,7,11,12,13,14,15,16,20,24,29,30,31,32,33,39,19,28,36,37	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q4	15,16,20,23,24,28,29,30,31,32,33,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q5	17,18,21,22,34,35,15,16,20,24,27,28,29,30,31,32,33,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q6	25,26,2,3,7,10,11,12,13,14,15,16,20,24,29,30,31,32,33,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q7	8,9,25,26,38,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q8	17,18,35,34,21,22	false	false
+automatas/conversiones/L3-253-AFND.jff	S	q9	25,26	false	false
+automatas/conversiones/L3-253-AFND.jff	S	q10	31,30,17,32,24,33,19,18,36,35,34,21,29,28,37,20,22,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q11	15,16,20,23,24,28,29,30,31,32,33,39,25,26	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q12	31,30,17,32,24,33,5,18,27,35,34,21,4,29,28,20,22,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q13	8,9,25,26	false	false
+automatas/conversiones/L3-253-AFND.jff	S	q14	31,30,32,24,33,27,29,28,20,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q15	31,12,30,32,24,33,11,14,2,3,13,10,29,20,15,16,7,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q16	31,30,32,24,33,19,36,29,28,37,20,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q17	25,26,38,39,15,16,20,23,24,28,29,30,31,32,33	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q18	34,35,15,16,19,20,24,28,29,30,31,32,33,39,2,3,6,7,11,12,13,14,17,18,21,22,36,37	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q19	25,26,38,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q20	31,30,17,32,24,33,19,5,18,36,35,34,21,4,29,28,37,20,22,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	S	q21	31,30,8,32,24,33,25,26,9,23,29,28,38,20,15,16,39	false	true
+automatas/conversiones/L3-253-AFND.jff	T	q13	q14	1
+automatas/conversiones/L3-253-AFND.jff	T	q4	q8	1
+automatas/conversiones/L3-253-AFND.jff	T	q6	q13	0
+automatas/conversiones/L3-253-AFND.jff	T	q8	q4	0
+automatas/conversiones/L3-253-AFND.jff	T	q20	q17	0
+automatas/conversiones/L3-253-AFND.jff	T	q19	q14	1
+automatas/conversiones/L3-253-AFND.jff	T	q13	q15	0
+automatas/conversiones/L3-253-AFND.jff	T	q15	q13	0
+automatas/conversiones/L3-253-AFND.jff	T	q6	q12	1
+automatas/conversiones/L3-253-AFND.jff	T	q8	q16	1
+automatas/conversiones/L3-253-AFND.jff	T	q16	q8	1
+automatas/conversiones/L3-253-AFND.jff	T	q5	q11	0
+automatas/conversiones/L3-253-AFND.jff	T	q11	q5	1
+automatas/conversiones/L3-253-AFND.jff	T	q12	q18	1
+automatas/conversiones/L3-253-AFND.jff	T	q1	q3	1
+automatas/conversiones/L3-253-AFND.jff	T	q3	q1	1
+automatas/conversiones/L3-253-AFND.jff	T	q15	q1	1
+automatas/conversiones/L3-253-AFND.jff	T	q18	q20	1
+automatas/conversiones/L3-253-AFND.jff	T	q20	q18	1
+automatas/conversiones/L3-253-AFND.jff	T	q11	q9	0
+automatas/conversiones/L3-253-AFND.jff	T	q0	q1	1
+automatas/conversiones/L3-253-AFND.jff	T	q4	q9	0
+automatas/conversiones/L3-253-AFND.jff	T	q17	q5	1
+automatas/conversiones/L3-253-AFND.jff	T	q21	q5	1
+automatas/conversiones/L3-253-AFND.jff	T	q2	q5	1
+automatas/conversiones/L3-253-AFND.jff	T	q10	q17	0
+automatas/conversiones/L3-253-AFND.jff	T	q14	q8	1
+automatas/conversiones/L3-253-AFND.jff	T	q0	q2	0
+automatas/conversiones/L3-253-AFND.jff	T	q2	q6	0
+automatas/conversiones/L3-253-AFND.jff	T	q21	q6	0
+automatas/conversiones/L3-253-AFND.jff	T	q17	q9	0
+automatas/conversiones/L3-253-AFND.jff	T	q18	q21	0
+automatas/conversiones/L3-253-AFND.jff	T	q5	q10	1
+automatas/conversiones/L3-253-AFND.jff	T	q10	q10	1
+automatas/conversiones/L3-253-AFND.jff	T	q9	q14	1
+automatas/conversiones/L3-253-AFND.jff	T	q3	q7	0
+automatas/conversiones/L3-253-AFND.jff	T	q7	q15	0
+automatas/conversiones/L3-253-AFND.jff	T	q14	q9	0
+automatas/conversiones/L3-253-AFND.jff	T	q16	q19	0
+automatas/conversiones/L3-253-AFND.jff	T	q1	q4	0
+automatas/conversiones/L3-253-AFND.jff	T	q7	q14	1
+automatas/conversiones/L3-253-AFND.jff	T	q12	q11	0
+automatas/lista3-afnd/L3-260-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-260-AFND.jff	S	q1	1,2	false	false
+automatas/lista3-afnd/L3-260-AFND.jff	S	q2	2,3,0,4	false	true
+automatas/lista3-afnd/L3-260-AFND.jff	S	q3	3,0,1,2	false	true
+automatas/lista3-afnd/L3-260-AFND.jff	S	q4	0,4,3,1,2	false	true
+automatas/lista3-afnd/L3-260-AFND.jff	S	q5	0,2,4	false	false
+automatas/lista3-afnd/L3-260-AFND.jff	S	q6	0,4,1,2	false	false
+automatas/lista3-afnd/L3-260-AFND.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q2	q5	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q5	q6	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q6	q4	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q2	q4	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q6	q4	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q3	q3	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q4	q4	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q5	q5	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q4	q4	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q0	q1	1
+automatas/lista3-afnd/L3-260-AFND.jff	T	q1	q3	0
+automatas/lista3-afnd/L3-260-AFND.jff	T	q3	q4	1
+automatas/lista3-afnd/L3-261-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-261-AFND.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-261-AFND.jff	S	q2	0,3	false	false
+automatas/lista3-afnd/L3-261-AFND.jff	S	q3	0,1,2	false	true
+automatas/lista3-afnd/L3-261-AFND.jff	S	q4	0,3,4	false	false
+automatas/lista3-afnd/L3-261-AFND.jff	T	q3	q3	0
+automatas/lista3-afnd/L3-261-AFND.jff	T	q4	q4	1
+automatas/lista3-afnd/L3-261-AFND.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-261-AFND.jff	T	q2	q1	0
+automatas/lista3-afnd/L3-261-AFND.jff	T	q0	q2	1
+automatas/lista3-afnd/L3-261-AFND.jff	T	q2	q4	1
+automatas/lista3-afnd/L3-261-AFND.jff	T	q3	q2	1
+automatas/lista3-afnd/L3-261-AFND.jff	T	q0	q1	0
+automatas/lista3-afnd/L3-261-AFND.jff	T	q1	q3	0
+automatas/lista3-afnd/L3-261-AFND.jff	T	q4	q1	0
+automatas/lista3-afnd/L3-262-AFND.jff	S	q0		true	false
+automatas/lista3-afnd/L3-262-AFND.jff	S	q1		false	false
+automatas/lista3-afnd/L3-262-AFND.jff	S	q2		false	false
+automatas/lista3-afnd/L3-262-AFND.jff	S	q3		false	true
+automatas/lista3-afnd/L3-262-AFND.jff	T	q2	q3	a
+automatas/lista3-afnd/L3-262-AFND.jff	T	q0	q2	b
+automatas/lista3-afnd/L3-262-AFND.jff	T	q1	q3	b
+automatas/lista3-afnd/L3-262-AFND.jff	T	q0	q1	a
+automatas/lista3-afnd/L3-263-AFND.jff	S	q0	0	true	false
+automatas/lista3-afnd/L3-263-AFND.jff	S	q1	0,1	false	false
+automatas/lista3-afnd/L3-263-AFND.jff	S	q2	0,2	false	true
+automatas/lista3-afnd/L3-263-AFND.jff	T	q1	q1	0
+automatas/lista3-afnd/L3-263-AFND.jff	T	q0	q0	1
+automatas/lista3-afnd/L3-263-AFND.jff	T	q2	q0	1
+automatas/lista3-afnd/L3-263-AFND.jff	T	q1	q2	1
+automatas/lista3-afnd/L3-263-AFND.jff	T	q2	q1	0
+automatas/lista3-afnd/L3-263-AFND.jff	T	q0	q1	0
+automatas/conversiones/familia-L1-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L1-AFND.jff	S	q1	0,1	false	true
+automatas/conversiones/familia-L1-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L1-AFND.jff	T	q1	q1	1
+automatas/conversiones/familia-L1-AFND.jff	T	q1	q0	0
+automatas/conversiones/familia-L1-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L2-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L2-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/familia-L2-AFND.jff	S	q2	0,2	false	true
+automatas/conversiones/familia-L2-AFND.jff	S	q3	0,1,2	false	true
+automatas/conversiones/familia-L2-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L2-AFND.jff	T	q3	q3	1
+automatas/conversiones/familia-L2-AFND.jff	T	q3	q2	0
+automatas/conversiones/familia-L2-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L2-AFND.jff	T	q1	q3	1
+automatas/conversiones/familia-L2-AFND.jff	T	q2	q0	0
+automatas/conversiones/familia-L2-AFND.jff	T	q2	q1	1
+automatas/conversiones/familia-L2-AFND.jff	T	q1	q2	0
+automatas/conversiones/familia-L3-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L3-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/familia-L3-AFND.jff	S	q2	2,0	false	false
+automatas/conversiones/familia-L3-AFND.jff	S	q3	0,1,2	false	false
+automatas/conversiones/familia-L3-AFND.jff	S	q4	3,0	false	true
+automatas/conversiones/familia-L3-AFND.jff	S	q5	1,3,0	false	true
+automatas/conversiones/familia-L3-AFND.jff	S	q6	2,3,0	false	true
+automatas/conversiones/familia-L3-AFND.jff	S	q7	0,1,2,3	false	true
+automatas/conversiones/familia-L3-AFND.jff	T	q2	q4	0
+automatas/conversiones/familia-L3-AFND.jff	T	q7	q6	0
+automatas/conversiones/familia-L3-AFND.jff	T	q3	q7	1
+automatas/conversiones/familia-L3-AFND.jff	T	q2	q5	1
+automatas/conversiones/familia-L3-AFND.jff	T	q1	q2	0
+automatas/conversiones/familia-L3-AFND.jff	T	q5	q2	0
+automatas/conversiones/familia-L3-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L3-AFND.jff	T	q3	q6	0
+automatas/conversiones/familia-L3-AFND.jff	T	q6	q4	0
+automatas/conversiones/familia-L3-AFND.jff	T	q7	q7	1
+automatas/conversiones/familia-L3-AFND.jff	T	q4	q0	0
+automatas/conversiones/familia-L3-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L3-AFND.jff	T	q1	q3	1
+automatas/conversiones/familia-L3-AFND.jff	T	q5	q3	1
+automatas/conversiones/familia-L3-AFND.jff	T	q6	q5	1
+automatas/conversiones/familia-L3-AFND.jff	T	q4	q1	1
+automatas/conversiones/familia-L4-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L4-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q2	0,2	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q3	0,1,2	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q4	0,3	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q5	0,3,1	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q6	0,3,2	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q7	0,1,2,3	false	false
+automatas/conversiones/familia-L4-AFND.jff	S	q8	0,4	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q9	0,4,1	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q10	0,4,2	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q11	0,4,1,2	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q12	0,4,3	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q13	0,4,3,1	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q14	0,4,3,2	false	true
+automatas/conversiones/familia-L4-AFND.jff	S	q15	0,1,2,3,4	false	true
+automatas/conversiones/familia-L4-AFND.jff	T	q1	q2	0
+automatas/conversiones/familia-L4-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L4-AFND.jff	T	q9	q2	0
+automatas/conversiones/familia-L4-AFND.jff	T	q11	q6	0
+automatas/conversiones/familia-L4-AFND.jff	T	q9	q3	1
+automatas/conversiones/familia-L4-AFND.jff	T	q14	q13	1
+automatas/conversiones/familia-L4-AFND.jff	T	q3	q6	0
+automatas/conversiones/familia-L4-AFND.jff	T	q4	q9	1
+automatas/conversiones/familia-L4-AFND.jff	T	q1	q3	1
+automatas/conversiones/familia-L4-AFND.jff	T	q6	q12	0
+automatas/conversiones/familia-L4-AFND.jff	T	q12	q9	1
+automatas/conversiones/familia-L4-AFND.jff	T	q13	q11	1
+automatas/conversiones/familia-L4-AFND.jff	T	q8	q1	1
+automatas/conversiones/familia-L4-AFND.jff	T	q13	q10	0
+automatas/conversiones/familia-L4-AFND.jff	T	q2	q4	0
+automatas/conversiones/familia-L4-AFND.jff	T	q7	q15	1
+automatas/conversiones/familia-L4-AFND.jff	T	q14	q12	0
+automatas/conversiones/familia-L4-AFND.jff	T	q6	q13	1
+automatas/conversiones/familia-L4-AFND.jff	T	q3	q7	1
+automatas/conversiones/familia-L4-AFND.jff	T	q10	q4	0
+automatas/conversiones/familia-L4-AFND.jff	T	q15	q14	0
+automatas/conversiones/familia-L4-AFND.jff	T	q8	q0	0
+automatas/conversiones/familia-L4-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L4-AFND.jff	T	q15	q15	1
+automatas/conversiones/familia-L4-AFND.jff	T	q5	q11	1
+automatas/conversiones/familia-L4-AFND.jff	T	q10	q5	1
+automatas/conversiones/familia-L4-AFND.jff	T	q5	q10	0
+automatas/conversiones/familia-L4-AFND.jff	T	q11	q7	1
+automatas/conversiones/familia-L4-AFND.jff	T	q2	q5	1
+automatas/conversiones/familia-L4-AFND.jff	T	q7	q14	0
+automatas/conversiones/familia-L4-AFND.jff	T	q12	q8	0
+automatas/conversiones/familia-L4-AFND.jff	T	q4	q8	0
+automatas/conversiones/familia-L5-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L5-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q2	0,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q3	0,1,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q4	3,0	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q5	3,0,1	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q6	3,0,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q7	0,1,2,3	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q8	4,0	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q9	4,0,1	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q10	4,0,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q11	4,0,1,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q12	4,3,0	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q13	4,3,0,1	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q14	4,3,0,2	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q15	0,1,2,3,4	false	false
+automatas/conversiones/familia-L5-AFND.jff	S	q16	5,0	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q17	5,0,1	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q18	5,0,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q19	5,0,1,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q20	5,3,0	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q21	5,3,0,1	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q22	5,3,0,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q23	5,3,0,1,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q24	4,5,0	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q25	4,5,0,1	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q26	4,5,0,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q27	4,5,0,1,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q28	4,5,3,0	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q29	4,5,3,0,1	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q30	4,5,3,0,2	false	true
+automatas/conversiones/familia-L5-AFND.jff	S	q31	0,1,2,3,4,5	false	true
+automatas/conversiones/familia-L5-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L5-AFND.jff	T	q14	q29	1
+automatas/conversiones/familia-L5-AFND.jff	T	q19	q7	1
+automatas/conversiones/familia-L5-AFND.jff	T	q28	q25	1
+automatas/conversiones/familia-L5-AFND.jff	T	q25	q19	1
+automatas/conversiones/familia-L5-AFND.jff	T	q30	q29	1
+automatas/conversiones/familia-L5-AFND.jff	T	q29	q27	1
+automatas/conversiones/familia-L5-AFND.jff	T	q14	q28	0
+automatas/conversiones/familia-L5-AFND.jff	T	q30	q28	0
+automatas/conversiones/familia-L5-AFND.jff	T	q17	q3	1
+automatas/conversiones/familia-L5-AFND.jff	T	q16	q0	0
+automatas/conversiones/familia-L5-AFND.jff	T	q9	q19	1
+automatas/conversiones/familia-L5-AFND.jff	T	q8	q16	0
+automatas/conversiones/familia-L5-AFND.jff	T	q7	q15	1
+automatas/conversiones/familia-L5-AFND.jff	T	q11	q23	1
+automatas/conversiones/familia-L5-AFND.jff	T	q19	q6	0
+automatas/conversiones/familia-L5-AFND.jff	T	q15	q31	1
+automatas/conversiones/familia-L5-AFND.jff	T	q27	q23	1
+automatas/conversiones/familia-L5-AFND.jff	T	q18	q5	1
+automatas/conversiones/familia-L5-AFND.jff	T	q5	q11	1
+automatas/conversiones/familia-L5-AFND.jff	T	q24	q17	1
+automatas/conversiones/familia-L5-AFND.jff	T	q29	q26	0
+automatas/conversiones/familia-L5-AFND.jff	T	q23	q14	0
+automatas/conversiones/familia-L5-AFND.jff	T	q16	q1	1
+automatas/conversiones/familia-L5-AFND.jff	T	q15	q30	0
+automatas/conversiones/familia-L5-AFND.jff	T	q9	q18	0
+automatas/conversiones/familia-L5-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L5-AFND.jff	T	q11	q22	0
+automatas/conversiones/familia-L5-AFND.jff	T	q27	q22	0
+automatas/conversiones/familia-L5-AFND.jff	T	q31	q31	1
+automatas/conversiones/familia-L5-AFND.jff	T	q10	q20	0
+automatas/conversiones/familia-L5-AFND.jff	T	q10	q21	1
+automatas/conversiones/familia-L5-AFND.jff	T	q23	q15	1
+automatas/conversiones/familia-L5-AFND.jff	T	q25	q18	0
+automatas/conversiones/familia-L5-AFND.jff	T	q21	q10	0
+automatas/conversiones/familia-L5-AFND.jff	T	q17	q2	0
+automatas/conversiones/familia-L5-AFND.jff	T	q31	q30	0
+automatas/conversiones/familia-L5-AFND.jff	T	q12	q24	0
+automatas/conversiones/familia-L5-AFND.jff	T	q2	q4	0
+automatas/conversiones/familia-L5-AFND.jff	T	q7	q14	0
+automatas/conversiones/familia-L5-AFND.jff	T	q4	q8	0
+automatas/conversiones/familia-L5-AFND.jff	T	q8	q17	1
+automatas/conversiones/familia-L5-AFND.jff	T	q4	q9	1
+automatas/conversiones/familia-L5-AFND.jff	T	q12	q25	1
+automatas/conversiones/familia-L5-AFND.jff	T	q2	q5	1
+automatas/conversiones/familia-L5-AFND.jff	T	q22	q12	0
+automatas/conversiones/familia-L5-AFND.jff	T	q1	q3	1
+automatas/conversiones/familia-L5-AFND.jff	T	q3	q6	0
+automatas/conversiones/familia-L5-AFND.jff	T	q18	q4	0
+automatas/conversiones/familia-L5-AFND.jff	T	q26	q21	1
+automatas/conversiones/familia-L5-AFND.jff	T	q22	q13	1
+automatas/conversiones/familia-L5-AFND.jff	T	q13	q27	1
+automatas/conversiones/familia-L5-AFND.jff	T	q26	q20	0
+automatas/conversiones/familia-L5-AFND.jff	T	q5	q10	0
+automatas/conversiones/familia-L5-AFND.jff	T	q20	q8	0
+automatas/conversiones/familia-L5-AFND.jff	T	q20	q9	1
+automatas/conversiones/familia-L5-AFND.jff	T	q6	q12	0
+automatas/conversiones/familia-L5-AFND.jff	T	q3	q7	1
+automatas/conversiones/familia-L5-AFND.jff	T	q13	q26	0
+automatas/conversiones/familia-L5-AFND.jff	T	q28	q24	0
+automatas/conversiones/familia-L5-AFND.jff	T	q21	q11	1
+automatas/conversiones/familia-L5-AFND.jff	T	q1	q2	0
+automatas/conversiones/familia-L5-AFND.jff	T	q6	q13	1
+automatas/conversiones/familia-L5-AFND.jff	T	q24	q16	0
+automatas/conversiones/familia-L6-AFND.jff	S	q0	0	true	false
+automatas/conversiones/familia-L6-AFND.jff	S	q1	0,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q2	0,2	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q3	0,1,2	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q4	0,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q5	0,3,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q6	0,2,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q7	0,1,2,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q8	0,4	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q9	0,4,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q10	0,2,4	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q11	0,2,4,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q12	0,4,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q13	0,4,3,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q14	0,2,4,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q15	0,1,2,3,4	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q16	0,5	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q17	0,5,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q18	0,2,5	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q19	0,2,5,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q20	0,5,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q21	0,5,3,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q22	0,2,5,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q23	0,2,5,3,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q24	0,4,5	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q25	0,4,5,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q26	0,2,4,5	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q27	0,2,4,5,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q28	0,4,5,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q29	0,4,5,3,1	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q30	0,2,4,5,3	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q31	0,1,2,3,4,5	false	false
+automatas/conversiones/familia-L6-AFND.jff	S	q32	6,0	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q33	6,0,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q34	6,0,2	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q35	6,0,2,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q36	6,0,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q37	6,0,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q38	6,0,2,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q39	6,0,2,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q40	6,0,4	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q41	6,0,4,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q42	6,0,2,4	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q43	6,0,2,4,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q44	6,0,4,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q45	6,0,4,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q46	6,0,2,4,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q47	6,0,2,4,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q48	6,0,5	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q49	6,0,5,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q50	6,0,2,5	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q51	6,0,2,5,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q52	6,0,5,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q53	6,0,5,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q54	6,0,2,5,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q55	6,0,2,5,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q56	6,0,4,5	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q57	6,0,4,5,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q58	6,0,2,4,5	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q59	6,0,2,4,5,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q60	6,0,4,5,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q61	6,0,4,5,3,1	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q62	6,0,2,4,5,3	false	true
+automatas/conversiones/familia-L6-AFND.jff	S	q63	0,1,2,3,4,5,6	false	true
+automatas/conversiones/familia-L6-AFND.jff	T	q42	q20	0
+automatas/conversiones/familia-L6-AFND.jff	T	q53	q43	1
+automatas/conversiones/familia-L6-AFND.jff	T	q9	q19	1
+automatas/conversiones/familia-L6-AFND.jff	T	q29	q59	1
+automatas/conversiones/familia-L6-AFND.jff	T	q47	q30	0
+automatas/conversiones/familia-L6-AFND.jff	T	q60	q57	1
+automatas/conversiones/familia-L6-AFND.jff	T	q13	q26	0
+automatas/conversiones/familia-L6-AFND.jff	T	q6	q12	0
+automatas/conversiones/familia-L6-AFND.jff	T	q3	q6	0
+automatas/conversiones/familia-L6-AFND.jff	T	q18	q36	0
+automatas/conversiones/familia-L6-AFND.jff	T	q51	q39	1
+automatas/conversiones/familia-L6-AFND.jff	T	q14	q29	1
+automatas/conversiones/familia-L6-AFND.jff	T	q31	q63	1
+automatas/conversiones/familia-L6-AFND.jff	T	q42	q21	1
+automatas/conversiones/familia-L6-AFND.jff	T	q21	q42	0
+automatas/conversiones/familia-L6-AFND.jff	T	q35	q6	0
+automatas/conversiones/familia-L6-AFND.jff	T	q30	q60	0
+automatas/conversiones/familia-L6-AFND.jff	T	q45	q27	1
+automatas/conversiones/familia-L6-AFND.jff	T	q33	q2	0
+automatas/conversiones/familia-L6-AFND.jff	T	q52	q41	1
+automatas/conversiones/familia-L6-AFND.jff	T	q57	q50	0
+automatas/conversiones/familia-L6-AFND.jff	T	q16	q33	1
+automatas/conversiones/familia-L6-AFND.jff	T	q12	q24	0
+automatas/conversiones/familia-L6-AFND.jff	T	q33	q3	1
+automatas/conversiones/familia-L6-AFND.jff	T	q43	q23	1
+automatas/conversiones/familia-L6-AFND.jff	T	q56	q48	0
+automatas/conversiones/familia-L6-AFND.jff	T	q0	q0	0
+automatas/conversiones/familia-L6-AFND.jff	T	q63	q63	1
+automatas/conversiones/familia-L6-AFND.jff	T	q52	q40	0
+automatas/conversiones/familia-L6-AFND.jff	T	q50	q37	1
+automatas/conversiones/familia-L6-AFND.jff	T	q25	q51	1
+automatas/conversiones/familia-L6-AFND.jff	T	q49	q35	1
+automatas/conversiones/familia-L6-AFND.jff	T	q27	q54	0
+automatas/conversiones/familia-L6-AFND.jff	T	q8	q17	1
+automatas/conversiones/familia-L6-AFND.jff	T	q54	q44	0
+automatas/conversiones/familia-L6-AFND.jff	T	q11	q22	0
+automatas/conversiones/familia-L6-AFND.jff	T	q24	q49	1
+automatas/conversiones/familia-L6-AFND.jff	T	q36	q8	0
+automatas/conversiones/familia-L6-AFND.jff	T	q49	q34	0
+automatas/conversiones/familia-L6-AFND.jff	T	q41	q18	0
+automatas/conversiones/familia-L6-AFND.jff	T	q32	q1	1
+automatas/conversiones/familia-L6-AFND.jff	T	q34	q4	0
+automatas/conversiones/familia-L6-AFND.jff	T	q7	q14	0
+automatas/conversiones/familia-L6-AFND.jff	T	q23	q47	1
+automatas/conversiones/familia-L6-AFND.jff	T	q55	q47	1
+automatas/conversiones/familia-L6-AFND.jff	T	q30	q61	1
+automatas/conversiones/familia-L6-AFND.jff	T	q39	q14	0
+automatas/conversiones/familia-L6-AFND.jff	T	q38	q13	1
+automatas/conversiones/familia-L6-AFND.jff	T	q26	q52	0
+automatas/conversiones/familia-L6-AFND.jff	T	q34	q5	1
+automatas/conversiones/familia-L6-AFND.jff	T	q63	q62	0
+automatas/conversiones/familia-L6-AFND.jff	T	q27	q55	1
+automatas/conversiones/familia-L6-AFND.jff	T	q37	q10	0
+automatas/conversiones/familia-L6-AFND.jff	T	q21	q43	1
+automatas/conversiones/familia-L6-AFND.jff	T	q54	q45	1
+automatas/conversiones/familia-L6-AFND.jff	T	q10	q20	0
+automatas/conversiones/familia-L6-AFND.jff	T	q15	q31	1
+automatas/conversiones/familia-L6-AFND.jff	T	q51	q38	0
+automatas/conversiones/familia-L6-AFND.jff	T	q4	q9	1
+automatas/conversiones/familia-L6-AFND.jff	T	q48	q32	0
+automatas/conversiones/familia-L6-AFND.jff	T	q44	q24	0
+automatas/conversiones/familia-L6-AFND.jff	T	q28	q57	1
+automatas/conversiones/familia-L6-AFND.jff	T	q53	q42	0
+automatas/conversiones/familia-L6-AFND.jff	T	q39	q15	1
+automatas/conversiones/familia-L6-AFND.jff	T	q46	q28	0
+automatas/conversiones/familia-L6-AFND.jff	T	q5	q10	0
+automatas/conversiones/familia-L6-AFND.jff	T	q7	q15	1
+automatas/conversiones/familia-L6-AFND.jff	T	q58	q52	0
+automatas/conversiones/familia-L6-AFND.jff	T	q2	q5	1
+automatas/conversiones/familia-L6-AFND.jff	T	q29	q58	0
+automatas/conversiones/familia-L6-AFND.jff	T	q2	q4	0
+automatas/conversiones/familia-L6-AFND.jff	T	q23	q46	0
+automatas/conversiones/familia-L6-AFND.jff	T	q31	q62	0
+automatas/conversiones/familia-L6-AFND.jff	T	q55	q46	0
+automatas/conversiones/familia-L6-AFND.jff	T	q40	q17	1
+automatas/conversiones/familia-L6-AFND.jff	T	q10	q21	1
+automatas/conversiones/familia-L6-AFND.jff	T	q60	q56	0
+automatas/conversiones/familia-L6-AFND.jff	T	q61	q58	0
+automatas/conversiones/familia-L6-AFND.jff	T	q4	q8	0
+automatas/conversiones/familia-L6-AFND.jff	T	q5	q11	1
+automatas/conversiones/familia-L6-AFND.jff	T	q16	q32	0
+automatas/conversiones/familia-L6-AFND.jff	T	q3	q7	1
+automatas/conversiones/familia-L6-AFND.jff	T	q9	q18	0
+automatas/conversiones/familia-L6-AFND.jff	T	q17	q35	1
+automatas/conversiones/familia-L6-AFND.jff	T	q19	q39	1
+automatas/conversiones/familia-L6-AFND.jff	T	q17	q34	0
+automatas/conversiones/familia-L6-AFND.jff	T	q37	q11	1
+automatas/conversiones/familia-L6-AFND.jff	T	q62	q60	0
+automatas/conversiones/familia-L6-AFND.jff	T	q58	q53	1
+automatas/conversiones/familia-L6-AFND.jff	T	q35	q7	1
+automatas/conversiones/familia-L6-AFND.jff	T	q6	q13	1
+automatas/conversiones/familia-L6-AFND.jff	T	q12	q25	1
+automatas/conversiones/familia-L6-AFND.jff	T	q56	q49	1
+automatas/conversiones/familia-L6-AFND.jff	T	q15	q30	0
+automatas/conversiones/familia-L6-AFND.jff	T	q20	q40	0
+automatas/conversiones/familia-L6-AFND.jff	T	q36	q9	1
+automatas/conversiones/familia-L6-AFND.jff	T	q43	q22	0
+automatas/conversiones/familia-L6-AFND.jff	T	q26	q53	1
+automatas/conversiones/familia-L6-AFND.jff	T	q46	q29	1
+automatas/conversiones/familia-L6-AFND.jff	T	q20	q41	1
+automatas/conversiones/familia-L6-AFND.jff	T	q0	q1	1
+automatas/conversiones/familia-L6-AFND.jff	T	q11	q23	1
+automatas/conversiones/familia-L6-AFND.jff	T	q32	q0	0
+automatas/conversiones/familia-L6-AFND.jff	T	q47	q31	1
+automatas/conversiones/familia-L6-AFND.jff	T	q24	q48	0
+automatas/conversiones/familia-L6-AFND.jff	T	q41	q19	1
+automatas/conversiones/familia-L6-AFND.jff	T	q25	q50	0
+automatas/conversiones/familia-L6-AFND.jff	T	q48	q33	1
+automatas/conversiones/familia-L6-AFND.jff	T	q59	q55	1
+automatas/conversiones/familia-L6-AFND.jff	T	q13	q27	1
+automatas/conversiones/familia-L6-AFND.jff	T	q40	q16	0
+automatas/conversiones/familia-L6-AFND.jff	T	q1	q2	0
+automatas/conversiones/familia-L6-AFND.jff	T	q18	q37	1
+automatas/conversiones/familia-L6-AFND.jff	T	q62	q61	1
+automatas/conversiones/familia-L6-AFND.jff	T	q59	q54	0
+automatas/conversiones/familia-L6-AFND.jff	T	q14	q28	0
+automatas/conversiones/familia-L6-AFND.jff	T	q57	q51	1
+automatas/conversiones/familia-L6-AFND.jff	T	q45	q26	0
+automatas/conversiones/familia-L6-AFND.jff	T	q22	q44	0
+automatas/conversiones/familia-L6-AFND.jff	T	q50	q36	0
+automatas/conversiones/familia-L6-AFND.jff	T	q19	q38	0
+automatas/conversiones/familia-L6-AFND.jff	T	q22	q45	1
+automatas/conversiones/familia-L6-AFND.jff	T	q44	q25	1
+automatas/conversiones/familia-L6-AFND.jff	T	q8	q16	0
+automatas/conversiones/familia-L6-AFND.jff	T	q38	q12	0
+automatas/conversiones/familia-L6-AFND.jff	T	q1	q3	1
+automatas/conversiones/familia-L6-AFND.jff	T	q28	q56	0
+automatas/conversiones/familia-L6-AFND.jff	T	q61	q59	1

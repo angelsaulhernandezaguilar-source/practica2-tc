@@ -1,0 +1,244 @@
+{
+  "nombre": "L3-AFND-p123-AFD",
+  "tipo": "AFD",
+  "alfabeto": [
+    "a",
+    "b"
+  ],
+  "estados": [
+    "{q0}",
+    "{q10, q11, q6}",
+    "{q10, q6}",
+    "{q11, q3, q7}",
+    "{q11, q4}",
+    "{q11, q5}",
+    "{q1}",
+    "{q2}",
+    "{q3, q7}",
+    "{q3}",
+    "{q4, q8}",
+    "{q4}",
+    "{q5, q9}",
+    "{q5}",
+    "{q6}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q10, q11, q6}",
+    "{q11, q3, q7}",
+    "{q11, q4}",
+    "{q11, q5}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1}"
+      ]
+    },
+    {
+      "desde": "{q0}",
+      "lee": "b",
+      "hacia": [
+        "{q2}"
+      ]
+    },
+    {
+      "desde": "{q10, q11, q6}",
+      "lee": "a",
+      "hacia": [
+        "{q6}"
+      ]
+    },
+    {
+      "desde": "{q10, q11, q6}",
+      "lee": "b",
+      "hacia": [
+        "{q10, q11, q6}"
+      ]
+    },
+    {
+      "desde": "{q10, q6}",
+      "lee": "a",
+      "hacia": [
+        "{q6}"
+      ]
+    },
+    {
+      "desde": "{q10, q6}",
+      "lee": "b",
+      "hacia": [
+        "{q10, q11, q6}"
+      ]
+    },
+    {
+      "desde": "{q11, q3, q7}",
+      "lee": "a",
+      "hacia": [
+        "{q11, q3, q7}"
+      ]
+    },
+    {
+      "desde": "{q11, q3, q7}",
+      "lee": "b",
+      "hacia": [
+        "{q3}"
+      ]
+    },
+    {
+      "desde": "{q11, q4}",
+      "lee": "a",
+      "hacia": [
+        "{q4, q8}"
+      ]
+    },
+    {
+      "desde": "{q11, q4}",
+      "lee": "b",
+      "hacia": [
+        "{q4}"
+      ]
+    },
+    {
+      "desde": "{q11, q5}",
+      "lee": "a",
+      "hacia": [
+        "{q5}"
+      ]
+    },
+    {
+      "desde": "{q11, q5}",
+      "lee": "b",
+      "hacia": [
+        "{q5, q9}"
+      ]
+    },
+    {
+      "desde": "{q1}",
+      "lee": "a",
+      "hacia": [
+        "{q3}"
+      ]
+    },
+    {
+      "desde": "{q1}",
+      "lee": "b",
+      "hacia": [
+        "{q4}"
+      ]
+    },
+    {
+      "desde": "{q2}",
+      "lee": "a",
+      "hacia": [
+        "{q5}"
+      ]
+    },
+    {
+      "desde": "{q2}",
+      "lee": "b",
+      "hacia": [
+        "{q6}"
+      ]
+    },
+    {
+      "desde": "{q3, q7}",
+      "lee": "a",
+      "hacia": [
+        "{q11, q3, q7}"
+      ]
+    },
+    {
+      "desde": "{q3, q7}",
+      "lee": "b",
+      "hacia": [
+        "{q3}"
+      ]
+    },
+    {
+      "desde": "{q3}",
+      "lee": "a",
+      "hacia": [
+        "{q3, q7}"
+      ]
+    },
+    {
+      "desde": "{q3}",
+      "lee": "b",
+      "hacia": [
+        "{q3}"
+      ]
+    },
+    {
+      "desde": "{q4, q8}",
+      "lee": "a",
+      "hacia": [
+        "{q4, q8}"
+      ]
+    },
+    {
+      "desde": "{q4, q8}",
+      "lee": "b",
+      "hacia": [
+        "{q11, q4}"
+      ]
+    },
+    {
+      "desde": "{q4}",
+      "lee": "a",
+      "hacia": [
+        "{q4, q8}"
+      ]
+    },
+    {
+      "desde": "{q4}",
+      "lee": "b",
+      "hacia": [
+        "{q4}"
+      ]
+    },
+    {
+      "desde": "{q5, q9}",
+      "lee": "a",
+      "hacia": [
+        "{q11, q5}"
+      ]
+    },
+    {
+      "desde": "{q5, q9}",
+      "lee": "b",
+      "hacia": [
+        "{q5, q9}"
+      ]
+    },
+    {
+      "desde": "{q5}",
+      "lee": "a",
+      "hacia": [
+        "{q5}"
+      ]
+    },
+    {
+      "desde": "{q5}",
+      "lee": "b",
+      "hacia": [
+        "{q5, q9}"
+      ]
+    },
+    {
+      "desde": "{q6}",
+      "lee": "a",
+      "hacia": [
+        "{q6}"
+      ]
+    },
+    {
+      "desde": "{q6}",
+      "lee": "b",
+      "hacia": [
+        "{q10, q6}"
+      ]
+    }
+  ]
+}

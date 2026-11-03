@@ -1,0 +1,34 @@
+{
+  "nombre": "L3-VF-202-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1, q2}",
+    "{q3}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q3}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2}"
+      ]
+    },
+    {
+      "desde": "{q1, q2}",
+      "lee": "b",
+      "hacia": [
+        "{q3}"
+      ]
+    }
+  ]
+}

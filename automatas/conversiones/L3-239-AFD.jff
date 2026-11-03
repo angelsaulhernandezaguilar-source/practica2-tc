@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/formatos.py).-->
+<structure>
+	<!--alfabeto: ["0", "1"]-->
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{q0}">
+			<x>80.0</x>
+			<y>190.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="{q10, q12, q13, q14, q15, q16, q17, q18, q20, q21, q22, q4, q5, q7, q8, q9}">
+			<x>400.0</x>
+			<y>80.0</y>
+			<final/>
+		</state>
+		<state id="2" name="{q11, q15, q17, q18, q19, q20, q21, q22, q23, q25, q4, q5, q7, q8, q9}">
+			<x>560.0</x>
+			<y>160.0</y>
+			<final/>
+		</state>
+		<state id="3" name="{q11, q15, q17, q18, q20, q21, q22, q23, q25, q4, q5, q7, q8, q9}">
+			<x>720.0</x>
+			<y>190.0</y>
+			<final/>
+		</state>
+		<state id="4" name="{q11, q15, q19, q20, q4, q5, q7, q8, q9}">
+			<x>400.0</x>
+			<y>190.0</y>
+			<final/>
+		</state>
+		<state id="5" name="{q11, q15, q3, q4, q5, q6, q7, q8, q9}">
+			<x>240.0</x>
+			<y>160.0</y>
+		</state>
+		<state id="6" name="{q11, q15, q4, q5, q7, q8, q9}">
+			<x>400.0</x>
+			<y>300.0</y>
+		</state>
+		<state id="7" name="{q12, q13, q15, q16, q17, q18, q20, q21, q22, q24, q25, q4, q5, q7, q8, q9}">
+			<x>560.0</x>
+			<y>270.0</y>
+			<final/>
+		</state>
+		<state id="8" name="{q12, q13, q15, q16, q4, q5, q7, q8, q9}">
+			<x>240.0</x>
+			<y>270.0</y>
+		</state>
+		<transition><from>0</from><to>5</to><read>0</read></transition>
+		<transition><from>0</from><to>8</to><read>1</read></transition>
+		<transition><from>1</from><to>2</to><read>0</read></transition>
+		<transition><from>1</from><to>7</to><read>1</read></transition>
+		<transition><from>2</from><to>3</to><read>0</read></transition>
+		<transition><from>2</from><to>7</to><read>1</read></transition>
+		<transition><from>3</from><to>3</to><read>0</read></transition>
+		<transition><from>3</from><to>7</to><read>1</read></transition>
+		<transition><from>4</from><to>6</to><read>0</read></transition>
+		<transition><from>4</from><to>8</to><read>1</read></transition>
+		<transition><from>5</from><to>6</to><read>0</read></transition>
+		<transition><from>5</from><to>1</to><read>1</read></transition>
+		<transition><from>6</from><to>6</to><read>0</read></transition>
+		<transition><from>6</from><to>8</to><read>1</read></transition>
+		<transition><from>7</from><to>2</to><read>0</read></transition>
+		<transition><from>7</from><to>7</to><read>1</read></transition>
+		<transition><from>8</from><to>4</to><read>0</read></transition>
+		<transition><from>8</from><to>8</to><read>1</read></transition>
+	</automaton>
+</structure>

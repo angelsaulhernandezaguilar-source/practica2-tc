@@ -1,0 +1,15 @@
+{
+  "nombre": "L3-VF-209-AFND",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "q0"
+  ],
+  "inicial": "q0",
+  "aceptacion": [],
+  "transiciones": []
+}

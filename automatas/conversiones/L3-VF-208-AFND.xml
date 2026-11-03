@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-VF-208-AFND">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo></alfabeto>
+	<estados>
+		<estado nombre="q0" inicial="true"/>
+		<estado nombre="q3"/>
+		<estado nombre="q5"/>
+		<estado nombre="q4"/>
+		<estado nombre="q6"/>
+		<estado nombre="q7" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="q0" lee="a" hacia="q3"/>
+		<transicion desde="q0" lee="a" hacia="q5"/>
+		<transicion desde="q0" lee="a" hacia="q4"/>
+		<transicion desde="q0" lee="a" hacia="q6"/>
+		<transicion desde="q0" lee="b" hacia="q7"/>
+		<transicion desde="q3" lee="a" hacia="q3"/>
+		<transicion desde="q3" lee="a" hacia="q5"/>
+		<transicion desde="q3" lee="a" hacia="q4"/>
+		<transicion desde="q3" lee="a" hacia="q6"/>
+		<transicion desde="q5" lee="a" hacia="q3"/>
+		<transicion desde="q5" lee="a" hacia="q5"/>
+		<transicion desde="q5" lee="a" hacia="q4"/>
+		<transicion desde="q5" lee="a" hacia="q6"/>
+		<transicion desde="q5" lee="b" hacia="q7"/>
+		<transicion desde="q4" lee="b" hacia="q7"/>
+		<transicion desde="q6" lee="b" hacia="q7"/>
+	</transiciones>
+</automata>

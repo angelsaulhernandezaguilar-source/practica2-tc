@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFD" nombre="L3-AFND-p109-AFD">
+	<alfabeto><simbolo>0</simbolo><simbolo>1</simbolo><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo></alfabeto>
+	<estados>
+		<estado nombre="{q0}" inicial="true"/>
+		<estado nombre="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q13, q16, q17, q21, q31}"/>
+		<estado nombre="{q0, q1, q13, q21, q26, q31, q5, q8}"/>
+		<estado nombre="{q0, q1, q13, q21, q26, q31, q5}"/>
+		<estado nombre="{q0, q1, q13, q21, q31, q5, q8}"/>
+		<estado nombre="{q0, q1, q13, q21, q31}"/>
+		<estado nombre="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q14, q16, q17, q21, q32}"/>
+		<estado nombre="{q0, q1, q14, q21, q27, q32, q5, q9}"/>
+		<estado nombre="{q0, q1, q14, q21, q27, q32, q5}"/>
+		<estado nombre="{q0, q1, q14, q21, q32, q5, q9}"/>
+		<estado nombre="{q0, q1, q14, q21, q32}"/>
+		<estado nombre="{q0, q1, q16, q17, q21, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q1, q16, q17, q21}"/>
+		<estado nombre="{q0, q1, q21, q5}"/>
+		<estado nombre="{q0, q1, q21}"/>
+		<estado nombre="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q10, q15, q2, q22, q28, q33, q5}"/>
+		<estado nombre="{q0, q10, q15, q2, q22, q33, q5}"/>
+		<estado nombre="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" aceptacion="true"/>
+		<estado nombre="{q0, q11, q16, q20, q24, q29, q35, q4}"/>
+		<estado nombre="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" aceptacion="true"/>
+		<estado nombre="{q0, q11, q16, q20, q24, q29, q4}"/>
+		<estado nombre="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" aceptacion="true"/>
+		<estado nombre="{q0, q11, q16, q24, q29, q35, q4}"/>
+		<estado nombre="{q0, q11, q16, q29, q36, q5, q6}" aceptacion="true"/>
+		<estado nombre="{q0, q11, q16, q29}"/>
+		<estado nombre="{q0, q11, q24, q29, q4, q5, q6}"/>
+		<estado nombre="{q0, q11, q24, q29, q4}"/>
+		<estado nombre="{q0, q11, q29, q5, q6}"/>
+		<estado nombre="{q0, q11, q29}"/>
+		<estado nombre="{q0, q12, q16, q25, q30, q36, q5, q7}" aceptacion="true"/>
+		<estado nombre="{q0, q12, q16, q25, q30, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q12, q16, q30, q36, q5, q7}" aceptacion="true"/>
+		<estado nombre="{q0, q12, q16, q30}"/>
+		<estado nombre="{q0, q12, q25, q30, q5, q7}"/>
+		<estado nombre="{q0, q12, q25, q30, q5}"/>
+		<estado nombre="{q0, q12, q30, q5, q7}"/>
+		<estado nombre="{q0, q12, q30}"/>
+		<estado nombre="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q15, q16, q18, q2, q22, q33}"/>
+		<estado nombre="{q0, q15, q2, q22, q28, q33, q5}"/>
+		<estado nombre="{q0, q15, q2, q22, q33}"/>
+		<estado nombre="{q0, q16, q18, q2, q22, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q16, q18, q2, q22}"/>
+		<estado nombre="{q0, q16, q19, q23, q3, q34, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q16, q19, q23, q3, q34}"/>
+		<estado nombre="{q0, q16, q19, q23, q3, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q16, q19, q23, q3}"/>
+		<estado nombre="{q0, q16, q23, q3, q34, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q16, q23, q3, q34}"/>
+		<estado nombre="{q0, q16, q36, q5}" aceptacion="true"/>
+		<estado nombre="{q0, q16}"/>
+		<estado nombre="{q0, q2, q22, q5}"/>
+		<estado nombre="{q0, q2, q22}"/>
+		<estado nombre="{q0, q23, q3, q5}"/>
+		<estado nombre="{q0, q23, q3}"/>
+		<estado nombre="{q0, q5}"/>
+	</estados>
+	<transiciones>
+		<transicion desde="{q0}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0}" lee="b" hacia="{q0}"/>
+		<transicion desde="{q0}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" lee="a" hacia="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" lee="b" hacia="{q0, q16, q18, q2, q22, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" lee="a" hacia="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" lee="b" hacia="{q0, q16, q18, q2, q22, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" lee="a" hacia="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" lee="b" hacia="{q0, q16, q18, q2, q22, q36, q5}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31}" lee="a" hacia="{q0, q1, q14, q16, q17, q21, q32}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31}" lee="b" hacia="{q0, q16, q18, q2, q22}"/>
+		<transicion desde="{q0, q1, q13, q16, q17, q21, q31}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5, q8}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5, q8}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5, q8}" lee="a" hacia="{q0, q1, q14, q21, q27, q32, q5, q9}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5, q8}" lee="b" hacia="{q0, q2, q22, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5, q8}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5}" lee="a" hacia="{q0, q1, q14, q21, q27, q32, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5}" lee="b" hacia="{q0, q2, q22, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q26, q31, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q21, q31, q5, q8}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q31, q5, q8}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q31, q5, q8}" lee="a" hacia="{q0, q1, q14, q21, q32, q5, q9}"/>
+		<transicion desde="{q0, q1, q13, q21, q31, q5, q8}" lee="b" hacia="{q0, q2, q22, q5}"/>
+		<transicion desde="{q0, q1, q13, q21, q31, q5, q8}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q13, q21, q31}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q13, q21, q31}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q13, q21, q31}" lee="a" hacia="{q0, q1, q14, q21, q32}"/>
+		<transicion desde="{q0, q1, q13, q21, q31}" lee="b" hacia="{q0, q2, q22}"/>
+		<transicion desde="{q0, q1, q13, q21, q31}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" lee="b" hacia="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5, q9}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" lee="b" hacia="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q27, q32, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" lee="b" hacia="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32, q36, q5, q9}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32}" lee="b" hacia="{q0, q15, q16, q18, q2, q22, q33}"/>
+		<transicion desde="{q0, q1, q14, q16, q17, q21, q32}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5, q9}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5, q9}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5, q9}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5, q9}" lee="b" hacia="{q0, q10, q15, q2, q22, q28, q33, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5, q9}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5}" lee="b" hacia="{q0, q15, q2, q22, q28, q33, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q27, q32, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q21, q32, q5, q9}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q32, q5, q9}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q32, q5, q9}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q32, q5, q9}" lee="b" hacia="{q0, q10, q15, q2, q22, q33, q5}"/>
+		<transicion desde="{q0, q1, q14, q21, q32, q5, q9}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q14, q21, q32}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q14, q21, q32}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q14, q21, q32}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q1, q14, q21, q32}" lee="b" hacia="{q0, q15, q2, q22, q33}"/>
+		<transicion desde="{q0, q1, q14, q21, q32}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q1, q16, q17, q21, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q16, q17, q21, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q1, q16, q17, q21, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q1, q16, q17, q21, q36, q5}" lee="b" hacia="{q0, q16, q18, q2, q22, q36, q5}"/>
+		<transicion desde="{q0, q1, q16, q17, q21, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q1, q16, q17, q21}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q16, q17, q21}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q1, q16, q17, q21}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q1, q16, q17, q21}" lee="b" hacia="{q0, q16, q18, q2, q22}"/>
+		<transicion desde="{q0, q1, q16, q17, q21}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q1, q21, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q21, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q1, q21, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q1, q21, q5}" lee="b" hacia="{q0, q2, q22, q5}"/>
+		<transicion desde="{q0, q1, q21, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q1, q21}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q21}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q1, q21}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q1, q21}" lee="b" hacia="{q0, q2, q22}"/>
+		<transicion desde="{q0, q1, q21}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="b" hacia="{q0, q16, q19, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" lee="b" hacia="{q0, q16, q19, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q16, q18, q2, q22, q33, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q28, q33, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q28, q33, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q28, q33, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q28, q33, q5}" lee="b" hacia="{q0, q16, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q28, q33, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q33, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q33, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q33, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q33, q5}" lee="b" hacia="{q0, q16, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q10, q15, q2, q22, q33, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5, q7}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q4}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q4}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q4}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q4}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q35, q4}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5, q7}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q4}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q4}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q4}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q4}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q20, q24, q29, q4}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5, q7}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q4}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q4}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q4}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q4}" lee="b" hacia="{q0, q12, q16, q25, q30, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q24, q29, q35, q4}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q11, q16, q29, q36, q5, q6}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q29, q36, q5, q6}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q29, q36, q5, q6}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q11, q16, q29, q36, q5, q6}" lee="b" hacia="{q0, q12, q16, q30, q36, q5, q7}"/>
+		<transicion desde="{q0, q11, q16, q29, q36, q5, q6}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q11, q16, q29}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q29}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q11, q16, q29}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q11, q16, q29}" lee="b" hacia="{q0, q12, q16, q30}"/>
+		<transicion desde="{q0, q11, q16, q29}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q11, q24, q29, q4, q5, q6}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q11, q24, q29, q4, q5, q6}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q11, q24, q29, q4, q5, q6}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q11, q24, q29, q4, q5, q6}" lee="b" hacia="{q0, q12, q25, q30, q5, q7}"/>
+		<transicion desde="{q0, q11, q24, q29, q4, q5, q6}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q11, q24, q29, q4}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q11, q24, q29, q4}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q11, q24, q29, q4}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q11, q24, q29, q4}" lee="b" hacia="{q0, q12, q25, q30, q5}"/>
+		<transicion desde="{q0, q11, q24, q29, q4}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q11, q29, q5, q6}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q11, q29, q5, q6}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q11, q29, q5, q6}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q11, q29, q5, q6}" lee="b" hacia="{q0, q12, q30, q5, q7}"/>
+		<transicion desde="{q0, q11, q29, q5, q6}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q11, q29}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q11, q29}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q11, q29}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q11, q29}" lee="b" hacia="{q0, q12, q30}"/>
+		<transicion desde="{q0, q11, q29}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5, q7}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5, q7}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5, q7}" lee="a" hacia="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5, q8}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5, q7}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5, q7}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5}" lee="a" hacia="{q0, q1, q13, q16, q17, q21, q26, q31, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q25, q30, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q12, q16, q30, q36, q5, q7}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q30, q36, q5, q7}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q30, q36, q5, q7}" lee="a" hacia="{q0, q1, q13, q16, q17, q21, q31, q36, q5, q8}"/>
+		<transicion desde="{q0, q12, q16, q30, q36, q5, q7}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q12, q16, q30, q36, q5, q7}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q12, q16, q30}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q12, q16, q30}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q12, q16, q30}" lee="a" hacia="{q0, q1, q13, q16, q17, q21, q31}"/>
+		<transicion desde="{q0, q12, q16, q30}" lee="b" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q12, q16, q30}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q12, q25, q30, q5, q7}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5, q7}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5, q7}" lee="a" hacia="{q0, q1, q13, q21, q26, q31, q5, q8}"/>
+		<transicion desde="{q0, q12, q25, q30, q5, q7}" lee="b" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5, q7}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q12, q25, q30, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5}" lee="a" hacia="{q0, q1, q13, q21, q26, q31, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5}" lee="b" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q25, q30, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q12, q30, q5, q7}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q30, q5, q7}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q30, q5, q7}" lee="a" hacia="{q0, q1, q13, q21, q31, q5, q8}"/>
+		<transicion desde="{q0, q12, q30, q5, q7}" lee="b" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q12, q30, q5, q7}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q12, q30}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q12, q30}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q12, q30}" lee="a" hacia="{q0, q1, q13, q21, q31}"/>
+		<transicion desde="{q0, q12, q30}" lee="b" hacia="{q0}"/>
+		<transicion desde="{q0, q12, q30}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="b" hacia="{q0, q16, q19, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q28, q33, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q33}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q33}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q33}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q33}" lee="b" hacia="{q0, q16, q19, q23, q3, q34}"/>
+		<transicion desde="{q0, q15, q16, q18, q2, q22, q33}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q15, q2, q22, q28, q33, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q15, q2, q22, q28, q33, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q15, q2, q22, q28, q33, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q15, q2, q22, q28, q33, q5}" lee="b" hacia="{q0, q16, q23, q3, q34, q36, q5}"/>
+		<transicion desde="{q0, q15, q2, q22, q28, q33, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q15, q2, q22, q33}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q15, q2, q22, q33}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q15, q2, q22, q33}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q15, q2, q22, q33}" lee="b" hacia="{q0, q16, q23, q3, q34}"/>
+		<transicion desde="{q0, q15, q2, q22, q33}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q16, q18, q2, q22, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q18, q2, q22, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q18, q2, q22, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q16, q18, q2, q22, q36, q5}" lee="b" hacia="{q0, q16, q19, q23, q3, q36, q5}"/>
+		<transicion desde="{q0, q16, q18, q2, q22, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q16, q18, q2, q22}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q18, q2, q22}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q18, q2, q22}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q16, q18, q2, q22}" lee="b" hacia="{q0, q16, q19, q23, q3}"/>
+		<transicion desde="{q0, q16, q18, q2, q22}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34, q36, q5}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34, q36, q5}" lee="c" hacia="{q0, q11, q16, q20, q24, q29, q35, q36, q4, q5, q6}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34}" lee="b" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q34}" lee="c" hacia="{q0, q11, q16, q20, q24, q29, q35, q4}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q36, q5}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q19, q23, q3, q36, q5}" lee="c" hacia="{q0, q11, q16, q20, q24, q29, q36, q4, q5, q6}"/>
+		<transicion desde="{q0, q16, q19, q23, q3}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q16, q19, q23, q3}" lee="b" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q19, q23, q3}" lee="c" hacia="{q0, q11, q16, q20, q24, q29, q4}"/>
+		<transicion desde="{q0, q16, q23, q3, q34, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q23, q3, q34, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q23, q3, q34, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q16, q23, q3, q34, q36, q5}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q23, q3, q34, q36, q5}" lee="c" hacia="{q0, q11, q16, q24, q29, q35, q36, q4, q5, q6}"/>
+		<transicion desde="{q0, q16, q23, q3, q34}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q23, q3, q34}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q23, q3, q34}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q16, q23, q3, q34}" lee="b" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16, q23, q3, q34}" lee="c" hacia="{q0, q11, q16, q24, q29, q35, q4}"/>
+		<transicion desde="{q0, q16, q36, q5}" lee="0" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q36, q5}" lee="1" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q36, q5}" lee="a" hacia="{q0, q1, q16, q17, q21, q36, q5}"/>
+		<transicion desde="{q0, q16, q36, q5}" lee="b" hacia="{q0, q16, q36, q5}"/>
+		<transicion desde="{q0, q16, q36, q5}" lee="c" hacia="{q0, q11, q16, q29, q36, q5, q6}"/>
+		<transicion desde="{q0, q16}" lee="0" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16}" lee="1" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16}" lee="a" hacia="{q0, q1, q16, q17, q21}"/>
+		<transicion desde="{q0, q16}" lee="b" hacia="{q0, q16}"/>
+		<transicion desde="{q0, q16}" lee="c" hacia="{q0, q11, q16, q29}"/>
+		<transicion desde="{q0, q2, q22, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q2, q22, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q2, q22, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q2, q22, q5}" lee="b" hacia="{q0, q23, q3, q5}"/>
+		<transicion desde="{q0, q2, q22, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+		<transicion desde="{q0, q2, q22}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q2, q22}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q2, q22}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q2, q22}" lee="b" hacia="{q0, q23, q3}"/>
+		<transicion desde="{q0, q2, q22}" lee="c" hacia="{q0, q11, q29}"/>
+		<transicion desde="{q0, q23, q3, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q23, q3, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q23, q3, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q23, q3, q5}" lee="b" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q23, q3, q5}" lee="c" hacia="{q0, q11, q24, q29, q4, q5, q6}"/>
+		<transicion desde="{q0, q23, q3}" lee="0" hacia="{q0}"/>
+		<transicion desde="{q0, q23, q3}" lee="1" hacia="{q0}"/>
+		<transicion desde="{q0, q23, q3}" lee="a" hacia="{q0, q1, q21}"/>
+		<transicion desde="{q0, q23, q3}" lee="b" hacia="{q0}"/>
+		<transicion desde="{q0, q23, q3}" lee="c" hacia="{q0, q11, q24, q29, q4}"/>
+		<transicion desde="{q0, q5}" lee="0" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q5}" lee="1" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q5}" lee="a" hacia="{q0, q1, q21, q5}"/>
+		<transicion desde="{q0, q5}" lee="b" hacia="{q0, q5}"/>
+		<transicion desde="{q0, q5}" lee="c" hacia="{q0, q11, q29, q5, q6}"/>
+	</transiciones>
+</automata>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata tipo="AFND" nombre="L3-AFNDL-p108-AFND">
+	<alfabeto><simbolo>a</simbolo><simbolo>b</simbolo><simbolo>c</simbolo><simbolo>0</simbolo><simbolo>1</simbolo></alfabeto>
+	<estados>
+		<estado nombre="i" inicial="true"/>
+		<estado nombre="x0"/>
+		<estado nombre="x1"/>
+		<estado nombre="x2"/>
+		<estado nombre="x3"/>
+		<estado nombre="x4"/>
+		<estado nombre="x5"/>
+		<estado nombre="x6"/>
+		<estado nombre="x7"/>
+		<estado nombre="x8"/>
+		<estado nombre="x9"/>
+		<estado nombre="x10"/>
+		<estado nombre="x11" aceptacion="true"/>
+		<estado nombre="y0"/>
+		<estado nombre="y1"/>
+		<estado nombre="y2"/>
+		<estado nombre="y3"/>
+		<estado nombre="y4"/>
+		<estado nombre="y5"/>
+		<estado nombre="y6"/>
+		<estado nombre="y7"/>
+		<estado nombre="y8"/>
+		<estado nombre="y9"/>
+		<estado nombre="y10"/>
+		<estado nombre="y11" aceptacion="true"/>
+		<estado nombre="f" aceptacion="true"/>
+	</estados>
+	<transiciones>
+		<transicion desde="i" lee="a" hacia="x0"/>
+		<transicion desde="i" lee="a" hacia="x1"/>
+		<transicion desde="i" lee="a" hacia="y0"/>
+		<transicion desde="i" lee="b" hacia="x0"/>
+		<transicion desde="i" lee="b" hacia="y0"/>
+		<transicion desde="i" lee="c" hacia="x0"/>
+		<transicion desde="i" lee="c" hacia="y0"/>
+		<transicion desde="i" lee="c" hacia="y1"/>
+		<transicion desde="i" lee="0" hacia="x0"/>
+		<transicion desde="i" lee="0" hacia="y0"/>
+		<transicion desde="i" lee="1" hacia="x0"/>
+		<transicion desde="i" lee="1" hacia="y0"/>
+		<transicion desde="x0" lee="a" hacia="x0"/>
+		<transicion desde="x0" lee="a" hacia="x1"/>
+		<transicion desde="x0" lee="b" hacia="x0"/>
+		<transicion desde="x0" lee="c" hacia="x0"/>
+		<transicion desde="x0" lee="0" hacia="x0"/>
+		<transicion desde="x0" lee="1" hacia="x0"/>
+		<transicion desde="x1" lee="b" hacia="x2"/>
+		<transicion desde="x2" lee="b" hacia="x3"/>
+		<transicion desde="x3" lee="c" hacia="x4"/>
+		<transicion desde="x4" lee="b" hacia="x5"/>
+		<transicion desde="x5" lee="a" hacia="x5"/>
+		<transicion desde="x5" lee="b" hacia="x5"/>
+		<transicion desde="x5" lee="c" hacia="x5"/>
+		<transicion desde="x5" lee="c" hacia="x6"/>
+		<transicion desde="x5" lee="0" hacia="x5"/>
+		<transicion desde="x5" lee="1" hacia="x5"/>
+		<transicion desde="x6" lee="b" hacia="x7"/>
+		<transicion desde="x7" lee="a" hacia="x8"/>
+		<transicion desde="x8" lee="a" hacia="x9"/>
+		<transicion desde="x9" lee="b" hacia="x10"/>
+		<transicion desde="x10" lee="b" hacia="x11"/>
+		<transicion desde="x10" lee="b" hacia="f"/>
+		<transicion desde="x11" lee="a" hacia="x11"/>
+		<transicion desde="x11" lee="a" hacia="f"/>
+		<transicion desde="x11" lee="b" hacia="x11"/>
+		<transicion desde="x11" lee="b" hacia="f"/>
+		<transicion desde="x11" lee="c" hacia="x11"/>
+		<transicion desde="x11" lee="c" hacia="f"/>
+		<transicion desde="x11" lee="0" hacia="x11"/>
+		<transicion desde="x11" lee="0" hacia="f"/>
+		<transicion desde="x11" lee="1" hacia="x11"/>
+		<transicion desde="x11" lee="1" hacia="f"/>
+		<transicion desde="y0" lee="a" hacia="y0"/>
+		<transicion desde="y0" lee="b" hacia="y0"/>
+		<transicion desde="y0" lee="c" hacia="y0"/>
+		<transicion desde="y0" lee="c" hacia="y1"/>
+		<transicion desde="y0" lee="0" hacia="y0"/>
+		<transicion desde="y0" lee="1" hacia="y0"/>
+		<transicion desde="y1" lee="b" hacia="y2"/>
+		<transicion desde="y2" lee="a" hacia="y3"/>
+		<transicion desde="y3" lee="a" hacia="y4"/>
+		<transicion desde="y4" lee="b" hacia="y5"/>
+		<transicion desde="y5" lee="b" hacia="y6"/>
+		<transicion desde="y6" lee="a" hacia="y6"/>
+		<transicion desde="y6" lee="a" hacia="y7"/>
+		<transicion desde="y6" lee="b" hacia="y6"/>
+		<transicion desde="y6" lee="c" hacia="y6"/>
+		<transicion desde="y6" lee="0" hacia="y6"/>
+		<transicion desde="y6" lee="1" hacia="y6"/>
+		<transicion desde="y7" lee="b" hacia="y8"/>
+		<transicion desde="y8" lee="b" hacia="y9"/>
+		<transicion desde="y9" lee="c" hacia="y10"/>
+		<transicion desde="y10" lee="b" hacia="y11"/>
+		<transicion desde="y10" lee="b" hacia="f"/>
+		<transicion desde="y11" lee="a" hacia="y11"/>
+		<transicion desde="y11" lee="a" hacia="f"/>
+		<transicion desde="y11" lee="b" hacia="y11"/>
+		<transicion desde="y11" lee="b" hacia="f"/>
+		<transicion desde="y11" lee="c" hacia="y11"/>
+		<transicion desde="y11" lee="c" hacia="f"/>
+		<transicion desde="y11" lee="0" hacia="y11"/>
+		<transicion desde="y11" lee="0" hacia="f"/>
+		<transicion desde="y11" lee="1" hacia="y11"/>
+		<transicion desde="y11" lee="1" hacia="f"/>
+	</transiciones>
+</automata>

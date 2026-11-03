@@ -21,8 +21,6 @@ Thumbs.db
 # Cache de pytest
 .pytest_cache/
 
-# Archivo intermedio de herramientas/generar_reporte.py
-casos.tsv
 
 # Compilados de las herramientas Java
 *.class

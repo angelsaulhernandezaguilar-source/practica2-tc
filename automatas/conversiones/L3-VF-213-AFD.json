@@ -1,0 +1,65 @@
+{
+  "nombre": "L3-VF-213-AFD",
+  "tipo": "AFND",
+  "alfabeto": [
+    "a",
+    "b",
+    "c"
+  ],
+  "estados": [
+    "{q0}",
+    "{q1, q2, q3, q4, q6, q7, q8}",
+    "{q3, q4, q5, q6, q7, q8}",
+    "{q7, q8, q9}"
+  ],
+  "inicial": "{q0}",
+  "aceptacion": [
+    "{q1, q2, q3, q4, q6, q7, q8}",
+    "{q3, q4, q5, q6, q7, q8}",
+    "{q7, q8, q9}"
+  ],
+  "transiciones": [
+    {
+      "desde": "{q0}",
+      "lee": "a",
+      "hacia": [
+        "{q1, q2, q3, q4, q6, q7, q8}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q6, q7, q8}",
+      "lee": "b",
+      "hacia": [
+        "{q3, q4, q5, q6, q7, q8}"
+      ]
+    },
+    {
+      "desde": "{q1, q2, q3, q4, q6, q7, q8}",
+      "lee": "c",
+      "hacia": [
+        "{q7, q8, q9}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q7, q8}",
+      "lee": "b",
+      "hacia": [
+        "{q3, q4, q5, q6, q7, q8}"
+      ]
+    },
+    {
+      "desde": "{q3, q4, q5, q6, q7, q8}",
+      "lee": "c",
+      "hacia": [
+        "{q7, q8, q9}"
+      ]
+    },
+    {
+      "desde": "{q7, q8, q9}",
+      "lee": "c",
+      "hacia": [
+        "{q7, q8, q9}"
+      ]
+    }
+  ]
+}
