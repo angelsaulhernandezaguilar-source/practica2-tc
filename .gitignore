@@ -26,3 +26,6 @@ casos.tsv
 
 # Compilados de las herramientas Java
 *.class
+
+# Clases compiladas de las herramientas Java
+build/
