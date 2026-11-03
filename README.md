@@ -8,6 +8,8 @@
 **Profesor:** M. en C. Gabriel Hurtado Avilés  
 **Fecha de entrega:** martes 6 de octubre de 2026, según el enunciado (la fecha efectiva es la de la última confirmación en `main`)
 
+**Repositorio:** https://github.com/angelsaulhernandezaguilar-source/practica2-tc
+
 ## Índice
 
 | Documento | Contenido |

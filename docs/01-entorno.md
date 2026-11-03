@@ -56,7 +56,8 @@ fusión (*merge commit*), para que las fusiones queden visibles en el grafo.
 | `feature/automatas-listas` | Los autómatas de las Listas 2 y 3, sus conversiones y la evidencia de JFLAP |
 | `feature/investigacion` | Ejercicio 4: investigación, artículo de Rabin y Scott y dos artículos nuevos |
 | `feature/automata-aplicacion` | Ejercicio 5: el autómata de TCP y la propuesta de trabajo |
-| `feature/evidencias` | Capturas del grafo de Git, de los *Pull Requests* y de GitHub Actions |
+| `feature/evidencias` | README completo y resultado de pytest en los tres contenedores |
+| `feature/capturas-evidencia` | Capturas del grafo de Git, de los *Pull Requests* y de GitHub Actions |
 
 El ciclo de cada rama es el del Anexo 1 del enunciado:
 
@@ -70,20 +71,32 @@ git switch main && git pull
 git branch -d feature/importar-exportar
 ```
 
+Los *Pull Requests* fusionados son los
+[#1 a #9 del repositorio](https://github.com/angelsaulhernandezaguilar-source/practica2-tc/pulls?q=is%3Apr+is%3Aclosed);
+cada uno describe el cambio que introduce. El último, el de las capturas, no puede aparecer en su propia
+captura.
+
 ## 1.4 Integración continua
 
 El archivo [`.github/workflows/pruebas.yml`](../.github/workflows/pruebas.yml) es el del Anexo 2: en
 cada `push` y en cada *Pull Request* GitHub Actions crea tres ejecuciones independientes (la clave
 `matrix` con `3.11`, `3.12` y `3.13`), instala `requirements.txt` y ejecuta `pytest -q`. Con
 `fail-fast: false`, el fallo de una versión no cancela las otras dos. Es el equivalente remoto de
-los tres contenedores locales.
+los tres contenedores locales. Las 24 ejecuciones generadas por las ramas, los *Pull Requests* y las fusiones
+aprobaron con las tres versiones.
+
+![GitHub Actions: pytest con 3.11, 3.12 y 3.13](../evidencias/ci/actions.png)
+
+![git log --oneline --graph --all](../evidencias/git/log-graph.png)
+
+![Pull Requests cerrados](../evidencias/git/pull-requests.png)
 
 ## 1.5 Evidencia
 
 | Evidencia | Archivo |
 |---|---|
-| Dirección del repositorio | Ver el [README](../README.md) |
+| Dirección del repositorio | https://github.com/angelsaulhernandezaguilar-source/practica2-tc |
 | `git log --oneline --graph --all` con las fusiones | [`evidencias/git/log-graph.png`](../evidencias/git/log-graph.png) ([texto](../evidencias/git/log-graph.txt)) |
 | Lista de *Pull Requests* cerrados | [`evidencias/git/pull-requests.png`](../evidencias/git/pull-requests.png) |
-| Ejecución de GitHub Actions con las tres versiones aprobadas | [`evidencias/ci/actions.png`](../evidencias/ci/actions.png) |
+| Ejecución de GitHub Actions con las tres versiones aprobadas | [`evidencias/ci/actions.png`](../evidencias/ci/actions.png) (ejecución #24 sobre `main`) y [`actions-lista.png`](../evidencias/ci/actions-lista.png) (todas las ejecuciones) |
 | Pruebas en los tres contenedores | [`evidencias/ci/pytest-contenedores.txt`](../evidencias/ci/pytest-contenedores.txt) |
