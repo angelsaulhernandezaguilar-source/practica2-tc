@@ -1,0 +1,15 @@
+GitHub Actions, flujo «pruebas», Pull Request #11 (rama feature/p3-algoritmos)
+Ejecución 41935358605: https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/41935358605
+
+✓ feature/p3-algoritmos pruebas angelsaulhernandezaguilar-source/practica2-tc#11 · 41935358605
+Triggered via pull_request about 1 minute ago
+
+JOBS
+✓ pytest (3.12) in 17s (ID 126942331078)
+✓ pytest (3.11) in 20s (ID 126942331345)
+✓ pytest (3.13) in 14s (ID 126942331970)
+
+Resumen de pytest en cada versión:
+pytest (3.12): 950 passed in 4.97s
+pytest (3.11): 950 passed in 4.36s
+pytest (3.13): 950 passed in 3.52s
