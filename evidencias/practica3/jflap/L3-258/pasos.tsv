@@ -1,0 +1,8 @@
+paso	etapa	detalle	accion	estados	transiciones
+0	Reform Transitions	Use the collapse tool to turn multiple transitions to one. 1 more collapses needed.	inicio	[A, B, C]	A -[0]→ C; A -[1]→ C; B -[0]→ A; B -[1]→ C; C -[0]→ B; C -[1]→ A
+1	Reform Transitions	Put empty transitions between states with no transitions. 4 more empty transitions needed.	Se combinan las transiciones de A a C	[A, B, C]	A -[0+1]→ C; B -[0]→ A; B -[1]→ C; C -[0]→ B; C -[1]→ A
+2	Reform Transitions	Put empty transitions between states with no transitions. 3 more empty transitions needed.	Transición ∅ de A a A	[A, B, C]	A -[0+1]→ C; A -[ø]→ A; B -[0]→ A; B -[1]→ C; C -[0]→ B; C -[1]→ A
+3	Reform Transitions	Put empty transitions between states with no transitions. 2 more empty transitions needed.	Transición ∅ de A a B	[A, B, C]	A -[0+1]→ C; A -[ø]→ A; A -[ø]→ B; B -[0]→ A; B -[1]→ C; C -[0]→ B; C -[1]→ A
+4	Reform Transitions	Put empty transitions between states with no transitions. 1 more empty transitions needed.	Transición ∅ de B a B	[A, B, C]	A -[0+1]→ C; A -[ø]→ A; A -[ø]→ B; B -[0]→ A; B -[1]→ C; B -[ø]→ B; C -[0]→ B; C -[1]→ A
+5	Remove States	Use the collapse state tool to remove nonfinal, noninitial states. 1 more removals needed.	Transición ∅ de C a C	[A, B, C]	A -[0+1]→ C; A -[ø]→ A; A -[ø]→ B; B -[0]→ A; B -[1]→ C; B -[ø]→ B; C -[0]→ B; C -[1]→ A; C -[ø]→ C
+6	Generalized Transition Graph Finished!	((0+1)(01)*(1+00))*(0+1)(01)*	Se elimina B; nuevas etiquetas: A -[ø]→ A; A -[0+1]→ C; C -[1+00]→ A; C -[01]→ C	[A, C]	A -[0+1]→ C; A -[ø]→ A; C -[01]→ C; C -[1+00]→ A

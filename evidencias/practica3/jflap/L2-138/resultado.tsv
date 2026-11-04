@@ -1,0 +1,11 @@
+expresion	(a+ba*ba*b)*
+equivalentes	true
+estados_afn	22
+sumideros	
+equivalentes_sin_sumidero	true
+cadena	λ	true	true
+cadena	a	true	true
+cadena	aa	true	true
+cadena	b	false	false
+cadena	ab	false	false
+cadena	ba	false	false

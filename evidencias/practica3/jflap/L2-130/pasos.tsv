@@ -1,0 +1,8 @@
+paso	etapa	detalle	accion	estados	transiciones
+0	Reform Transitions	Use the collapse tool to turn multiple transitions to one. 1 more collapses needed.	inicio	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q2 -[0]→ q3; q2 -[1]→ q2; q3 -[0]→ q2; q3 -[1]→ q2
+1	Reform Transitions	Put empty transitions between states with no transitions. 4 more empty transitions needed.	Se combinan las transiciones de q3 a q2	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q2 -[0]→ q3; q2 -[1]→ q2; q3 -[0+1]→ q2
+2	Reform Transitions	Put empty transitions between states with no transitions. 3 more empty transitions needed.	Transición ∅ de q1 a q3	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q1 -[ø]→ q3; q2 -[0]→ q3; q2 -[1]→ q2; q3 -[0+1]→ q2
+3	Reform Transitions	Put empty transitions between states with no transitions. 2 more empty transitions needed.	Transición ∅ de q2 a q1	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q1 -[ø]→ q3; q2 -[0]→ q3; q2 -[1]→ q2; q2 -[ø]→ q1; q3 -[0+1]→ q2
+4	Reform Transitions	Put empty transitions between states with no transitions. 1 more empty transitions needed.	Transición ∅ de q3 a q1	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q1 -[ø]→ q3; q2 -[0]→ q3; q2 -[1]→ q2; q2 -[ø]→ q1; q3 -[0+1]→ q2; q3 -[ø]→ q1
+5	Remove States	Use the collapse state tool to remove nonfinal, noninitial states. 1 more removals needed.	Transición ∅ de q3 a q3	[q1, q2, q3]	q1 -[0]→ q1; q1 -[1]→ q2; q1 -[ø]→ q3; q2 -[0]→ q3; q2 -[1]→ q2; q2 -[ø]→ q1; q3 -[0+1]→ q2; q3 -[ø]→ q1; q3 -[ø]→ q3
+6	Generalized Transition Graph Finished!	0*1(1+0(0+1))*	Se elimina q3; nuevas etiquetas: q1 -[0]→ q1; q1 -[1]→ q2; q2 -[ø]→ q1; q2 -[1+0(0+1)]→ q2	[q1, q2]	q1 -[0]→ q1; q1 -[1]→ q2; q2 -[1+0(0+1)]→ q2; q2 -[ø]→ q1
