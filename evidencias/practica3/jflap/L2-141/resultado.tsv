@@ -1,0 +1,11 @@
+expresion	(1+01)*
+equivalentes	false
+estados_afn	12
+sumideros	q2
+equivalentes_sin_sumidero	true
+cadena	λ	true	true
+cadena	1	true	true
+cadena	01	true	true
+cadena	0	false	false
+cadena	00	false	false
+cadena	10	false	false

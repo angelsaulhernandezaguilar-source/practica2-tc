@@ -1,0 +1,11 @@
+expresion	((1+01*0)(0+1))*(01*+1+01*0)
+equivalentes	true
+estados_afn	48
+sumideros	
+equivalentes_sin_sumidero	true
+cadena	0	true	true
+cadena	1	true	true
+cadena	00	true	true
+cadena	λ	false	false
+cadena	10	false	false
+cadena	11	false	false
