@@ -1,0 +1,20 @@
+Informe de validación de cadenas
+Autómata: L3-196 (AFND-lambda, 3 estados, Σ = {0, 1})
+Archivo de cadenas: cadenas-ejemplo.txt
+Método: simulación directa con cerradura λ
+
+   #  cadena  resultado
+   1  λ       RECHAZADA
+   2  0       RECHAZADA
+   3  1       ACEPTADA
+   4  00      RECHAZADA
+   5  01      ACEPTADA
+   6  10      RECHAZADA
+   7  11      RECHAZADA
+   8  110     RECHAZADA
+   9  0101    RECHAZADA
+  10  1001    RECHAZADA
+  11  0012    RECHAZADA (símbolos fuera de Σ: 2)
+  12  111000  RECHAZADA
+
+Total: 12 cadenas; 2 aceptadas y 10 rechazadas.

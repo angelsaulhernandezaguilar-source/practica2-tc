@@ -63,14 +63,20 @@ class Clausura:
     arcos: list = field(default_factory=list)
     pasos: list = field(default_factory=list)
     operaciones: int = 0
+    conjuntos: list = field(default_factory=list)  # estados ya en la cerradura tras cada paso
 
 
-def _cerrar(aut: Automata, inicio) -> tuple[frozenset, list, list, int]:
-    """Cl(S) por recorrido en profundidad con una pila explícita."""
+def _cerrar(aut: Automata, inicio, conjuntos=None) -> tuple[frozenset, list, list, int]:
+    """Cl(S) por recorrido en profundidad con una pila explícita.
+
+    Si se da la lista ``conjuntos``, se le agrega el conjunto visitado tras cada paso.
+    """
     vistos = list(_orden(aut, inicio))
     pila = list(reversed(vistos))
     arcos, pasos, ops = [], [], 0
+    conjuntos = [] if conjuntos is None else conjuntos
     pasos.append(f"Se parte de {_conj(aut, vistos)}: todo estado está en su propia cerradura (cero transiciones λ).")
+    conjuntos.append(frozenset(vistos))
     while pila:
         q = pila.pop()
         destinos = _orden(aut, aut.destinos(q, LAMBDA))
@@ -87,8 +93,10 @@ def _cerrar(aut: Automata, inicio) -> tuple[frozenset, list, list, int]:
             vistos.append(p)
             arcos.append((q, p))
         pila.extend(reversed(nuevos))
+        conjuntos.append(frozenset(vistos))
     resultado = frozenset(vistos)
     pasos.append(f"La pila quedó vacía: Cl = {_conj(aut, resultado)}.")
+    conjuntos.append(resultado)
     return resultado, arcos, pasos, ops
 
 
@@ -101,9 +109,10 @@ def clausura_lambda(aut: Automata, estado) -> Clausura:
     for q in inicio:
         if q not in aut.estados:
             raise AutomataInvalido(f"{q!r} no pertenece a Q.")
-    resultado, arcos, pasos, ops = _cerrar(aut, inicio)
+    conjuntos = []
+    resultado, arcos, pasos, ops = _cerrar(aut, inicio, conjuntos)
     nombre = estado if isinstance(estado, str) else _conj(aut, inicio)
-    return Clausura(nombre, resultado, arcos, pasos, ops)
+    return Clausura(nombre, resultado, arcos, pasos, ops, conjuntos)
 
 
 def clausuras(aut: Automata) -> dict[str, Clausura]:
@@ -358,8 +367,8 @@ class ResultadoMinimo:
             if r.numero == 0:
                 linea += "  (F y Q − F)"
             for viejo, partes in r.divisiones:
-                linea += (f"\n   {_conj(b, viejo)} se divide: " +
-                          "; ".join(f"{_conj(b, nuevo)} van a {firma}" for nuevo, firma in partes))
+                linea += (f"\n   {_bloque(b, viejo)} se divide: " +
+                          "; ".join(f"{_bloque(b, nuevo)} van a {firma}" for nuevo, firma in partes))
             lineas.append(linea)
         lineas.append(f"Π{self.rondas[-1].numero} = Π{self.rondas[-1].numero - 1}: la partición es estable."
                       if len(self.rondas) > 1 else "La partición inicial ya es estable.")

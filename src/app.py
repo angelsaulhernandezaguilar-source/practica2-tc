@@ -5,7 +5,8 @@ Este archivo solo conecta controles con el núcleo:
 
 * automata.py  — la quíntupla, la simulación y las conversiones;
 * formatos.py  — la lectura y escritura de .jff, .json y .xml;
-* lenguajes.py — las operaciones de la Práctica 1.
+* lenguajes.py — las operaciones de la Práctica 1;
+* algoritmos.py — los algoritmos de la Práctica 3 con su registro paso a paso.
 
 Ninguna regla del autómata vive aquí; por eso el núcleo se prueba con pytest
 sin abrir la interfaz.
@@ -27,6 +28,17 @@ from automata import (
     desde_tabla,
     mostrar_cadena,
     mostrar_conjunto,
+)
+from algoritmos import (
+    clausura_lambda,
+    clausuras,
+    construir_subconjuntos,
+    eliminar_lambda,
+    equivalentes_por_minimizacion,
+    informe_lote,
+    minimizar_afd,
+    simular_directo,
+    validar_lote,
 )
 from formatos import FormatoInvalido, a_texto, desde_texto, posiciones, resumen_quintupla
 from lenguajes import (
@@ -130,10 +142,15 @@ def diagrama(aut: Automata, activos=frozenset(), recientes=()) -> ft.Control:
 
 
 def tabla_control(aut: Automata) -> ft.DataTable:
-    filas = aut.tabla()
+    return tabla_de_filas(aut.tabla())
+
+
+def tabla_de_filas(filas, resaltar=None) -> ft.DataTable:
+    """DataTable a partir de [encabezado, renglón, ...]; ``resaltar`` es el índice de un renglón."""
     return ft.DataTable(
         columns=[ft.DataColumn(ft.Text(c, weight=ft.FontWeight.BOLD)) for c in filas[0]],
-        rows=[ft.DataRow([ft.DataCell(ft.Text(c, selectable=True)) for c in f]) for f in filas[1:]],
+        rows=[ft.DataRow([ft.DataCell(ft.Text(c, selectable=True)) for c in f],
+                         color=ft.Colors.AMBER_50 if k == resaltar else None) for k, f in enumerate(filas[1:])],
         border=ft.Border.all(1, ft.Colors.GREY_400),
         horizontal_lines=ft.BorderSide(0.5, ft.Colors.GREY_300),
     )
@@ -144,7 +161,7 @@ def tabla_control(aut: Automata) -> ft.DataTable:
 # ----------------------------------------------------------------------
 
 def main(page: ft.Page):
-    page.title = "Práctica 2 — Simulador de autómatas finitos"
+    page.title = "Prácticas 2 y 3 — Simulador de autómatas finitos"
     page.padding = 16
     page.scroll = ft.ScrollMode.AUTO
 
@@ -219,6 +236,7 @@ def main(page: ft.Page):
     def fijar(aut: Automata, aviso=None):
         estado["aut"] = aut
         estado["pasos"], estado["i"], estado["simulado"] = [], 0, None
+        al_cambiar_automata()
         refrescar_vista()
         refrescar_simulacion()
         if aviso:
@@ -346,7 +364,7 @@ def main(page: ft.Page):
     # ------------------------------------------------------------------
     campo_cadena = ft.TextField(label="Cadena w (vacía = λ)", width=320)
     modo = ft.RadioGroup(value=TODOS_LOS_CAMINOS, content=ft.Row([
-        ft.Radio(value=TODOS_LOS_CAMINOS, label="Seguir todos los caminos (conjuntos de estados)"),
+        ft.Radio(value=TODOS_LOS_CAMINOS, label="Simulación directa (conjuntos de estados con cerradura λ)"),
         ft.Radio(value=CONVERTIR_A_AFD, label="Convertir a AFD y simular el AFD"),
     ]))
     veredicto = ft.Text(size=18, weight=ft.FontWeight.BOLD)
@@ -415,6 +433,10 @@ def main(page: ft.Page):
                                                  or f"ninguna: no hay δ(·, {p.simbolo}) desde {mostrar_conjunto(p.antes)}")
         if p.por_lambda:
             texto += "\nTransiciones λ seguidas: " + "; ".join(f"{q} -λ→ {r}" for q, _, r in p.por_lambda)
+        if not simulado.es_determinista:
+            directo = simular_directo(simulado, simbolos).pasos[i]
+            texto += (f"\nActivos antes de la cerradura λ: {mostrar_conjunto(directo.antes)} · "
+                      f"después de la cerradura λ: {mostrar_conjunto(directo.despues)}")
         paso_actual.value = texto
         if i == total:
             acepta = bool(p.despues & simulado.aceptacion)
@@ -436,6 +458,53 @@ def main(page: ft.Page):
             if truncado:
                 lista_caminos.controls.append(ft.Text("(se muestran solo los primeros 40 caminos)", italic=True))
 
+    # Validación de varias cadenas (Práctica 3, apartado 2.5)
+    salida_lote = ft.Column(spacing=2)
+    lote = {"informe": "", "origen": ""}
+
+    def mostrar_lote(texto, origen):
+        aut = estado["aut"]
+        if aut is None:
+            avisar("Primero defina o cargue un autómata.", error=True)
+            return
+        resultados = validar_lote(aut, texto)
+        lote.update(informe=informe_lote(aut, resultados, origen), origen=origen)
+        aceptadas = sum(r.acepta for r in resultados)
+        salida_lote.controls = [
+            ft.Text(f"{origen}: {len(resultados)} cadenas, {aceptadas} aceptadas y "
+                    f"{len(resultados) - aceptadas} rechazadas.", weight=ft.FontWeight.BOLD),
+            ft.Row([tabla_de_filas(
+                [["#", "Cadena", "Resultado"]] +
+                [[str(r.linea), mostrar_cadena(r.cadena),
+                  ("ACEPTADA" if r.acepta else "RECHAZADA") +
+                  (f" (fuera de Σ: {', '.join(r.simbolos_fuera)})" if r.simbolos_fuera else "")]
+                 for r in resultados])], scroll=ft.ScrollMode.AUTO),
+        ]
+        page.update()
+
+    async def abrir_lote(e):
+        archivos = await selector.pick_files(allowed_extensions=["txt"], with_data=True)
+        if not archivos:
+            return
+        f = archivos[0]
+        datos = bytes(f.bytes) if f.bytes is not None else pathlib.Path(f.path).read_bytes()
+        mostrar_lote(datos.decode("utf-8-sig"), f.name)
+
+    def lote_ejemplo(e):
+        ruta = CARPETA_EJEMPLOS / "practica3" / "cadenas-ejemplo.txt"
+        mostrar_lote(ruta.read_text(encoding="utf-8"), ruta.name)
+
+    async def guardar_informe(e):
+        if not lote["informe"]:
+            avisar("Primero valide un archivo de cadenas.", error=True)
+            return
+        nombre = pathlib.Path(lote["origen"] or "cadenas").stem + "-informe.txt"
+        datos = lote["informe"].encode("utf-8")
+        ruta = await selector.save_file(file_name=nombre, src_bytes=datos)
+        if ruta and not os.path.exists(ruta):
+            pathlib.Path(ruta).write_bytes(datos)
+        avisar(f"Informe guardado como {ruta or nombre}.")
+
     pestana_simular = ft.Column([
         ft.Text("Simulación y validación de cadenas", size=20, weight=ft.FontWeight.BOLD),
         ft.Row([campo_cadena, ft.FilledButton("Validar", icon=ft.Icons.PLAY_ARROW, on_click=validar)]),
@@ -446,6 +515,182 @@ def main(page: ft.Page):
                 ft.Button("Hasta el final", icon=ft.Icons.SKIP_NEXT, on_click=mover(10 ** 6))], wrap=True),
         veredicto, paso_actual, diagrama_sim,
         ft.Text("Traza del recorrido:", weight=ft.FontWeight.BOLD), lista_traza, lista_caminos,
+        ft.Divider(),
+        ft.Text("Validación de varias cadenas", size=18, weight=ft.FontWeight.BOLD),
+        ft.Text("Archivo de texto con una cadena por línea (línea vacía o λ = cadena vacía; # = comentario).",
+                italic=True),
+        ft.Row([ft.Button("Cargar archivo de cadenas (.txt)", icon=ft.Icons.UPLOAD_FILE, on_click=abrir_lote),
+                ft.Button("Usar cadenas-ejemplo.txt", on_click=lote_ejemplo),
+                ft.Button("Guardar informe", icon=ft.Icons.SAVE, on_click=guardar_informe)], wrap=True),
+        salida_lote,
+    ], spacing=10)
+
+    # ------------------------------------------------------------------
+    # Pestaña 5: algoritmos de la Práctica 3 paso a paso
+    # ------------------------------------------------------------------
+    algoritmo = ft.Dropdown(label="Algoritmo", width=330, value="clausura", options=[
+        ft.DropdownOption(key="clausura", text="2.1 Cerradura λ"),
+        ft.DropdownOption(key="lambda", text="2.2 Eliminación de transiciones λ"),
+        ft.DropdownOption(key="subconjuntos", text="2.3 Construcción de subconjuntos"),
+        ft.DropdownOption(key="minimizar", text="2.4 Minimización de AFD"),
+        ft.DropdownOption(key="equivalencia", text="2.4 Equivalencia de dos autómatas"),
+    ])
+    estado_cl = ft.Dropdown(label="Estado para Cl(q)", width=200)
+    segundo = ft.Dropdown(label="Segundo autómata (equivalencia)", width=420, enable_filter=True, editable=True,
+                          options=[ft.DropdownOption(n) for n in ejemplos_disponibles()])
+    titulo_paso = ft.Text(size=16, weight=ft.FontWeight.BOLD)
+    texto_paso = ft.Column(spacing=2)
+    tabla_paso = ft.Row(scroll=ft.ScrollMode.AUTO)
+    diagrama_paso = ft.Row(scroll=ft.ScrollMode.AUTO, wrap=True)
+    pap = {"pasos": [], "i": 0, "resultado": None}
+
+    def paso(texto, tabla=None, resaltar=None, aut=None, activos=frozenset(), recientes=()):
+        return {"texto": texto, "tabla": tabla, "resaltar": resaltar, "aut": aut,
+                "activos": activos, "recientes": recientes}
+
+    def pasos_clausura(aut):
+        q = estado_cl.value if estado_cl.value in aut.estados else aut.inicial
+        c = clausura_lambda(aut, q)
+        todas = clausuras(aut)
+        tabla = [["q", "Cl(q)"]] + [[r, mostrar_conjunto(x.resultado)] for r, x in todas.items()]
+        lista = [paso(t, None, None, aut, conj, [(o, LAMBDA, d) for o, d in c.arcos if d in conj])
+                 for t, conj in zip(c.pasos, c.conjuntos)]
+        lista.append(paso(f"Cl({q}) = {mostrar_conjunto(c.resultado)}. Cerraduras de todos los estados:",
+                          tabla, aut.estados.index(q), aut, c.resultado, [(o, LAMBDA, d) for o, d in c.arcos]))
+        return lista, None
+
+    def pasos_lambda(aut):
+        r = eliminar_lambda(aut)
+        nuevo = r.automata
+        cab = ["q", "Cl(q)"] + [f"δ'(q, {a})" for a in aut.alfabeto] + ["¿F'?"]
+        filas = [[f.estado, mostrar_conjunto(f.clausura)] + [mostrar_conjunto(f.destinos[a]) for a in aut.alfabeto]
+                 + ["sí" if f.aceptacion else ""] for f in r.filas]
+        lista = [paso("Se calculan las cerraduras: " + "; ".join(
+            f"Cl({f.estado}) = {mostrar_conjunto(f.clausura)}" for f in r.filas) + ".", None, None, aut)]
+        for k, linea in enumerate(r.describir()):
+            f = r.filas[k]
+            agregadas = [t for t in r.agregadas if t[0] == f.estado]
+            linea += (" Se añaden: " + ", ".join(f"{q} -{a}→ {p}" for q, a, p in agregadas) + "."
+                      if agregadas else " No se añaden transiciones.")
+            if f.estado in r.nuevas_aceptacion:
+                linea += f" {f.estado} pasa a ser de aceptación: Cl({f.estado}) contiene un estado de F."
+            lista.append(paso(linea, [cab] + filas[: k + 1], k, aut, f.clausura))
+        lista.append(paso(
+            f"Resultado: AFN sin λ con {len(nuevo.estados)} estados. Se quitaron {len(r.quitadas)} transiciones λ "
+            f"y se añadieron {len(r.agregadas)} transiciones. Nuevos estados de aceptación: "
+            f"{', '.join(r.nuevas_aceptacion) or 'ninguno'}.", [cab] + filas, None, nuevo,
+            frozenset(r.nuevas_aceptacion), r.agregadas))
+        return lista, nuevo
+
+    def pasos_subconjuntos(aut):
+        r = construir_subconjuntos(aut)
+        afd = r.automata
+        cab = ["Estado del AFD"] + list(aut.alfabeto) + ["¿Aceptación?"]
+        filas = []
+        lista = [paso(f"Estado inicial del AFD: {r.nombres[r.filas[0].conjunto]}"
+                      + (" (la cerradura λ de q0)." if aut.tiene_lambda else "."), None, None, aut,
+                      r.filas[0].conjunto)]
+        for k, (f, linea) in enumerate(zip(r.filas, r.describir())):
+            filas.append([("→" if k == 0 else "") + r.nombres[f.conjunto]] +
+                         [r.nombres.get(f.destinos[a], "∅") for a in aut.alfabeto] +
+                         [f"sí: S ∩ F = {mostrar_conjunto(f.razon)}" if f.aceptacion else "no: S ∩ F = ∅"])
+            lista.append(paso(linea, [cab] + [list(x) for x in filas], k, aut, f.conjunto))
+        lista.append(paso(f"No quedan subconjuntos por procesar: el AFD tiene {len(afd.estados)} estados "
+                          f"alcanzables (de 2^{len(aut.estados)} = {2 ** len(aut.estados)} posibles).",
+                          [cab] + filas, None, afd))
+        return lista, afd
+
+    def pasos_minimizar(aut):
+        r = minimizar_afd(aut)
+        base, minimo = r.base, r.automata
+        lineas = r.describir()
+        lista = [paso("\n".join(lineas[: 2 if r.sumidero else 1]), None, None, base)]
+        desplaz = 2 if r.sumidero else 1
+        for k, ronda in enumerate(r.rondas):
+            cab = ["Bloque", "Estados", "¿Aceptación?"]
+            filas = [[f"B{j}", ", ".join(q for q in base.estados if q in b),
+                      "sí" if b & base.aceptacion else "no"] for j, b in enumerate(ronda.bloques)]
+            lista.append(paso(lineas[desplaz + k], [cab] + filas, None, base))
+        lista.append(paso(lineas[-1] + f" AFD mínimo: {len(minimo.estados)} estados (el AFD tenía "
+                          f"{len(aut.estados)}).", None, None, minimo))
+        return lista, minimo
+
+    def pasos_equivalencia(aut):
+        if not segundo.value:
+            raise AutomataInvalido("Elija el segundo autómata en la lista.")
+        ruta = CARPETA_EJEMPLOS / segundo.value
+        otro = desde_texto(ruta.read_text(encoding="utf-8"), ruta.name)
+        r = equivalentes_por_minimizacion(aut, otro)
+        lista = [paso(f"Se lleva cada autómata a su AFD mínimo. Primero: {aut.nombre} → "
+                      f"{len(r.minimo1.automata.estados)} estados.", None, None, r.minimo1.automata),
+                 paso(f"Segundo: {otro.nombre} → {len(r.minimo2.automata.estados)} estados.", None, None,
+                      r.minimo2.automata),
+                 paso(("EQUIVALENTES. " if r.equivalentes else "NO EQUIVALENTES. ") + r.motivo, None, None,
+                      r.minimo1.automata)]
+        return lista, None
+
+    GENERADORES = {"clausura": pasos_clausura, "lambda": pasos_lambda, "subconjuntos": pasos_subconjuntos,
+                   "minimizar": pasos_minimizar, "equivalencia": pasos_equivalencia}
+
+    def calcular(e=None):
+        aut = estado["aut"]
+        if aut is None:
+            avisar("Primero defina o cargue un autómata.", error=True)
+            return
+        try:
+            pap["pasos"], pap["resultado"] = GENERADORES[algoritmo.value](aut)
+        except (AutomataInvalido, FormatoInvalido, OSError) as err:
+            avisar(str(err), error=True)
+            return
+        pap["i"] = 0
+        mostrar_paso()
+
+    def mover_paso(delta):
+        def accion(e):
+            if not pap["pasos"]:
+                calcular()
+                return
+            pap["i"] = max(0, min(len(pap["pasos"]) - 1, pap["i"] + delta))
+            mostrar_paso()
+        return accion
+
+    def usar_resultado(e):
+        if pap["resultado"] is None:
+            avisar("Este algoritmo no produce un autómata nuevo (o aún no se ha calculado).", error=True)
+            return
+        preparar_tabla(aut=pap["resultado"])
+        fijar(pap["resultado"], f"Ahora se trabaja con {pap['resultado'].nombre}.")
+
+    def mostrar_paso():
+        pasos, i = pap["pasos"], pap["i"]
+        p = pasos[i]
+        titulo_paso.value = f"Paso {i + 1} de {len(pasos)}"
+        texto_paso.controls = [ft.Text(x["texto"], selectable=True, weight=ft.FontWeight.BOLD if k == i else None,
+                                       color=None if k == i else ft.Colors.GREY_700)
+                               for k, x in enumerate(pasos[: i + 1])]
+        tabla_paso.controls = [tabla_de_filas(p["tabla"], p["resaltar"])] if p["tabla"] else []
+        diagrama_paso.controls = [diagrama(p["aut"], p["activos"], p["recientes"])] if p["aut"] else []
+        page.update()
+
+    def al_cambiar_automata():
+        aut = estado["aut"]
+        estado_cl.options = [ft.DropdownOption(q) for q in aut.estados] if aut else []
+        if aut and estado_cl.value not in aut.estados:
+            estado_cl.value = aut.inicial
+        pap["pasos"], pap["resultado"] = [], None
+        titulo_paso.value = ""
+        texto_paso.controls, tabla_paso.controls, diagrama_paso.controls = [], [], []
+
+    pestana_algoritmos = ft.Column([
+        ft.Text("Algoritmos de la Práctica 3, paso a paso", size=20, weight=ft.FontWeight.BOLD),
+        ft.Text("Se aplican al autómata actual (definido o importado de un .jff en la pestaña 1).", italic=True),
+        ft.Row([algoritmo, estado_cl, segundo], wrap=True),
+        ft.Row([ft.FilledButton("Calcular", icon=ft.Icons.PLAY_ARROW, on_click=calcular),
+                ft.Button("Paso anterior", icon=ft.Icons.NAVIGATE_BEFORE, on_click=mover_paso(-1)),
+                ft.Button("Siguiente paso", icon=ft.Icons.NAVIGATE_NEXT, on_click=mover_paso(1)),
+                ft.Button("Hasta el final", icon=ft.Icons.SKIP_NEXT, on_click=mover_paso(10 ** 6)),
+                ft.Button("Usar el resultado", icon=ft.Icons.CHECK, on_click=usar_resultado)], wrap=True),
+        titulo_paso, texto_paso, tabla_paso, diagrama_paso,
     ], spacing=10)
 
     # ------------------------------------------------------------------
@@ -493,16 +738,18 @@ def main(page: ft.Page):
     ], spacing=10)
 
     pestanas = ft.Tabs(
-        length=4,
+        length=5,
         selected_index=0,
         content=ft.Column([
             ft.TabBar(tabs=[ft.Tab(label="1. Definir"), ft.Tab(label="2. Autómata"),
-                            ft.Tab(label="3. Simular"), ft.Tab(label="4. Lenguajes")]),
+                            ft.Tab(label="3. Simular"), ft.Tab(label="4. Lenguajes"),
+                            ft.Tab(label="5. Paso a paso")]),
             ft.TabBarView(controls=[
                 ft.Container(ft.Column([pestana_definir], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([vista], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([pestana_simular], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([pestana_lenguajes], scroll=ft.ScrollMode.AUTO), padding=10),
+                ft.Container(ft.Column([pestana_algoritmos], scroll=ft.ScrollMode.AUTO), padding=10),
             ], expand=True),
         ], expand=True),
         expand=True,
