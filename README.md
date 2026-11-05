@@ -1,4 +1,4 @@
-# Teoría de la Computación — Prácticas 2 y 3: simulador de autómatas finitos con interfaz gráfica
+# Teoría de la Computación — Prácticas 2, 3 y 4: simulador de autómatas finitos y expresiones regulares con interfaz gráfica
 
 **Nombre completo:** Ángel Saúl Hernández Aguilar  
 **Boleta:** 2025630123  
@@ -9,6 +9,80 @@
 **Fecha de entrega de la Práctica 2:** martes 6 de octubre de 2026, según el enunciado; la confirmación entregada quedó marcada con la etiqueta `practica2` (la última de `main` antes de la Práctica 3)
 
 **Repositorio:** https://github.com/angelsaulhernandezaguilar-source/practica2-tc
+
+## Práctica 4: expresiones regulares y las dos direcciones del teorema de Kleene
+
+**Fecha de entrega:** viernes 6 de noviembre de 2026. La entrega es la confirmación que señala la etiqueta
+**`practica4`**; las Prácticas 2 y 3 quedaron fijas en las etiquetas `practica2` y `practica3`. El software es
+el de las Prácticas 2 y 3, ampliado en este mismo repositorio, y reutiliza sin cambios la eliminación de λ, la
+construcción de subconjuntos, la minimización y la prueba de equivalencia de la Práctica 3.
+
+### Índice de documentos
+
+| Documento | Contenido |
+|---|---|
+| [Ejercicio 1](docs/practica4/01-investigacion.md) | Investigación: lenguajes y expresiones regulares, jerarquía de Chomsky, teorema de Kleene con sus referencias, leyes algebraicas de la Práctica 3, expresiones de la teoría contra las de los lenguajes de programación (con la demostración de que `(a*)b\1` no es regular) y cinco aplicaciones con una expresión cada una |
+| [Ejercicio 2](docs/practica4/02-er-a-automata.md) | Analizador de la notación del curso con errores posicionados, construcción del AFN-λ paso a paso, cadena hasta el AFD mínimo, exportación a `.jff` y validación de cadenas; casos 241-253, 272, 273 y 278 |
+| [Ejercicio 3](docs/practica4/03-automata-a-er.md) | Verificación de determinismo, eliminación de estados con el autómata generalizado de cada paso, y comparación con JFLAP y con Arden por AFD mínimos; casos 254-258, 276, 277 y los cinco AFD de la Práctica 3 |
+| [Ejercicio 4](docs/practica4/04-validadores.md) | Validadores de correo, teléfono nacional, fecha y URL: expresión del curso y patrón de `re`, estados antes y después de minimizar, lo que queda fuera de cada expresión, y las pruebas de congruencia con 600 cadenas por validador |
+| [Bibliografía](docs/bibliografia.md) | Referencias en formato APA 7 (ampliada) |
+
+| Carpeta | Contenido |
+|---|---|
+| `src/expresiones.py` | Analizador, construcción de Kleene (parte I), eliminación de estados (parte II), comparación de expresiones y traducción a `re` |
+| `src/validadores.py` | Los cuatro validadores y el generador de cadenas de prueba |
+| `tests/test_practica4.py` | 93 pruebas: los casos de prueba del enunciado y la congruencia de cada validador con `re.fullmatch` |
+| `automatas/practica4/casos-de-prueba/er/` | Para cada expresión de prueba: la expresión en `.jff` y los cuatro autómatas generados (AFN-λ, AFN, AFD, mínimo) |
+| `automatas/practica4/casos-de-prueba/afd/` | Para cada AFD de prueba: el AFD, la expresión obtenida (`*-ER.jff`) y su AFD mínimo |
+| `automatas/practica4/validadores/` | El AFN-λ, el AFD mínimo, la expresión y el patrón de `re` de cada validador |
+| `automatas/practica4/lista4/` | Los AFN-λ hechos en JFLAP para la Lista 4 (272 a-e, 278), con los que se contrasta el software |
+| `automatas/practica4/resultados.md` | Tablas generadas con `herramientas/practica4_generar.py` |
+| `evidencias/practica4/` | Capturas del simulador (`app/`) y de la integración continua (`ci/`) |
+| `herramientas/` | `practica4_generar.py` (archivos y tablas) y `capturas_p4.py` (capturas con Playwright) |
+
+### Notación aceptada por el analizador
+
+| Se escribe | Significa |
+|---|---|
+| `+` | unión |
+| yuxtaposición | concatenación |
+| `*` | cerradura de Kleene |
+| `λ` (también `ε` o `!`, como JFLAP) | palabra vacía |
+| `∅` (también `Ø`) | lenguaje vacío |
+| `( )` | agrupación; la cerradura liga más que la concatenación y esta más que la unión |
+| espacios | se ignoran; `␣` es un espacio como símbolo |
+| `\+` `\*` `\(` `\)` `\\` | esos caracteres como símbolos del alfabeto |
+| cualquier otro carácter (`.`, `@`, `/`, `-`, `:`, `?`, `#`, …) | un símbolo del alfabeto |
+| una letra declarada como clase (`D = 0123456789`) | abreviatura de la unión de sus símbolos |
+
+Una expresión mal formada se rechaza con la posición del error: `(ab` → «Posición 4: falta el paréntesis de
+cierre del «(» de la posición 1.»
+
+### Uso de las funciones nuevas
+
+1. Pestaña **6. ER → autómata**: escriba la expresión (y, si quiere, clases como `D = 0123456789; L = abc` y
+   un Σ explícito) y pulse *Analizar y construir*. Recorra la construcción con *Siguiente paso* (cada autómata
+   parcial N(r), con las transiciones nuevas en naranja). Abajo elija qué autómata ver (AFN-λ, AFN sin λ, AFD,
+   AFD mínimo), guárdelo en `.jff`, guarde la expresión en `.jff` de JFLAP o páselo a las demás pestañas con
+   *Usar en las demás pestañas*. Al final, valide una cadena o una lista (una por línea) contra el AFD mínimo.
+2. Pestaña **7. Autómata → ER**: cargue un `.jff` en la pestaña 1 y pulse *Verificar y calcular*. Si no es
+   determinista se listan el estado y el símbolo que lo impiden; si lo es, se recorre la eliminación de estados
+   paso a paso (tabla R(p, r) y diagrama del autómata generalizado) y se muestra la expresión. *Orden de
+   eliminación* permite cambiar el orden. En *Comparar*, escriba la expresión de JFLAP (u otra): las dos se
+   convierten a AFD mínimos y se comparan por isomorfismo.
+3. Pestaña **8. Validadores**: elija el validador, escriba el texto y pulse *Validar*: se muestra el veredicto
+   del AFD mínimo y el de `re.fullmatch`. *Ver el AFD mínimo* lo dibuja; *Guardar* lo exporta.
+4. Desde Python, sin interfaz (con `PYTHONPATH=src`):
+
+   ```python
+   from expresiones import de_expresion_a_minimo, eliminar_estados, comparar_expresiones, a_python
+   c = de_expresion_a_minimo("(a+b)*abb")        # c.afn_lambda, c.cadena.subconjuntos.automata, c.minimo
+   print(c.tamanos(), c.acepta("babb"), a_python(c.expresion))
+   r = eliminar_estados(c.minimo)                 # r.expresion, r.pasos (un autómata generalizado por paso)
+   print(r.expresion, comparar_expresiones(str(r.expresion), "(a+b)*abb").equivalentes)
+   ```
+
+Regenerar los archivos de `automatas/practica4/` y sus tablas: `python herramientas/practica4_generar.py`.
 
 ## Práctica 3: de AFD a expresiones regulares con JFLAP, y de AFN-λ a AFD mínimo en el software
 
