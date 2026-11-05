@@ -18,7 +18,7 @@ import re
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-from expresiones import CadenaExpresion, a_python, analizar, de_expresion_a_minimo
+from expresiones import CadenaExpresion, Simbolo, a_python, analizar, de_expresion_a_minimo
 
 DIGITOS = "0123456789"
 MINUSCULAS = "abcdefghijklmnopqrstuvwxyz"
@@ -72,7 +72,7 @@ def _mostrar_clase(miembros: str) -> str:
     for trozo in m.split(" "):
         if not trozo:
             continue
-        partes.append(trozo if "…" in trozo else "+".join("␣" if c == " " else c for c in trozo))
+        partes.append(trozo if "…" in trozo else "+".join(str(Simbolo(c)) for c in trozo))
     return "+".join(partes)
 
 

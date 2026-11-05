@@ -6,7 +6,10 @@ Este archivo solo conecta controles con el núcleo:
 * automata.py  — la quíntupla, la simulación y las conversiones;
 * formatos.py  — la lectura y escritura de .jff, .json y .xml;
 * lenguajes.py — las operaciones de la Práctica 1;
-* algoritmos.py — los algoritmos de la Práctica 3 con su registro paso a paso.
+* algoritmos.py — los algoritmos de la Práctica 3 con su registro paso a paso;
+* expresiones.py — el analizador de expresiones regulares y las dos direcciones
+  del teorema de Kleene (Práctica 4);
+* validadores.py — los validadores de formatos reales (Práctica 4).
 
 Ninguna regla del autómata vive aquí; por eso el núcleo se prueba con pytest
 sin abrir la interfaz.
@@ -40,7 +43,19 @@ from algoritmos import (
     simular_directo,
     validar_lote,
 )
+from expresiones import (
+    ErrorDeSintaxis,
+    a_python,
+    analizar,
+    comparar_expresiones,
+    de_expresion_a_minimo,
+    eliminar_estados,
+    escribir_expresion_jff,
+    problemas_de_determinismo,
+    transiciones_faltantes,
+)
 from formatos import FormatoInvalido, a_texto, desde_texto, posiciones, resumen_quintupla
+from validadores import VALIDADORES
 from lenguajes import (
     cerradura_kleene,
     cerradura_positiva,
@@ -104,7 +119,9 @@ def diagrama(aut: Automata, activos=frozenset(), recientes=()) -> ft.Control:
 
     for (q, p), simbolos in etiquetas.items():
         pintura = resaltado if (q, p) in usados else lapiz
-        rotulo = ",".join(sorted(simbolos, key=lambda s: (s == "λ", s)))
+        ordenados = sorted(simbolos, key=lambda s: (s == "λ", s))
+        # Con alfabetos grandes (validadores) se abrevia la etiqueta: los primeros símbolos y cuántos son.
+        rotulo = ",".join(ordenados) if len(ordenados) <= 6 else ",".join(ordenados[:4]) + f",…({len(ordenados)})"
         x1, y1 = pos[q]
         if q == p:
             figuras.append(cv.Circle(x1, y1 - RADIO - 10, 13, pintura))
@@ -161,7 +178,7 @@ def tabla_de_filas(filas, resaltar=None) -> ft.DataTable:
 # ----------------------------------------------------------------------
 
 def main(page: ft.Page):
-    page.title = "Prácticas 2 y 3 — Simulador de autómatas finitos"
+    page.title = "Prácticas 2, 3 y 4 — Simulador de autómatas finitos y expresiones regulares"
     page.padding = 16
     page.scroll = ft.ScrollMode.AUTO
 
@@ -277,6 +294,13 @@ def main(page: ft.Page):
             return
         cargar_texto(texto, f.name)
 
+    async def guardar_archivo(nombre, datos: bytes):
+        ruta = await selector.save_file(file_name=nombre, src_bytes=datos)
+        # En escritorio save_file devuelve la ruta elegida; en web el navegador ya descargó.
+        if ruta and not os.path.exists(ruta):
+            pathlib.Path(ruta).write_bytes(datos)
+        avisar(f"Guardado como {ruta or nombre}.")
+
     def exportador(ext):
         async def exportar(e):
             aut = estado["aut"]
@@ -284,12 +308,7 @@ def main(page: ft.Page):
                 avisar("Primero defina o cargue un autómata.", error=True)
                 return
             nombre = (aut.nombre or "automata") + ext
-            datos = a_texto(aut, nombre).encode("utf-8")
-            ruta = await selector.save_file(file_name=nombre, src_bytes=datos)
-            # En escritorio save_file devuelve la ruta elegida; en web el navegador ya descargó.
-            if ruta and not os.path.exists(ruta):
-                pathlib.Path(ruta).write_bytes(datos)
-            avisar(f"Guardado como {ruta or nombre}.")
+            await guardar_archivo(nombre, a_texto(aut, nombre).encode("utf-8"))
         return exportar
 
     pestana_definir = ft.Column([
@@ -737,19 +756,408 @@ def main(page: ft.Page):
         salida_l,
     ], spacing=10)
 
+    # ------------------------------------------------------------------
+    # Visor de pasos reutilizable (Práctica 4): texto acumulado, tabla y diagrama
+    # ------------------------------------------------------------------
+    class Visor:
+        def __init__(self, titulo_fila=""):
+            self.titulo = ft.Text(size=16, weight=ft.FontWeight.BOLD)
+            self.texto = ft.Column(spacing=2)
+            self.tabla = ft.Row(scroll=ft.ScrollMode.AUTO)
+            self.diagrama = ft.Row(scroll=ft.ScrollMode.AUTO, wrap=True)
+            self.pasos, self.i = [], 0
+            self.botones = ft.Row([
+                ft.Button("Paso anterior", icon=ft.Icons.NAVIGATE_BEFORE, on_click=self.mover(-1)),
+                ft.Button("Siguiente paso", icon=ft.Icons.NAVIGATE_NEXT, on_click=self.mover(1)),
+                ft.Button("Hasta el final", icon=ft.Icons.SKIP_NEXT, on_click=self.mover(10 ** 6)),
+                ft.Button("Reiniciar", icon=ft.Icons.RESTART_ALT, on_click=self.mover(-10 ** 6)),
+            ], wrap=True)
+            self.controles = [self.botones, self.titulo, self.texto, self.tabla, self.diagrama]
+
+        def cargar(self, pasos, al_final=False):
+            self.pasos, self.i = pasos, (len(pasos) - 1 if al_final else 0)
+            self.mostrar()
+
+        def limpiar(self):
+            self.pasos, self.i = [], 0
+            self.titulo.value = ""
+            self.texto.controls, self.tabla.controls, self.diagrama.controls = [], [], []
+
+        def mover(self, delta):
+            def accion(e):
+                if not self.pasos:
+                    return
+                self.i = max(0, min(len(self.pasos) - 1, self.i + delta))
+                self.mostrar()
+                page.update()
+            return accion
+
+        def mostrar(self):
+            if not self.pasos:
+                self.limpiar()
+                return
+            p = self.pasos[self.i]
+            self.titulo.value = f"Paso {self.i + 1} de {len(self.pasos)}"
+            self.texto.controls = [ft.Text(x["texto"], selectable=True,
+                                           weight=ft.FontWeight.BOLD if k == self.i else None,
+                                           color=None if k == self.i else ft.Colors.GREY_700)
+                                   for k, x in enumerate(self.pasos[: self.i + 1])]
+            self.tabla.controls = [tabla_de_filas(p["tabla"], p["resaltar"])] if p["tabla"] else []
+            self.diagrama.controls = [diagrama(p["aut"], p["activos"], p["recientes"])] if p["aut"] else []
+
+    def leer_clases(texto: str) -> dict:
+        """«D = 0123456789; L = abc» → {"D": "0123456789", "L": "abc"}."""
+        clases = {}
+        for parte in (texto or "").replace("\n", ";").split(";"):
+            if "=" not in parte:
+                continue
+            nombre, miembros = parte.split("=", 1)
+            nombre = nombre.strip()
+            if nombre:
+                clases[nombre] = miembros.strip().replace("␣", " ")
+        return clases
+
+    def tabla_etiquetas(paso_elim):
+        """Tabla R(p, r) del autómata generalizado."""
+        q = paso_elim.estados
+        filas = [["R(p, r)"] + q]
+        for p in q:
+            filas.append([p] + [str(paso_elim.etiquetas.get((p, r), "∅")) for r in q])
+        return filas
+
+    # ------------------------------------------------------------------
+    # Pestaña 6: de expresión regular a autómata (Práctica 4, Ejercicio 2)
+    # ------------------------------------------------------------------
+    campo_er = ft.TextField(label="Expresión regular (notación del curso)", value="(a+b)*abb", width=520)
+    campo_clases = ft.TextField(label="Clases de símbolos (opcional): D = 0123456789; L = abc", width=520)
+    campo_sigma_er = ft.TextField(label="Σ (opcional, separado por comas)", width=260)
+    error_er = ft.Text(color=ft.Colors.RED_700, selectable=True, font_family="monospace")
+    resumen_er = ft.Text(selectable=True)
+    visor_er = Visor()
+    etapa_er = ft.Dropdown(label="Autómata", width=220, value="min", options=[
+        ft.DropdownOption(key="afn-lambda", text="AFN-λ (parte I de Kleene)"),
+        ft.DropdownOption(key="afn", text="AFN sin λ (2.2)"),
+        ft.DropdownOption(key="afd", text="AFD por subconjuntos (2.3)"),
+        ft.DropdownOption(key="min", text="AFD mínimo (2.4)"),
+    ])
+    vista_etapa = ft.Column(spacing=6)
+    campo_w_er = ft.TextField(label="Cadena a validar (vacía = λ)", width=320)
+    campo_lote_er = ft.TextField(label="Varias cadenas, una por línea", multiline=True, min_lines=3, max_lines=8,
+                                 width=320)
+    salida_w_er = ft.Column(spacing=2)
+    er = {"cadena": None}
+
+    def automatas_de_la_cadena():
+        c = er["cadena"]
+        return {"afn-lambda": c.afn_lambda, "afn": c.cadena.sin_lambda.automata,
+                "afd": c.cadena.subconjuntos.automata, "min": c.minimo}
+
+    def construir_er(e=None):
+        texto = campo_er.value or ""
+        try:
+            clases = leer_clases(campo_clases.value)
+            sigma = [s.strip() for s in (campo_sigma_er.value or "").split(",") if s.strip()] or None
+            c = de_expresion_a_minimo(texto, clases, sigma)
+        except ErrorDeSintaxis as err:
+            error_er.value = f"Expresión mal formada. {err}\n{err.senalar()}"
+            resumen_er.value = ""
+            er["cadena"] = None
+            visor_er.limpiar()
+            vista_etapa.controls, salida_w_er.controls = [], []
+            page.update()
+            return
+        except (AutomataInvalido, ValueError) as err:
+            error_er.value = str(err)
+            page.update()
+            return
+        error_er.value = ""
+        er["cadena"] = c
+        t = c.tamanos()
+        resumen_er.value = (f"Árbol: {c.expresion}   ·   Patrón de re: {a_python(c.expresion)}\n"
+                            f"Σ = {{{', '.join(c.afn_lambda.alfabeto)}}}   ·   Estados: AFN-λ {t['AFN-λ']} → "
+                            f"AFN {t['AFN']} → AFD {t['AFD']} → AFD mínimo {t['AFD mínimo']}")
+        pasos = []
+        for p in c.construccion.pasos:
+            pasos.append(paso(f"Paso {p.numero}: N({p.expresion}), {p.regla}: {p.descripcion}", None, None,
+                              p.automata, frozenset({p.inicial, p.final}), p.nuevas))
+        pasos.append(paso(f"AFN-λ completo: {len(c.afn_lambda.estados)} estados, inicial {c.afn_lambda.inicial}, "
+                          f"final {', '.join(c.afn_lambda.aceptacion)}.", None, None, c.afn_lambda))
+        visor_er.cargar(pasos)
+        mostrar_etapa()
+        salida_w_er.controls = []
+        page.update()
+
+    def mostrar_etapa(e=None):
+        if er["cadena"] is None:
+            vista_etapa.controls = []
+            return
+        m = automatas_de_la_cadena()[etapa_er.value]
+        vista_etapa.controls = [
+            ft.Text(f"{etapa_er.value}: {m.tipo} con {len(m.estados)} estados y {m.num_transiciones()} "
+                    f"transiciones", weight=ft.FontWeight.BOLD),
+            ft.Row([diagrama(m)], scroll=ft.ScrollMode.AUTO),
+            ft.Row([tabla_control(m)], scroll=ft.ScrollMode.AUTO),
+        ]
+        page.update()
+
+    etapa_er.on_select = mostrar_etapa
+
+    async def guardar_etapa(e):
+        if er["cadena"] is None:
+            avisar("Primero construya una expresión.", error=True)
+            return
+        m = automatas_de_la_cadena()[etapa_er.value]
+        nombre = f"{er['cadena'].afn_lambda.nombre}-{etapa_er.value}.jff"
+        await guardar_archivo(nombre, a_texto(m, nombre).encode("utf-8"))
+
+    async def guardar_er(e):
+        if er["cadena"] is None:
+            avisar("Primero construya una expresión.", error=True)
+            return
+        await guardar_archivo(f"{er['cadena'].afn_lambda.nombre}-ER.jff",
+                              escribir_expresion_jff(er["cadena"].expresion).encode("utf-8"))
+
+    def usar_etapa(e):
+        if er["cadena"] is None:
+            avisar("Primero construya una expresión.", error=True)
+            return
+        m = automatas_de_la_cadena()[etapa_er.value].copia(f"{er['cadena'].afn_lambda.nombre}-{etapa_er.value}")
+        preparar_tabla(aut=m)
+        fijar(m, f"Ahora se trabaja con {m.nombre} en las demás pestañas.")
+
+    def validar_er(e):
+        if er["cadena"] is None:
+            avisar("Primero construya una expresión.", error=True)
+            return
+        c = er["cadena"]
+        m = c.minimo
+        w = campo_w_er.value or ""
+        tz = m.traza(w)
+        recorrido = " → ".join(next(iter(p.despues)) if p.despues else "∅" for p in tz)
+        acepta = m.acepta(w)
+        salida_w_er.controls = [ft.Text(
+            f"«{mostrar_cadena(w)}» {'ACEPTADA' if acepta else 'RECHAZADA'} por el AFD mínimo de {c.expresion}. "
+            f"Recorrido: {recorrido}. re.fullmatch: {'coincide' if bool(a_python_fullmatch(c, w)) == acepta else 'DISCREPA'}.",
+            weight=ft.FontWeight.BOLD, color=ft.Colors.GREEN_800 if acepta else ft.Colors.RED_800, selectable=True)]
+        lote = [l.strip() for l in (campo_lote_er.value or "").splitlines() if not l.strip().startswith("#")]
+        if any(campo_lote_er.value or ""):
+            filas = [["#", "Cadena", "AFD mínimo", "re.fullmatch"]]
+            for k, linea in enumerate(lote, 1):
+                x = "" if linea == "λ" else linea
+                filas.append([str(k), mostrar_cadena(x), "ACEPTADA" if m.acepta(x) else "RECHAZADA",
+                              "acepta" if a_python_fullmatch(c, x) else "rechaza"])
+            salida_w_er.controls.append(ft.Row([tabla_de_filas(filas)], scroll=ft.ScrollMode.AUTO))
+        page.update()
+
+    def a_python_fullmatch(c, w):
+        import re as _re
+        return _re.fullmatch(a_python(c.expresion), w) is not None
+
+    pestana_er = ft.Column([
+        ft.Text("De expresión regular a autómata (teorema de Kleene, parte I)", size=20, weight=ft.FontWeight.BOLD),
+        ft.Text("Notación: + unión, yuxtaposición concatenación, * cerradura, λ (o ! o ε) palabra vacía, ∅ lenguaje "
+                "vacío, paréntesis; ␣ es un espacio literal y \\+ \\* \\( \\) \\\\ son esos caracteres como símbolos.",
+                italic=True),
+        ft.Row([campo_er, campo_clases], wrap=True),
+        ft.Row([campo_sigma_er, ft.FilledButton("Analizar y construir", icon=ft.Icons.PLAY_ARROW,
+                                                on_click=construir_er)], wrap=True),
+        error_er, resumen_er,
+        ft.Text("Construcción paso a paso (cada autómata parcial N(r); en naranja las transiciones nuevas):",
+                weight=ft.FontWeight.BOLD),
+        *visor_er.controles,
+        ft.Divider(),
+        ft.Text("Autómatas obtenidos con los algoritmos de la Práctica 3", size=18, weight=ft.FontWeight.BOLD),
+        ft.Row([etapa_er, ft.Button("Guardar este autómata .jff", icon=ft.Icons.SAVE, on_click=guardar_etapa),
+                ft.Button("Guardar la expresión .jff", icon=ft.Icons.SAVE, on_click=guardar_er),
+                ft.Button("Usar en las demás pestañas", icon=ft.Icons.CHECK, on_click=usar_etapa)], wrap=True),
+        vista_etapa,
+        ft.Divider(),
+        ft.Text("Validar cadenas contra la expresión (con el AFD mínimo)", size=18, weight=ft.FontWeight.BOLD),
+        ft.Row([campo_w_er, campo_lote_er, ft.FilledButton("Validar", icon=ft.Icons.PLAY_ARROW, on_click=validar_er)],
+               wrap=True, vertical_alignment=ft.CrossAxisAlignment.START),
+        salida_w_er,
+    ], spacing=10)
+
+    # ------------------------------------------------------------------
+    # Pestaña 7: de autómata a expresión regular (Práctica 4, Ejercicio 3)
+    # ------------------------------------------------------------------
+    campo_orden = ft.TextField(label="Orden de eliminación (opcional, separado por comas)", width=420)
+    diagnostico = ft.Text(selectable=True)
+    visor_afd = Visor()
+    expresion_final = ft.Text(size=16, weight=ft.FontWeight.BOLD, selectable=True)
+    campo_otra = ft.TextField(label="Expresión con la que comparar (p. ej. la de JFLAP)", width=420)
+    salida_comparacion = ft.Text(selectable=True)
+    elim = {"resultado": None}
+
+    def calcular_elim(e=None):
+        aut = estado["aut"]
+        if aut is None:
+            avisar("Primero cargue un autómata en la pestaña 1.", error=True)
+            return
+        problemas = problemas_de_determinismo(aut)
+        if problemas:
+            diagnostico.value = (f"{aut.nombre}: NO es determinista; no se puede aplicar el método hasta corregirlo "
+                                 "(o conviértalo con la pestaña 5).\n" + "\n".join(problemas))
+            diagnostico.color = ft.Colors.RED_800
+            visor_afd.limpiar()
+            expresion_final.value = salida_comparacion.value = ""
+            elim["resultado"] = None
+            page.update()
+            return
+        faltan = transiciones_faltantes(aut)
+        diagnostico.value = (f"{aut.nombre}: es determinista (sin transiciones λ y a lo sumo un destino por "
+                             f"estado y símbolo)." + (f" δ es parcial en {len(faltan)} pares, que se tratan como ∅ "
+                                                      "(sumidero implícito)." if faltan else " δ es total."))
+        diagnostico.color = ft.Colors.GREEN_800
+        orden = [s.strip() for s in (campo_orden.value or "").split(",") if s.strip()] or None
+        try:
+            r = eliminar_estados(aut, orden)
+        except AutomataInvalido as err:
+            avisar(str(err), error=True)
+            return
+        elim["resultado"] = r
+        pasos = []
+        for p in r.pasos:
+            g = p.generalizado()
+            texto = p.titulo + ("." if not p.detalles else ":\n   " + "\n   ".join(p.detalles))
+            pasos.append(paso(texto, tabla_etiquetas(p), None, g, frozenset({p.eliminado} if p.eliminado else ())))
+        visor_afd.cargar(pasos)
+        expresion_final.value = f"Expresión regular de {aut.nombre}: {r.expresion}"
+        salida_comparacion.value = ""
+        page.update()
+
+    def comparar(e):
+        r = elim["resultado"]
+        if r is None:
+            avisar("Primero calcule la expresión.", error=True)
+            return
+        otra = campo_otra.value or ""
+        try:
+            c = comparar_expresiones(str(r.expresion), otra)
+        except ErrorDeSintaxis as err:
+            salida_comparacion.value = f"La expresión a comparar está mal formada. {err}\n{err.senalar()}"
+            page.update()
+            return
+        t1, t2 = c.primera.tamanos(), c.segunda.tamanos()
+        salida_comparacion.value = (
+            f"{'EQUIVALENTES' if c.equivalentes else 'NO EQUIVALENTES'}. {c.resultado.motivo}\n"
+            f"Obtenida: {r.expresion} → AFN-λ {t1['AFN-λ']} → AFD {t1['AFD']} → mínimo {t1['AFD mínimo']} estados.\n"
+            f"Comparada: {c.segunda.expresion} → AFN-λ {t2['AFN-λ']} → AFD {t2['AFD']} → mínimo {t2['AFD mínimo']} estados.")
+        page.update()
+
+    async def guardar_er_obtenida(e):
+        r = elim["resultado"]
+        if r is None:
+            avisar("Primero calcule la expresión.", error=True)
+            return
+        await guardar_archivo(f"{r.automata.nombre}-ER.jff", escribir_expresion_jff(r.expresion).encode("utf-8"))
+
+    pestana_afd_er = ft.Column([
+        ft.Text("De autómata a expresión regular (teorema de Kleene, parte II)", size=20, weight=ft.FontWeight.BOLD),
+        ft.Text("Se aplica al autómata actual (importado de un .jff en la pestaña 1). Primero se verifica que sea "
+                "determinista; después se eliminan los estados uno por uno y se muestra el autómata generalizado "
+                "tras cada eliminación.", italic=True),
+        ft.Row([campo_orden, ft.FilledButton("Verificar y calcular", icon=ft.Icons.PLAY_ARROW, on_click=calcular_elim),
+                ft.Button("Guardar la expresión .jff", icon=ft.Icons.SAVE, on_click=guardar_er_obtenida)], wrap=True),
+        diagnostico,
+        *visor_afd.controles,
+        expresion_final,
+        ft.Divider(),
+        ft.Text("Comparar con otra expresión (AFD mínimos isomorfos, Práctica 3 § 2.4)", size=18,
+                weight=ft.FontWeight.BOLD),
+        ft.Row([campo_otra, ft.FilledButton("Comparar", icon=ft.Icons.COMPARE_ARROWS, on_click=comparar)], wrap=True),
+        salida_comparacion,
+    ], spacing=10)
+
+    # ------------------------------------------------------------------
+    # Pestaña 8: validadores (Práctica 4, Ejercicio 4)
+    # ------------------------------------------------------------------
+    lista_validadores = ft.Dropdown(label="Validador", width=360, value="correo",
+                                    options=[ft.DropdownOption(key=k, text=v.nombre) for k, v in VALIDADORES.items()])
+    ficha = ft.Column(spacing=4)
+    campo_texto_val = ft.TextField(label="Texto a validar", width=420, value="juan.perez@escom.ipn.mx")
+    salida_val = ft.Text(size=16, weight=ft.FontWeight.BOLD, selectable=True)
+    vista_val = ft.Column(spacing=6)
+
+    def mostrar_validador(e=None, actualizar=True):
+        v = VALIDADORES[lista_validadores.value]
+        t = v.cadena().tamanos()
+        ficha.controls = [
+            ft.Text(v.nombre, size=18, weight=ft.FontWeight.BOLD),
+            ft.Text("Clases: " + "; ".join(v.clases_texto()), selectable=True),
+            ft.Text("Expresión (notación del curso): " + v.expresion, selectable=True, font_family="monospace"),
+            ft.Text("Patrón de re: " + v.patron, selectable=True, font_family="monospace"),
+            ft.Text(f"Acepta: {v.descripcion}", selectable=True),
+            ft.Text(f"Norma consultada: {v.fuente}", selectable=True),
+            ft.Text(f"|Σ| = {len(v.alfabeto())}. AFN-λ: {t['AFN-λ']} estados → AFN: {t['AFN']} → AFD: {t['AFD']} "
+                    f"estados antes de minimizar → AFD mínimo: {t['AFD mínimo']} estados.", weight=ft.FontWeight.BOLD),
+            *[ft.Text(f"• {x}", selectable=True) for x in v.fuera],
+        ]
+        campo_texto_val.value = v.validas[0]
+        salida_val.value = ""
+        vista_val.controls = []
+        if actualizar:
+            page.update()
+
+    lista_validadores.on_select = mostrar_validador
+
+    def validar_texto(e):
+        v = VALIDADORES[lista_validadores.value]
+        w = campo_texto_val.value or ""
+        con_aut, con_re = v.valida_con_automata(w), v.valida_con_re(w)
+        salida_val.value = (f"«{w}»: {'VÁLIDO' if con_aut else 'INVÁLIDO'} según el AFD mínimo; re.fullmatch "
+                            f"{'acepta' if con_re else 'rechaza'} → {'coinciden' if con_aut == con_re else 'DISCREPAN'}.")
+        salida_val.color = ft.Colors.GREEN_800 if con_aut else ft.Colors.RED_800
+        page.update()
+
+    def ver_afd_val(e):
+        v = VALIDADORES[lista_validadores.value]
+        m = v.cadena().minimo
+        vista_val.controls = [ft.Row([diagrama(m)], scroll=ft.ScrollMode.AUTO),
+                              ft.Row([tabla_control(m)], scroll=ft.ScrollMode.AUTO)]
+        page.update()
+
+    async def guardar_afd_val(e):
+        v = VALIDADORES[lista_validadores.value]
+        m = v.cadena().minimo
+        await guardar_archivo(f"{v.clave}-min.jff", a_texto(m, "x.jff").encode("utf-8"))
+
+    def usar_afd_val(e):
+        v = VALIDADORES[lista_validadores.value]
+        m = v.cadena().minimo.copia(f"{v.clave}-min")
+        preparar_tabla(aut=m)
+        fijar(m, f"Ahora se trabaja con el AFD mínimo de «{v.nombre}».")
+
+    pestana_validadores = ft.Column([
+        ft.Text("Validadores de formatos reales (Ejercicio 4)", size=20, weight=ft.FontWeight.BOLD),
+        ft.Text("Cada validador es una expresión en la notación del curso; su AFD se obtiene con la pestaña 6 y "
+                "su patrón con la traducción al módulo re. Ambos deben coincidir en toda cadena.", italic=True),
+        ft.Row([lista_validadores, ft.Button("Ver el AFD mínimo", icon=ft.Icons.ACCOUNT_TREE, on_click=ver_afd_val),
+                ft.Button("Guardar el AFD mínimo .jff", icon=ft.Icons.SAVE, on_click=guardar_afd_val),
+                ft.Button("Usar en las demás pestañas", icon=ft.Icons.CHECK, on_click=usar_afd_val)], wrap=True),
+        ficha,
+        ft.Row([campo_texto_val, ft.FilledButton("Validar", icon=ft.Icons.PLAY_ARROW, on_click=validar_texto)], wrap=True),
+        salida_val, vista_val,
+    ], spacing=10)
+    mostrar_validador(actualizar=False)
+
     pestanas = ft.Tabs(
-        length=5,
+        length=8,
         selected_index=0,
         content=ft.Column([
             ft.TabBar(tabs=[ft.Tab(label="1. Definir"), ft.Tab(label="2. Autómata"),
                             ft.Tab(label="3. Simular"), ft.Tab(label="4. Lenguajes"),
-                            ft.Tab(label="5. Paso a paso")]),
+                            ft.Tab(label="5. Paso a paso"), ft.Tab(label="6. ER → autómata"),
+                            ft.Tab(label="7. Autómata → ER"), ft.Tab(label="8. Validadores")]),
             ft.TabBarView(controls=[
                 ft.Container(ft.Column([pestana_definir], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([vista], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([pestana_simular], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([pestana_lenguajes], scroll=ft.ScrollMode.AUTO), padding=10),
                 ft.Container(ft.Column([pestana_algoritmos], scroll=ft.ScrollMode.AUTO), padding=10),
+                ft.Container(ft.Column([pestana_er], scroll=ft.ScrollMode.AUTO), padding=10),
+                ft.Container(ft.Column([pestana_afd_er], scroll=ft.ScrollMode.AUTO), padding=10),
+                ft.Container(ft.Column([pestana_validadores], scroll=ft.ScrollMode.AUTO), padding=10),
             ], expand=True),
         ], expand=True),
         expand=True,

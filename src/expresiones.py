@@ -140,7 +140,7 @@ PALABRA_VACIA = Lambda()
 # Se usan en la eliminación de estados para que las etiquetas no crezcan con ∅ y λ inútiles.
 
 def union(*partes) -> Expr:
-    """r + ∅ = r (3.4.4, ∅ es la identidad de la unión); r + r = r (idempotencia, 3.4.4)."""
+    """r + ∅ = r (3.4.2, ∅ es la identidad de la unión); r + r = r (idempotencia, 3.4.4)."""
     planas = []
     for p in partes:
         for x in (p.partes if isinstance(p, Union) else (p,)):
@@ -153,7 +153,7 @@ def union(*partes) -> Expr:
 
 
 def concat(*partes) -> Expr:
-    """∅r = r∅ = ∅ (3.4.4, ∅ es el aniquilador); λr = rλ = r (3.4.2, identidad)."""
+    """∅r = r∅ = ∅ (∅ es el aniquilador de la concatenación) y λr = rλ = r (λ es su identidad), ambas en 3.4.2."""
     planas = []
     for p in partes:
         for x in (p.partes if isinstance(p, Concat) else (p,)):
@@ -668,8 +668,23 @@ def equivalente_al_automata(er: str, aut: Automata, clases=None) -> ResultadoEqu
 # ======================================================================
 
 def _clase_re(miembros) -> str:
-    dentro = "".join("\\" + c if c in "\\]^-" else c for c in miembros)
-    return f"[{dentro}]"
+    """Clase de caracteres de re; las corridas de tres o más códigos consecutivos se escriben como rangos."""
+    codigos = sorted(set(ord(c) for c in miembros))
+    partes, k = [], 0
+    while k < len(codigos):
+        j = k
+        while j + 1 < len(codigos) and codigos[j + 1] == codigos[j] + 1:
+            j += 1
+        if j - k >= 2:
+            partes.append(_escape_clase(chr(codigos[k])) + "-" + _escape_clase(chr(codigos[j])))
+        else:
+            partes += [_escape_clase(chr(c)) for c in codigos[k:j + 1]]
+        k = j + 1
+    return "[" + "".join(partes) + "]"
+
+
+def _escape_clase(c: str) -> str:
+    return "\\" + c if c in "\\]^-[" else c
 
 
 def a_python(expr: Expr | str, clases=None, _contexto=0) -> str:

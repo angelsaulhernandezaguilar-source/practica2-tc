@@ -319,9 +319,11 @@ def test_a_python(er, esperado):
 
 def test_a_python_con_clases():
     p = a_python("D*", {"D": "0123456789"})
-    assert p == "[0123456789]*" and re.fullmatch(p, "2026")
+    assert p == "[0-9]*" and re.fullmatch(p, "2026")
+    assert a_python("X", {"X": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-+"}) == "[+\\-0-9A-Z_a-z]"
     p = a_python("S", {"S": "a-]"})
-    assert re.fullmatch(p, "-") and re.fullmatch(p, "]")
+    assert re.fullmatch(p, "-") and re.fullmatch(p, "]") and not re.fullmatch(p, "b")
+    assert a_python("S", {"S": "acegik"}) == "[acegik]"
 
 
 # ----------------------------------------------------------------------
