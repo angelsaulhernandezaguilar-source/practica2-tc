@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/formatos.py).-->
+<structure>
+	<!--alfabeto: [" ", "(", ")", "-", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]-->
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{q140}">
+			<x>80.0</x>
+			<y>245.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="∅">
+			<x>240.0</x>
+			<y>160.0</y>
+		</state>
+		<state id="2" name="{q53, q54, q113, q114}">
+			<x>240.0</x>
+			<y>270.0</y>
+		</state>
+		<state id="3" name="{q1, q2, q21, q22, q81, q82}">
+			<x>240.0</x>
+			<y>380.0</y>
+		</state>
+		<state id="4" name="{q55, q56, q115, q116}">
+			<x>400.0</x>
+			<y>190.0</y>
+		</state>
+		<state id="5" name="{q3, q4, q23, q24, q26, q28, q83, q84}">
+			<x>400.0</x>
+			<y>300.0</y>
+		</state>
+		<state id="6" name="{q57, q58, q117, q118}">
+			<x>560.0</x>
+			<y>160.0</y>
+		</state>
+		<state id="7" name="[{q25, q29, q30}, {q27, q29, q30}]">
+			<x>560.0</x>
+			<y>270.0</y>
+		</state>
+		<state id="8" name="{q5, q6, q85, q86, q88, q90}">
+			<x>560.0</x>
+			<y>380.0</y>
+		</state>
+		<state id="9" name="{q59, q60}">
+			<x>720.0</x>
+			<y>80.0</y>
+		</state>
+		<state id="10" name="{q119, q120}">
+			<x>720.0</x>
+			<y>190.0</y>
+		</state>
+		<state id="11" name="[{q31, q32}, {q87, q91, q92}, {q89, q91, q92}]">
+			<x>720.0</x>
+			<y>300.0</y>
+		</state>
+		<state id="12" name="{q7, q8}">
+			<x>720.0</x>
+			<y>410.0</y>
+		</state>
+		<state id="13" name="{q61, q62}">
+			<x>880.0</x>
+			<y>105.0</y>
+		</state>
+		<state id="14" name="{q121, q122}">
+			<x>880.0</x>
+			<y>215.0</y>
+		</state>
+		<state id="15" name="[{q33, q34}, {q93, q94}]">
+			<x>880.0</x>
+			<y>325.0</y>
+		</state>
+		<state id="16" name="{q9, q10}">
+			<x>880.0</x>
+			<y>435.0</y>
+		</state>
+		<state id="17" name="[{q63, q64}, {q123, q124}]">
+			<x>1040.0</x>
+			<y>135.0</y>
+		</state>
+		<state id="18" name="[{q35, q36}, {q95, q96}]">
+			<x>1040.0</x>
+			<y>245.0</y>
+		</state>
+		<state id="19" name="[{q11, q12}, {q39, q43, q44}, {q41, q43, q44}, {q99, q103, q104}, {q101, q103, q104}, {q71, q72}, {q131, q132}]">
+			<x>1040.0</x>
+			<y>355.0</y>
+		</state>
+		<state id="20" name="[{q65, q66}, {q125, q126}]">
+			<x>1200.0</x>
+			<y>160.0</y>
+		</state>
+		<state id="21" name="[{q37, q38, q40, q42}, {q97, q98, q100, q102}]">
+			<x>1200.0</x>
+			<y>270.0</y>
+		</state>
+		<state id="22" name="[{q13, q14}, {q45, q46}, {q105, q106}, {q73, q74}, {q133, q134}]">
+			<x>1200.0</x>
+			<y>380.0</y>
+		</state>
+		<state id="23" name="[{q67, q68}, {q127, q128}]">
+			<x>1360.0</x>
+			<y>190.0</y>
+		</state>
+		<state id="24" name="[{q15, q16}, {q47, q48}, {q107, q108}, {q75, q76}, {q135, q136}]">
+			<x>1360.0</x>
+			<y>300.0</y>
+		</state>
+		<state id="25" name="[{q69, q70}, {q129, q130}]">
+			<x>1520.0</x>
+			<y>215.0</y>
+		</state>
+		<state id="26" name="[{q17, q18}, {q49, q50}, {q109, q110}, {q77, q78}, {q137, q138}]">
+			<x>1520.0</x>
+			<y>325.0</y>
+		</state>
+		<state id="27" name="[{q19, q141}, {q51, q141}, {q111, q141}, {q79, q141}, {q139, q141}]">
+			<x>1680.0</x>
+			<y>245.0</y>
+			<final/>
+		</state>
+		<transition><from>0</from><to>1</to><read> </read></transition>
+		<transition><from>0</from><to>2</to><read>(</read></transition>
+		<transition><from>0</from><to>1</to><read>)</read></transition>
+		<transition><from>0</from><to>1</to><read>-</read></transition>
+		<transition><from>0</from><to>1</to><read>0</read></transition>
+		<transition><from>0</from><to>1</to><read>1</read></transition>
+		<transition><from>0</from><to>3</to><read>2</read></transition>
+		<transition><from>0</from><to>3</to><read>3</read></transition>
+		<transition><from>0</from><to>3</to><read>4</read></transition>
+		<transition><from>0</from><to>3</to><read>5</read></transition>
+		<transition><from>0</from><to>3</to><read>6</read></transition>
+		<transition><from>0</from><to>3</to><read>7</read></transition>
+		<transition><from>0</from><to>3</to><read>8</read></transition>
+		<transition><from>0</from><to>3</to><read>9</read></transition>
+		<transition><from>1</from><to>1</to><read> </read></transition>
+		<transition><from>1</from><to>1</to><read>(</read></transition>
+		<transition><from>1</from><to>1</to><read>)</read></transition>
+		<transition><from>1</from><to>1</to><read>-</read></transition>
+		<transition><from>1</from><to>1</to><read>0</read></transition>
+		<transition><from>1</from><to>1</to><read>1</read></transition>
+		<transition><from>1</from><to>1</to><read>2</read></transition>
+		<transition><from>1</from><to>1</to><read>3</read></transition>
+		<transition><from>1</from><to>1</to><read>4</read></transition>
+		<transition><from>1</from><to>1</to><read>5</read></transition>
+		<transition><from>1</from><to>1</to><read>6</read></transition>
+		<transition><from>1</from><to>1</to><read>7</read></transition>
+		<transition><from>1</from><to>1</to><read>8</read></transition>
+		<transition><from>1</from><to>1</to><read>9</read></transition>
+		<transition><from>2</from><to>1</to><read> </read></transition>
+		<transition><from>2</from><to>1</to><read>(</read></transition>
+		<transition><from>2</from><to>1</to><read>)</read></transition>
+		<transition><from>2</from><to>1</to><read>-</read></transition>
+		<transition><from>2</from><to>1</to><read>0</read></transition>
+		<transition><from>2</from><to>1</to><read>1</read></transition>
+		<transition><from>2</from><to>4</to><read>2</read></transition>
+		<transition><from>2</from><to>4</to><read>3</read></transition>
+		<transition><from>2</from><to>4</to><read>4</read></transition>
+		<transition><from>2</from><to>4</to><read>5</read></transition>
+		<transition><from>2</from><to>4</to><read>6</read></transition>
+		<transition><from>2</from><to>4</to><read>7</read></transition>
+		<transition><from>2</from><to>4</to><read>8</read></transition>
+		<transition><from>2</from><to>4</to><read>9</read></transition>
+		<transition><from>3</from><to>1</to><read> </read></transition>
+		<transition><from>3</from><to>1</to><read>(</read></transition>
+		<transition><from>3</from><to>1</to><read>)</read></transition>
+		<transition><from>3</from><to>1</to><read>-</read></transition>
+		<transition><from>3</from><to>5</to><read>0</read></transition>
+		<transition><from>3</from><to>5</to><read>1</read></transition>
+		<transition><from>3</from><to>5</to><read>2</read></transition>
+		<transition><from>3</from><to>5</to><read>3</read></transition>
+		<transition><from>3</from><to>5</to><read>4</read></transition>
+		<transition><from>3</from><to>5</to><read>5</read></transition>
+		<transition><from>3</from><to>5</to><read>6</read></transition>
+		<transition><from>3</from><to>5</to><read>7</read></transition>
+		<transition><from>3</from><to>5</to><read>8</read></transition>
+		<transition><from>3</from><to>5</to><read>9</read></transition>
+		<transition><from>4</from><to>1</to><read> </read></transition>
+		<transition><from>4</from><to>1</to><read>(</read></transition>
+		<transition><from>4</from><to>1</to><read>)</read></transition>
+		<transition><from>4</from><to>1</to><read>-</read></transition>
+		<transition><from>4</from><to>6</to><read>0</read></transition>
+		<transition><from>4</from><to>6</to><read>1</read></transition>
+		<transition><from>4</from><to>6</to><read>2</read></transition>
+		<transition><from>4</from><to>6</to><read>3</read></transition>
+		<transition><from>4</from><to>6</to><read>4</read></transition>
+		<transition><from>4</from><to>6</to><read>5</read></transition>
+		<transition><from>4</from><to>6</to><read>6</read></transition>
+		<transition><from>4</from><to>6</to><read>7</read></transition>
+		<transition><from>4</from><to>6</to><read>8</read></transition>
+		<transition><from>4</from><to>6</to><read>9</read></transition>
+		<transition><from>5</from><to>7</to><read> </read></transition>
+		<transition><from>5</from><to>1</to><read>(</read></transition>
+		<transition><from>5</from><to>1</to><read>)</read></transition>
+		<transition><from>5</from><to>7</to><read>-</read></transition>
+		<transition><from>5</from><to>8</to><read>0</read></transition>
+		<transition><from>5</from><to>8</to><read>1</read></transition>
+		<transition><from>5</from><to>8</to><read>2</read></transition>
+		<transition><from>5</from><to>8</to><read>3</read></transition>
+		<transition><from>5</from><to>8</to><read>4</read></transition>
+		<transition><from>5</from><to>8</to><read>5</read></transition>
+		<transition><from>5</from><to>8</to><read>6</read></transition>
+		<transition><from>5</from><to>8</to><read>7</read></transition>
+		<transition><from>5</from><to>8</to><read>8</read></transition>
+		<transition><from>5</from><to>8</to><read>9</read></transition>
+		<transition><from>6</from><to>1</to><read> </read></transition>
+		<transition><from>6</from><to>1</to><read>(</read></transition>
+		<transition><from>6</from><to>9</to><read>)</read></transition>
+		<transition><from>6</from><to>1</to><read>-</read></transition>
+		<transition><from>6</from><to>10</to><read>0</read></transition>
+		<transition><from>6</from><to>10</to><read>1</read></transition>
+		<transition><from>6</from><to>10</to><read>2</read></transition>
+		<transition><from>6</from><to>10</to><read>3</read></transition>
+		<transition><from>6</from><to>10</to><read>4</read></transition>
+		<transition><from>6</from><to>10</to><read>5</read></transition>
+		<transition><from>6</from><to>10</to><read>6</read></transition>
+		<transition><from>6</from><to>10</to><read>7</read></transition>
+		<transition><from>6</from><to>10</to><read>8</read></transition>
+		<transition><from>6</from><to>10</to><read>9</read></transition>
+		<transition><from>7</from><to>1</to><read> </read></transition>
+		<transition><from>7</from><to>1</to><read>(</read></transition>
+		<transition><from>7</from><to>1</to><read>)</read></transition>
+		<transition><from>7</from><to>1</to><read>-</read></transition>
+		<transition><from>7</from><to>11</to><read>0</read></transition>
+		<transition><from>7</from><to>11</to><read>1</read></transition>
+		<transition><from>7</from><to>11</to><read>2</read></transition>
+		<transition><from>7</from><to>11</to><read>3</read></transition>
+		<transition><from>7</from><to>11</to><read>4</read></transition>
+		<transition><from>7</from><to>11</to><read>5</read></transition>
+		<transition><from>7</from><to>11</to><read>6</read></transition>
+		<transition><from>7</from><to>11</to><read>7</read></transition>
+		<transition><from>7</from><to>11</to><read>8</read></transition>
+		<transition><from>7</from><to>11</to><read>9</read></transition>
+		<transition><from>8</from><to>11</to><read> </read></transition>
+		<transition><from>8</from><to>1</to><read>(</read></transition>
+		<transition><from>8</from><to>1</to><read>)</read></transition>
+		<transition><from>8</from><to>11</to><read>-</read></transition>
+		<transition><from>8</from><to>12</to><read>0</read></transition>
+		<transition><from>8</from><to>12</to><read>1</read></transition>
+		<transition><from>8</from><to>12</to><read>2</read></transition>
+		<transition><from>8</from><to>12</to><read>3</read></transition>
+		<transition><from>8</from><to>12</to><read>4</read></transition>
+		<transition><from>8</from><to>12</to><read>5</read></transition>
+		<transition><from>8</from><to>12</to><read>6</read></transition>
+		<transition><from>8</from><to>12</to><read>7</read></transition>
+		<transition><from>8</from><to>12</to><read>8</read></transition>
+		<transition><from>8</from><to>12</to><read>9</read></transition>
+		<transition><from>9</from><to>13</to><read> </read></transition>
+		<transition><from>9</from><to>1</to><read>(</read></transition>
+		<transition><from>9</from><to>1</to><read>)</read></transition>
+		<transition><from>9</from><to>1</to><read>-</read></transition>
+		<transition><from>9</from><to>1</to><read>0</read></transition>
+		<transition><from>9</from><to>1</to><read>1</read></transition>
+		<transition><from>9</from><to>1</to><read>2</read></transition>
+		<transition><from>9</from><to>1</to><read>3</read></transition>
+		<transition><from>9</from><to>1</to><read>4</read></transition>
+		<transition><from>9</from><to>1</to><read>5</read></transition>
+		<transition><from>9</from><to>1</to><read>6</read></transition>
+		<transition><from>9</from><to>1</to><read>7</read></transition>
+		<transition><from>9</from><to>1</to><read>8</read></transition>
+		<transition><from>9</from><to>1</to><read>9</read></transition>
+		<transition><from>10</from><to>1</to><read> </read></transition>
+		<transition><from>10</from><to>1</to><read>(</read></transition>
+		<transition><from>10</from><to>14</to><read>)</read></transition>
+		<transition><from>10</from><to>1</to><read>-</read></transition>
+		<transition><from>10</from><to>1</to><read>0</read></transition>
+		<transition><from>10</from><to>1</to><read>1</read></transition>
+		<transition><from>10</from><to>1</to><read>2</read></transition>
+		<transition><from>10</from><to>1</to><read>3</read></transition>
+		<transition><from>10</from><to>1</to><read>4</read></transition>
+		<transition><from>10</from><to>1</to><read>5</read></transition>
+		<transition><from>10</from><to>1</to><read>6</read></transition>
+		<transition><from>10</from><to>1</to><read>7</read></transition>
+		<transition><from>10</from><to>1</to><read>8</read></transition>
+		<transition><from>10</from><to>1</to><read>9</read></transition>
+		<transition><from>11</from><to>1</to><read> </read></transition>
+		<transition><from>11</from><to>1</to><read>(</read></transition>
+		<transition><from>11</from><to>1</to><read>)</read></transition>
+		<transition><from>11</from><to>1</to><read>-</read></transition>
+		<transition><from>11</from><to>15</to><read>0</read></transition>
+		<transition><from>11</from><to>15</to><read>1</read></transition>
+		<transition><from>11</from><to>15</to><read>2</read></transition>
+		<transition><from>11</from><to>15</to><read>3</read></transition>
+		<transition><from>11</from><to>15</to><read>4</read></transition>
+		<transition><from>11</from><to>15</to><read>5</read></transition>
+		<transition><from>11</from><to>15</to><read>6</read></transition>
+		<transition><from>11</from><to>15</to><read>7</read></transition>
+		<transition><from>11</from><to>15</to><read>8</read></transition>
+		<transition><from>11</from><to>15</to><read>9</read></transition>
+		<transition><from>12</from><to>1</to><read> </read></transition>
+		<transition><from>12</from><to>1</to><read>(</read></transition>
+		<transition><from>12</from><to>1</to><read>)</read></transition>
+		<transition><from>12</from><to>1</to><read>-</read></transition>
+		<transition><from>12</from><to>16</to><read>0</read></transition>
+		<transition><from>12</from><to>16</to><read>1</read></transition>
+		<transition><from>12</from><to>16</to><read>2</read></transition>
+		<transition><from>12</from><to>16</to><read>3</read></transition>
+		<transition><from>12</from><to>16</to><read>4</read></transition>
+		<transition><from>12</from><to>16</to><read>5</read></transition>
+		<transition><from>12</from><to>16</to><read>6</read></transition>
+		<transition><from>12</from><to>16</to><read>7</read></transition>
+		<transition><from>12</from><to>16</to><read>8</read></transition>
+		<transition><from>12</from><to>16</to><read>9</read></transition>
+		<transition><from>13</from><to>1</to><read> </read></transition>
+		<transition><from>13</from><to>1</to><read>(</read></transition>
+		<transition><from>13</from><to>1</to><read>)</read></transition>
+		<transition><from>13</from><to>1</to><read>-</read></transition>
+		<transition><from>13</from><to>17</to><read>0</read></transition>
+		<transition><from>13</from><to>17</to><read>1</read></transition>
+		<transition><from>13</from><to>17</to><read>2</read></transition>
+		<transition><from>13</from><to>17</to><read>3</read></transition>
+		<transition><from>13</from><to>17</to><read>4</read></transition>
+		<transition><from>13</from><to>17</to><read>5</read></transition>
+		<transition><from>13</from><to>17</to><read>6</read></transition>
+		<transition><from>13</from><to>17</to><read>7</read></transition>
+		<transition><from>13</from><to>17</to><read>8</read></transition>
+		<transition><from>13</from><to>17</to><read>9</read></transition>
+		<transition><from>14</from><to>17</to><read> </read></transition>
+		<transition><from>14</from><to>1</to><read>(</read></transition>
+		<transition><from>14</from><to>1</to><read>)</read></transition>
+		<transition><from>14</from><to>1</to><read>-</read></transition>
+		<transition><from>14</from><to>1</to><read>0</read></transition>
+		<transition><from>14</from><to>1</to><read>1</read></transition>
+		<transition><from>14</from><to>1</to><read>2</read></transition>
+		<transition><from>14</from><to>1</to><read>3</read></transition>
+		<transition><from>14</from><to>1</to><read>4</read></transition>
+		<transition><from>14</from><to>1</to><read>5</read></transition>
+		<transition><from>14</from><to>1</to><read>6</read></transition>
+		<transition><from>14</from><to>1</to><read>7</read></transition>
+		<transition><from>14</from><to>1</to><read>8</read></transition>
+		<transition><from>14</from><to>1</to><read>9</read></transition>
+		<transition><from>15</from><to>1</to><read> </read></transition>
+		<transition><from>15</from><to>1</to><read>(</read></transition>
+		<transition><from>15</from><to>1</to><read>)</read></transition>
+		<transition><from>15</from><to>1</to><read>-</read></transition>
+		<transition><from>15</from><to>18</to><read>0</read></transition>
+		<transition><from>15</from><to>18</to><read>1</read></transition>
+		<transition><from>15</from><to>18</to><read>2</read></transition>
+		<transition><from>15</from><to>18</to><read>3</read></transition>
+		<transition><from>15</from><to>18</to><read>4</read></transition>
+		<transition><from>15</from><to>18</to><read>5</read></transition>
+		<transition><from>15</from><to>18</to><read>6</read></transition>
+		<transition><from>15</from><to>18</to><read>7</read></transition>
+		<transition><from>15</from><to>18</to><read>8</read></transition>
+		<transition><from>15</from><to>18</to><read>9</read></transition>
+		<transition><from>16</from><to>1</to><read> </read></transition>
+		<transition><from>16</from><to>1</to><read>(</read></transition>
+		<transition><from>16</from><to>1</to><read>)</read></transition>
+		<transition><from>16</from><to>1</to><read>-</read></transition>
+		<transition><from>16</from><to>19</to><read>0</read></transition>
+		<transition><from>16</from><to>19</to><read>1</read></transition>
+		<transition><from>16</from><to>19</to><read>2</read></transition>
+		<transition><from>16</from><to>19</to><read>3</read></transition>
+		<transition><from>16</from><to>19</to><read>4</read></transition>
+		<transition><from>16</from><to>19</to><read>5</read></transition>
+		<transition><from>16</from><to>19</to><read>6</read></transition>
+		<transition><from>16</from><to>19</to><read>7</read></transition>
+		<transition><from>16</from><to>19</to><read>8</read></transition>
+		<transition><from>16</from><to>19</to><read>9</read></transition>
+		<transition><from>17</from><to>1</to><read> </read></transition>
+		<transition><from>17</from><to>1</to><read>(</read></transition>
+		<transition><from>17</from><to>1</to><read>)</read></transition>
+		<transition><from>17</from><to>1</to><read>-</read></transition>
+		<transition><from>17</from><to>20</to><read>0</read></transition>
+		<transition><from>17</from><to>20</to><read>1</read></transition>
+		<transition><from>17</from><to>20</to><read>2</read></transition>
+		<transition><from>17</from><to>20</to><read>3</read></transition>
+		<transition><from>17</from><to>20</to><read>4</read></transition>
+		<transition><from>17</from><to>20</to><read>5</read></transition>
+		<transition><from>17</from><to>20</to><read>6</read></transition>
+		<transition><from>17</from><to>20</to><read>7</read></transition>
+		<transition><from>17</from><to>20</to><read>8</read></transition>
+		<transition><from>17</from><to>20</to><read>9</read></transition>
+		<transition><from>18</from><to>1</to><read> </read></transition>
+		<transition><from>18</from><to>1</to><read>(</read></transition>
+		<transition><from>18</from><to>1</to><read>)</read></transition>
+		<transition><from>18</from><to>1</to><read>-</read></transition>
+		<transition><from>18</from><to>21</to><read>0</read></transition>
+		<transition><from>18</from><to>21</to><read>1</read></transition>
+		<transition><from>18</from><to>21</to><read>2</read></transition>
+		<transition><from>18</from><to>21</to><read>3</read></transition>
+		<transition><from>18</from><to>21</to><read>4</read></transition>
+		<transition><from>18</from><to>21</to><read>5</read></transition>
+		<transition><from>18</from><to>21</to><read>6</read></transition>
+		<transition><from>18</from><to>21</to><read>7</read></transition>
+		<transition><from>18</from><to>21</to><read>8</read></transition>
+		<transition><from>18</from><to>21</to><read>9</read></transition>
+		<transition><from>19</from><to>1</to><read> </read></transition>
+		<transition><from>19</from><to>1</to><read>(</read></transition>
+		<transition><from>19</from><to>1</to><read>)</read></transition>
+		<transition><from>19</from><to>1</to><read>-</read></transition>
+		<transition><from>19</from><to>22</to><read>0</read></transition>
+		<transition><from>19</from><to>22</to><read>1</read></transition>
+		<transition><from>19</from><to>22</to><read>2</read></transition>
+		<transition><from>19</from><to>22</to><read>3</read></transition>
+		<transition><from>19</from><to>22</to><read>4</read></transition>
+		<transition><from>19</from><to>22</to><read>5</read></transition>
+		<transition><from>19</from><to>22</to><read>6</read></transition>
+		<transition><from>19</from><to>22</to><read>7</read></transition>
+		<transition><from>19</from><to>22</to><read>8</read></transition>
+		<transition><from>19</from><to>22</to><read>9</read></transition>
+		<transition><from>20</from><to>1</to><read> </read></transition>
+		<transition><from>20</from><to>1</to><read>(</read></transition>
+		<transition><from>20</from><to>1</to><read>)</read></transition>
+		<transition><from>20</from><to>1</to><read>-</read></transition>
+		<transition><from>20</from><to>23</to><read>0</read></transition>
+		<transition><from>20</from><to>23</to><read>1</read></transition>
+		<transition><from>20</from><to>23</to><read>2</read></transition>
+		<transition><from>20</from><to>23</to><read>3</read></transition>
+		<transition><from>20</from><to>23</to><read>4</read></transition>
+		<transition><from>20</from><to>23</to><read>5</read></transition>
+		<transition><from>20</from><to>23</to><read>6</read></transition>
+		<transition><from>20</from><to>23</to><read>7</read></transition>
+		<transition><from>20</from><to>23</to><read>8</read></transition>
+		<transition><from>20</from><to>23</to><read>9</read></transition>
+		<transition><from>21</from><to>19</to><read> </read></transition>
+		<transition><from>21</from><to>1</to><read>(</read></transition>
+		<transition><from>21</from><to>1</to><read>)</read></transition>
+		<transition><from>21</from><to>19</to><read>-</read></transition>
+		<transition><from>21</from><to>1</to><read>0</read></transition>
+		<transition><from>21</from><to>1</to><read>1</read></transition>
+		<transition><from>21</from><to>1</to><read>2</read></transition>
+		<transition><from>21</from><to>1</to><read>3</read></transition>
+		<transition><from>21</from><to>1</to><read>4</read></transition>
+		<transition><from>21</from><to>1</to><read>5</read></transition>
+		<transition><from>21</from><to>1</to><read>6</read></transition>
+		<transition><from>21</from><to>1</to><read>7</read></transition>
+		<transition><from>21</from><to>1</to><read>8</read></transition>
+		<transition><from>21</from><to>1</to><read>9</read></transition>
+		<transition><from>22</from><to>1</to><read> </read></transition>
+		<transition><from>22</from><to>1</to><read>(</read></transition>
+		<transition><from>22</from><to>1</to><read>)</read></transition>
+		<transition><from>22</from><to>1</to><read>-</read></transition>
+		<transition><from>22</from><to>24</to><read>0</read></transition>
+		<transition><from>22</from><to>24</to><read>1</read></transition>
+		<transition><from>22</from><to>24</to><read>2</read></transition>
+		<transition><from>22</from><to>24</to><read>3</read></transition>
+		<transition><from>22</from><to>24</to><read>4</read></transition>
+		<transition><from>22</from><to>24</to><read>5</read></transition>
+		<transition><from>22</from><to>24</to><read>6</read></transition>
+		<transition><from>22</from><to>24</to><read>7</read></transition>
+		<transition><from>22</from><to>24</to><read>8</read></transition>
+		<transition><from>22</from><to>24</to><read>9</read></transition>
+		<transition><from>23</from><to>1</to><read> </read></transition>
+		<transition><from>23</from><to>1</to><read>(</read></transition>
+		<transition><from>23</from><to>1</to><read>)</read></transition>
+		<transition><from>23</from><to>1</to><read>-</read></transition>
+		<transition><from>23</from><to>25</to><read>0</read></transition>
+		<transition><from>23</from><to>25</to><read>1</read></transition>
+		<transition><from>23</from><to>25</to><read>2</read></transition>
+		<transition><from>23</from><to>25</to><read>3</read></transition>
+		<transition><from>23</from><to>25</to><read>4</read></transition>
+		<transition><from>23</from><to>25</to><read>5</read></transition>
+		<transition><from>23</from><to>25</to><read>6</read></transition>
+		<transition><from>23</from><to>25</to><read>7</read></transition>
+		<transition><from>23</from><to>25</to><read>8</read></transition>
+		<transition><from>23</from><to>25</to><read>9</read></transition>
+		<transition><from>24</from><to>1</to><read> </read></transition>
+		<transition><from>24</from><to>1</to><read>(</read></transition>
+		<transition><from>24</from><to>1</to><read>)</read></transition>
+		<transition><from>24</from><to>1</to><read>-</read></transition>
+		<transition><from>24</from><to>26</to><read>0</read></transition>
+		<transition><from>24</from><to>26</to><read>1</read></transition>
+		<transition><from>24</from><to>26</to><read>2</read></transition>
+		<transition><from>24</from><to>26</to><read>3</read></transition>
+		<transition><from>24</from><to>26</to><read>4</read></transition>
+		<transition><from>24</from><to>26</to><read>5</read></transition>
+		<transition><from>24</from><to>26</to><read>6</read></transition>
+		<transition><from>24</from><to>26</to><read>7</read></transition>
+		<transition><from>24</from><to>26</to><read>8</read></transition>
+		<transition><from>24</from><to>26</to><read>9</read></transition>
+		<transition><from>25</from><to>19</to><read> </read></transition>
+		<transition><from>25</from><to>1</to><read>(</read></transition>
+		<transition><from>25</from><to>1</to><read>)</read></transition>
+		<transition><from>25</from><to>1</to><read>-</read></transition>
+		<transition><from>25</from><to>1</to><read>0</read></transition>
+		<transition><from>25</from><to>1</to><read>1</read></transition>
+		<transition><from>25</from><to>1</to><read>2</read></transition>
+		<transition><from>25</from><to>1</to><read>3</read></transition>
+		<transition><from>25</from><to>1</to><read>4</read></transition>
+		<transition><from>25</from><to>1</to><read>5</read></transition>
+		<transition><from>25</from><to>1</to><read>6</read></transition>
+		<transition><from>25</from><to>1</to><read>7</read></transition>
+		<transition><from>25</from><to>1</to><read>8</read></transition>
+		<transition><from>25</from><to>1</to><read>9</read></transition>
+		<transition><from>26</from><to>1</to><read> </read></transition>
+		<transition><from>26</from><to>1</to><read>(</read></transition>
+		<transition><from>26</from><to>1</to><read>)</read></transition>
+		<transition><from>26</from><to>1</to><read>-</read></transition>
+		<transition><from>26</from><to>27</to><read>0</read></transition>
+		<transition><from>26</from><to>27</to><read>1</read></transition>
+		<transition><from>26</from><to>27</to><read>2</read></transition>
+		<transition><from>26</from><to>27</to><read>3</read></transition>
+		<transition><from>26</from><to>27</to><read>4</read></transition>
+		<transition><from>26</from><to>27</to><read>5</read></transition>
+		<transition><from>26</from><to>27</to><read>6</read></transition>
+		<transition><from>26</from><to>27</to><read>7</read></transition>
+		<transition><from>26</from><to>27</to><read>8</read></transition>
+		<transition><from>26</from><to>27</to><read>9</read></transition>
+		<transition><from>27</from><to>1</to><read> </read></transition>
+		<transition><from>27</from><to>1</to><read>(</read></transition>
+		<transition><from>27</from><to>1</to><read>)</read></transition>
+		<transition><from>27</from><to>1</to><read>-</read></transition>
+		<transition><from>27</from><to>1</to><read>0</read></transition>
+		<transition><from>27</from><to>1</to><read>1</read></transition>
+		<transition><from>27</from><to>1</to><read>2</read></transition>
+		<transition><from>27</from><to>1</to><read>3</read></transition>
+		<transition><from>27</from><to>1</to><read>4</read></transition>
+		<transition><from>27</from><to>1</to><read>5</read></transition>
+		<transition><from>27</from><to>1</to><read>6</read></transition>
+		<transition><from>27</from><to>1</to><read>7</read></transition>
+		<transition><from>27</from><to>1</to><read>8</read></transition>
+		<transition><from>27</from><to>1</to><read>9</read></transition>
+	</automaton>
+</structure>

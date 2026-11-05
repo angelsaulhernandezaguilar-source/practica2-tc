@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/formatos.py).-->
+<structure>
+	<!--alfabeto: ["0", "1"]-->
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{q36}">
+			<x>80.0</x>
+			<y>355.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q12, q16, q19, q20}">
+			<x>240.0</x>
+			<y>325.0</y>
+		</state>
+		<state id="2" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q16, q23, q24}">
+			<x>240.0</x>
+			<y>435.0</y>
+		</state>
+		<state id="3" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q11, q12, q16, q17, q21, q27, q28, q30, q32, q34, q35, q37}">
+			<x>400.0</x>
+			<y>190.0</y>
+			<final/>
+		</state>
+		<state id="4" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q16}">
+			<x>400.0</x>
+			<y>300.0</y>
+		</state>
+		<state id="5" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q12, q16}">
+			<x>400.0</x>
+			<y>410.0</y>
+		</state>
+		<state id="6" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q15, q16, q17, q25, q27, q28, q30, q32, q34, q35, q37}">
+			<x>400.0</x>
+			<y>520.0</y>
+			<final/>
+		</state>
+		<state id="7" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q11, q12, q16, q17, q28, q29, q30, q32, q33, q35, q37}">
+			<x>560.0</x>
+			<y>105.0</y>
+			<final/>
+		</state>
+		<state id="8" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q16, q28, q30, q31, q32, q33, q35, q37}">
+			<x>560.0</x>
+			<y>215.0</y>
+			<final/>
+		</state>
+		<state id="9" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q15, q16, q17, q37}">
+			<x>560.0</x>
+			<y>325.0</y>
+			<final/>
+		</state>
+		<state id="10" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q11, q12, q16, q17, q37}">
+			<x>560.0</x>
+			<y>435.0</y>
+			<final/>
+		</state>
+		<state id="11" name="{q0, q1, q2, q4, q5, q7, q8, q9, q10, q12, q16, q28, q29, q30, q32, q33, q35, q37}">
+			<x>560.0</x>
+			<y>545.0</y>
+			<final/>
+		</state>
+		<state id="12" name="{q0, q2, q3, q4, q5, q7, q8, q12, q13, q14, q15, q16, q17, q28, q30, q31, q32, q33, q35, q37}">
+			<x>560.0</x>
+			<y>655.0</y>
+			<final/>
+		</state>
+		<transition><from>0</from><to>1</to><read>0</read></transition>
+		<transition><from>0</from><to>2</to><read>1</read></transition>
+		<transition><from>1</from><to>3</to><read>0</read></transition>
+		<transition><from>1</from><to>4</to><read>1</read></transition>
+		<transition><from>2</from><to>5</to><read>0</read></transition>
+		<transition><from>2</from><to>6</to><read>1</read></transition>
+		<transition><from>3</from><to>7</to><read>0</read></transition>
+		<transition><from>3</from><to>8</to><read>1</read></transition>
+		<transition><from>4</from><to>5</to><read>0</read></transition>
+		<transition><from>4</from><to>9</to><read>1</read></transition>
+		<transition><from>5</from><to>10</to><read>0</read></transition>
+		<transition><from>5</from><to>4</to><read>1</read></transition>
+		<transition><from>6</from><to>11</to><read>0</read></transition>
+		<transition><from>6</from><to>12</to><read>1</read></transition>
+		<transition><from>7</from><to>7</to><read>0</read></transition>
+		<transition><from>7</from><to>8</to><read>1</read></transition>
+		<transition><from>8</from><to>11</to><read>0</read></transition>
+		<transition><from>8</from><to>12</to><read>1</read></transition>
+		<transition><from>9</from><to>5</to><read>0</read></transition>
+		<transition><from>9</from><to>9</to><read>1</read></transition>
+		<transition><from>10</from><to>10</to><read>0</read></transition>
+		<transition><from>10</from><to>4</to><read>1</read></transition>
+		<transition><from>11</from><to>7</to><read>0</read></transition>
+		<transition><from>11</from><to>8</to><read>1</read></transition>
+		<transition><from>12</from><to>11</to><read>0</read></transition>
+		<transition><from>12</from><to>12</to><read>1</read></transition>
+	</automaton>
+</structure>
