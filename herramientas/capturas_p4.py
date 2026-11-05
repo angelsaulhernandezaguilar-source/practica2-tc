@@ -43,14 +43,22 @@ def main():
             pausa()
 
         def escribir(etiqueta, valor):
+            """Teclea el valor con eventos de teclado reales, que Flet recibe como cambios del campo."""
             campo = pg.get_by_role("textbox", name=etiqueta)
+            campo.scroll_into_view_if_needed()
             campo.click()
-            campo.fill(valor)
-            pausa(0.5)
+            pg.keyboard.press("End")
+            for _ in range(60):  # vacía el campo (Ctrl+A no selecciona en Flutter web)
+                pg.keyboard.press("Backspace")
+            pg.keyboard.type(valor, delay=15)
+            pausa(0.8)
 
         def cargar(ruta):
             pestana("1. Definir")
-            escribir("Autómatas del repositorio", ruta)
+            campo = pg.get_by_role("textbox", name="Autómatas del repositorio")
+            campo.click()
+            campo.fill(ruta)
+            pausa()
             pg.get_by_text(ruta, exact=True).last.click()
             pausa()
             boton("Cargar")
@@ -116,6 +124,8 @@ def main():
         foto("afd-eliminacion-paso")
         boton("Hasta el final")
         foto("afd-eliminacion-final")
+        pg.mouse.wheel(0, 2500)  # el campo de comparación está al final de la pestaña
+        pausa()
         escribir("Expresión con la que comparar (p. ej. la de JFLAP)", "((1+01*0)(0+1))*(01*(λ+0)+1)")
         boton("Comparar")
         pg.mouse.wheel(0, 2500)
