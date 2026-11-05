@@ -1,0 +1,39 @@
+PR #12 — feature/p4-expresiones — 2026-11-05
+
+✓ feature/p4-expresiones pruebas angelsaulhernandezaguilar-source/practica2-tc#12 · 42072097205
+Triggered via pull_request about 1 minute ago
+
+JOBS
+✓ pytest (3.11) in 25s (ID 127402470161)
+✓ pytest (3.13) in 29s (ID 127402470869)
+✓ pytest (3.12) in 23s (ID 127402471166)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+pytest (3.11): .github#2
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+pytest (3.11): .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+pytest (3.13): .github#2
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+pytest (3.13): .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+pytest (3.12): .github#2
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+pytest (3.12): .github#1
+
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072097205
+
+pytest (3.11)	pass	19s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072083492/job/127402422180	
+pytest (3.11)	pass	25s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072097205/job/127402470161	
+pytest (3.12)	pass	24s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072083492/job/127402422822	
+pytest (3.12)	pass	23s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072097205/job/127402471166	
+pytest (3.13)	pass	27s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072083492/job/127402422630	
+pytest (3.13)	pass	29s	https://github.com/angelsaulhernandezaguilar-source/practica2-tc/actions/runs/42072097205/job/127402470869	

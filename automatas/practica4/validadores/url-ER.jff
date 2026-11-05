@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/expresiones.py).-->
+<structure>
+	<type>re</type>
+	<expression>http(!+s)://(X(X+-)*X+X)(.(X(X+-)*X+X))*(!+:DD*)(/P*)*(!+?Q*)(!+#Q*)</expression>
+</structure>

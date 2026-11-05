@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Creado con practica2-tc (src/expresiones.py).-->
+<structure>
+	<type>re</type>
+	<expression>0*(0+1)</expression>
+</structure>
